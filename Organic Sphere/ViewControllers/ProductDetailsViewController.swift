@@ -26,11 +26,10 @@ class ProductDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = selectedProduct
+        self.title = "Product Details"
         
-        //Add border to label
-        productOrderCountLabel.layer.borderColor = UIColor.gray.cgColor
-        productOrderCountLabel.layer.borderWidth = 1
+        productNameLabel.text = selectedProduct
+        productCategoryLabel.text = "Organic Sphere"
     }
     
     func makeButtonCircular(button:UIButton) {
@@ -38,14 +37,16 @@ class ProductDetailsViewController: UIViewController {
         button.clipsToBounds = true
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewDidLayoutSubviews() {
+        
         makeButtonCircular(button: increaseProductCountButton)
         makeButtonCircular(button: decreaseProductCountButton)
         
-        buyButton.layer.cornerRadius = buyButton.frame.width * 0.15
+        buyButton.layer.cornerRadius = buyButton.frame.width * 0.12
+        
+        //Add border to label
+        productOrderCountLabel.layer.borderColor = UIColor.gray.cgColor
+        productOrderCountLabel.layer.borderWidth = 1
     }
     
     @IBAction func descreaseProductCountButtonTapped(_ sender: AnyObject) {
