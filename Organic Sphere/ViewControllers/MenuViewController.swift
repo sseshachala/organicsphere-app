@@ -16,10 +16,15 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
         super.viewDidLoad()
         view.backgroundColor = UIColor().osGreenColor()
         tableView.backgroundColor = UIColor().osGreenColor()
-
         self.tableView.isScrollEnabled = false
-        
-        // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidLayoutSubviews() {
+        let viewForLogo = UIView(frame: CGRect(x:0, y:0, width: 100, height:100))
+        let splashImageView = UIImageView(frame: CGRect(x:tableView.frame.width/2 - 75, y:0, width: 150, height:100))
+        splashImageView.image = UIImage(named: "splashImage")
+        viewForLogo.addSubview(splashImageView)
+        self.tableView.tableFooterView = viewForLogo
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
