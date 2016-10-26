@@ -1,15 +1,15 @@
 PODS:
   - Alamofire (4.0.1)
-  - SlideMenuControllerSwift (3.0.0)
+  - SideMenu (2.0.5)
 
 DEPENDENCIES:
   - Alamofire (~> 4.0)
-  - SlideMenuControllerSwift
+  - SideMenu
 
 SPEC CHECKSUMS:
   Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
-  SlideMenuControllerSwift: 9c0a84f9a3fba51681debd7be77617094562ebcc
+  SideMenu: 0ecfd407b24e7d36c57fc50ca7f5d7cedb7c8841
 
-PODFILE CHECKSUM: c7f13ca6468f32ac4e8b9687a699ef7a012a1c13
+PODFILE CHECKSUM: 71dd6e703f8a4bd84d97b2d41e95dacca5072903
 
 COCOAPODS: 1.1.1

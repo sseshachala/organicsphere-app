@@ -16,6 +16,10 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
         super.viewDidLoad()
         view.backgroundColor = UIColor().osGreenColor()
         tableView.backgroundColor = UIColor().osGreenColor()
+        
+        //
+        self.navigationController?.setNavigationBarHidden(true, animated: false);
+        
         self.tableView.isScrollEnabled = false
     }
     

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SideMenu
 
 class CategoriesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -17,6 +18,18 @@ class CategoriesViewController: UIViewController, UITableViewDelegate, UITableVi
 
         // Do any additional setup after loading the view.
         navigationController?.navigationBar.topItem?.title = "Categories"
+        navigationController?.navigationBar.barTintColor = UIColor().osGreenColor()
+        
+        SideMenuManager.menuLeftNavigationController = storyboard!.instantiateViewController(withIdentifier: "LeftMenuNavigationController") as? UISideMenuNavigationController
+        SideMenuManager.menuRightNavigationController = storyboard!.instantiateViewController(withIdentifier: "RightMenuNavigationController") as? UISideMenuNavigationController
+        
+        // Enable gestures. The left and/or right menus must be set up above for these to work.
+        // Note that these continue to work on the Navigation Controller independent of the View Controller it displays!
+        SideMenuManager.menuAddPanGestureToPresent(toView: self.navigationController!.navigationBar)
+        SideMenuManager.menuAddScreenEdgePanGesturesToPresent(toView: self.navigationController!.view)
+        
+        SideMenuManager.menuFadeStatusBar = false
+
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

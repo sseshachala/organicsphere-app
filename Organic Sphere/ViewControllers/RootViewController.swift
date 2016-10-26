@@ -7,21 +7,21 @@
 //
 
 import UIKit
-import SlideMenuControllerSwift
+import SideMenu
 
-class RootViewController: SlideMenuController {
+class RootViewController: UIViewController {
 
     override func awakeFromNib() {
         
-        SlideMenuOptions.leftViewWidth = view.frame.width * 0.80
-        SlideMenuOptions.contentViewScale = 0.50
-        
-        if let controller = self.storyboard?.instantiateViewController(withIdentifier: "CategoriesViewController") {
-            self.mainViewController = controller
-        }
-        if let controller = self.storyboard?.instantiateViewController(withIdentifier: "MenuViewController") {
-            self.leftViewController = controller
-        }
+//        SlideMenuOptions.leftViewWidth = view.frame.width * 0.80
+//        SlideMenuOptions.contentViewScale = 0.50
+//        
+//        if let controller = self.storyboard?.instantiateViewController(withIdentifier: "CategoriesViewController") {
+//            self.mainViewController = controller
+//        }
+//        if let controller = self.storyboard?.instantiateViewController(withIdentifier: "MenuViewController") {
+//            self.leftViewController = controller
+//        }
         super.awakeFromNib()
     }
 
@@ -30,9 +30,9 @@ class RootViewController: SlideMenuController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        self.addLeftBarButtonWithImage(UIImage(named: "menu")!)
-        self.addRightBarButtonWithImage(UIImage(named: "cart")!)
-        
+//        self.addLeftBarButtonWithImage(UIImage(named: "menu")!)
+//        self.addRightBarButtonWithImage(UIImage(named: "cart")!)
+//        
         navigationController?.navigationBar.barTintColor = UIColor().osGreenColor()
         
     }

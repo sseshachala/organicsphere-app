@@ -7,7 +7,7 @@ target 'Organic Sphere' do
 
   # Pods for Organic Sphere
 
-    pod 'SlideMenuControllerSwift'
+    pod 'SideMenu'
     pod 'Alamofire', '~> 4.0'
 
 

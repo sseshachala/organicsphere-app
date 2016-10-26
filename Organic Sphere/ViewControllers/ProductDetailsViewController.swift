@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SideMenu
 
 class ProductDetailsViewController: UIViewController {
 
@@ -70,6 +71,7 @@ class ProductDetailsViewController: UIViewController {
         }
     }
     @IBAction func buyButtonTapped(_ sender: AnyObject) {
+        present(SideMenuManager.menuLeftNavigationController!, animated: true, completion: nil)
     }
     /*
     // MARK: - Navigation
