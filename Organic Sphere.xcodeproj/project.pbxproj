@@ -19,6 +19,7 @@
 		5A6C862B1DC0184800C42D04 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6C862A1DC0184800C42D04 /* RootViewController.swift */; };
 		5A6C862F1DC0329400C42D04 /* OSColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6C862E1DC0329400C42D04 /* OSColors.swift */; };
 		5A6C86311DC0353F00C42D04 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6C86301DC0353F00C42D04 /* ProductsViewController.swift */; };
+		5A6C86331DC03AC600C42D04 /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6C86321DC03AC600C42D04 /* ProductDetailsViewController.swift */; };
 		D10E47B4792A65B48B446D34 /* Pods_Organic_SphereTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39466B08DC01132F871DD4A9 /* Pods_Organic_SphereTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		5A6C862A1DC0184800C42D04 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootViewController.swift; path = ViewControllers/RootViewController.swift; sourceTree = "<group>"; };
 		5A6C862E1DC0329400C42D04 /* OSColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSColors.swift; sourceTree = "<group>"; };
 		5A6C86301DC0353F00C42D04 /* ProductsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductsViewController.swift; path = ViewControllers/ProductsViewController.swift; sourceTree = "<group>"; };
+		5A6C86321DC03AC600C42D04 /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductDetailsViewController.swift; path = ViewControllers/ProductDetailsViewController.swift; sourceTree = "<group>"; };
 		726DAB9F387207D018A6734E /* Pods-Organic Sphere.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Organic Sphere.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Organic Sphere/Pods-Organic Sphere.debug.xcconfig"; sourceTree = "<group>"; };
 		7E308E3A4298B184B29DD1EE /* Pods-Organic Sphere.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Organic Sphere.release.xcconfig"; path = "Pods/Target Support Files/Pods-Organic Sphere/Pods-Organic Sphere.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,6 +149,7 @@
 				5A6C86261DC0181F00C42D04 /* CategoriesViewController.swift */,
 				5A6C86281DC0183500C42D04 /* MenuViewController.swift */,
 				5A6C86301DC0353F00C42D04 /* ProductsViewController.swift */,
+				5A6C86321DC03AC600C42D04 /* ProductDetailsViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -370,6 +373,7 @@
 				5A6C862F1DC0329400C42D04 /* OSColors.swift in Sources */,
 				5A6C86271DC0181F00C42D04 /* CategoriesViewController.swift in Sources */,
 				5A6C86041DC010B800C42D04 /* AppDelegate.swift in Sources */,
+				5A6C86331DC03AC600C42D04 /* ProductDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
