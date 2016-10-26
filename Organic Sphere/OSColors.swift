@@ -14,6 +14,6 @@ extension UIColor {
     }
     
     public func osGreenColor() -> UIColor {
-        return UIColor(red: 84, green: 156, blue: 37)
+        return UIColor(red: 120, green: 200, blue: 57)
     }
 }

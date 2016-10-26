@@ -17,6 +17,7 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
         view.backgroundColor = UIColor().osGreenColor()
         tableView.backgroundColor = UIColor().osGreenColor()
 
+        self.tableView.isScrollEnabled = false
         
         // Do any additional setup after loading the view.
     }
