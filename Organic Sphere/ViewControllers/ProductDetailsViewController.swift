@@ -71,7 +71,7 @@ class ProductDetailsViewController: UIViewController {
         }
     }
     @IBAction func buyButtonTapped(_ sender: AnyObject) {
-        present(SideMenuManager.menuLeftNavigationController!, animated: true, completion: nil)
+//        present(SideMenuManager.menuLeftNavigationController!, animated: true, completion: nil)
     }
     /*
     // MARK: - Navigation

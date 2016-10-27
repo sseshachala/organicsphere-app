@@ -18,7 +18,6 @@ class CategoriesViewController: UIViewController, UITableViewDelegate, UITableVi
 
         // Do any additional setup after loading the view.
         navigationController?.navigationBar.topItem?.title = "Categories"
-        navigationController?.navigationBar.barTintColor = UIColor().osGreenColor()
         
         SideMenuManager.menuLeftNavigationController = storyboard!.instantiateViewController(withIdentifier: "LeftMenuNavigationController") as? UISideMenuNavigationController
         SideMenuManager.menuRightNavigationController = storyboard!.instantiateViewController(withIdentifier: "RightMenuNavigationController") as? UISideMenuNavigationController
@@ -27,7 +26,7 @@ class CategoriesViewController: UIViewController, UITableViewDelegate, UITableVi
         // Note that these continue to work on the Navigation Controller independent of the View Controller it displays!
         SideMenuManager.menuAddPanGestureToPresent(toView: self.navigationController!.navigationBar)
         SideMenuManager.menuAddScreenEdgePanGesturesToPresent(toView: self.navigationController!.view)
-        
+//        SideMenuManager.menuEnableSwipeGestures = false
         SideMenuManager.menuFadeStatusBar = false
 
     }
