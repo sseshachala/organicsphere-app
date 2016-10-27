@@ -11,6 +11,7 @@
 		5A5C7ACF1DC18F6F00643F5D /* OSWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5C7ACE1DC18F6F00643F5D /* OSWebViewController.swift */; };
 		5A5C7AD11DC18F8000643F5D /* PrivacyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5C7AD01DC18F8000643F5D /* PrivacyPolicyViewController.swift */; };
 		5A5C7AD31DC18F8F00643F5D /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5C7AD21DC18F8F00643F5D /* AboutViewController.swift */; };
+		5A5C7AD61DC1AD5200643F5D /* OSLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5C7AD51DC1AD5200643F5D /* OSLocationManager.swift */; };
 		5A6ACF7C1DC1730E00083C0F /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6ACF7B1DC1730E00083C0F /* CartViewController.swift */; };
 		5A6C86041DC010B800C42D04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6C86031DC010B800C42D04 /* AppDelegate.swift */; };
 		5A6C86091DC010B800C42D04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A6C86071DC010B800C42D04 /* Main.storyboard */; };
@@ -45,6 +46,7 @@
 		5A5C7ACE1DC18F6F00643F5D /* OSWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OSWebViewController.swift; path = ViewControllers/OSWebViewController.swift; sourceTree = "<group>"; };
 		5A5C7AD01DC18F8000643F5D /* PrivacyPolicyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PrivacyPolicyViewController.swift; path = ViewControllers/PrivacyPolicyViewController.swift; sourceTree = "<group>"; };
 		5A5C7AD21DC18F8F00643F5D /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutViewController.swift; path = ViewControllers/AboutViewController.swift; sourceTree = "<group>"; };
+		5A5C7AD51DC1AD5200643F5D /* OSLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OSLocationManager.swift; path = Managers/OSLocationManager.swift; sourceTree = "<group>"; };
 		5A6ACF7B1DC1730E00083C0F /* CartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CartViewController.swift; path = ViewControllers/CartViewController.swift; sourceTree = "<group>"; };
 		5A6C86001DC010B800C42D04 /* Organic Sphere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Organic Sphere.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A6C86031DC010B800C42D04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5A5C7AD41DC1AD2500643F5D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				5A5C7AD51DC1AD5200643F5D /* OSLocationManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
 		5A6C85F71DC010B800C42D04 = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +139,7 @@
 		5A6C86021DC010B800C42D04 /* Organic Sphere */ = {
 			isa = PBXGroup;
 			children = (
+				5A5C7AD41DC1AD2500643F5D /* Managers */,
 				5A6C862D1DC031F000C42D04 /* Categories */,
 				5A6C862C1DC031E100C42D04 /* ViewControllers */,
 				5A6C86031DC010B800C42D04 /* AppDelegate.swift */,
@@ -384,6 +395,7 @@
 				5A6C86311DC0353F00C42D04 /* ProductsViewController.swift in Sources */,
 				5A6C862B1DC0184800C42D04 /* RootViewController.swift in Sources */,
 				5A6C862F1DC0329400C42D04 /* OSColors.swift in Sources */,
+				5A5C7AD61DC1AD5200643F5D /* OSLocationManager.swift in Sources */,
 				5A5C7AD31DC18F8F00643F5D /* AboutViewController.swift in Sources */,
 				5A6C86271DC0181F00C42D04 /* CategoriesViewController.swift in Sources */,
 				5A5C7ACF1DC18F6F00643F5D /* OSWebViewController.swift in Sources */,

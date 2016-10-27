@@ -28,6 +28,9 @@ class CategoriesViewController: UIViewController, UITableViewDelegate, UITableVi
         SideMenuManager.menuAddScreenEdgePanGesturesToPresent(toView: self.navigationController!.view)
 //        SideMenuManager.menuEnableSwipeGestures = false
         SideMenuManager.menuFadeStatusBar = false
+        
+        OSLocationManager.sharedInstance.intializeLocationManager()
+
     
     }
     
