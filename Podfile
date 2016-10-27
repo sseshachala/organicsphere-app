@@ -9,6 +9,7 @@ target 'Organic Sphere' do
 
     pod 'SideMenu'
     pod 'Alamofire', '~> 4.0'
+    pod 'NVActivityIndicatorView'
 
 
   target 'Organic SphereTests' do

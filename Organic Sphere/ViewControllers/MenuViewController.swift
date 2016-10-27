@@ -10,7 +10,7 @@ import UIKit
 
 class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var tableView: UITableView!
-    let menuDataSource = ["HOME", "CATEGORY", "TERMS AND CONDITIONS", "PRIVACY POLICY", "ABOUT"];
+    let menuDataSource = ["HOME", "CATEGORY", "TERMS & CONDITIONS", "PRIVACY POLICY", "ABOUT"];
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +32,7 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80;
+        return 60;
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -46,15 +46,33 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "ToOSWebViewController", sender: indexPath)
+        
+    }
+    
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if  let controller = segue.destination as? OSWebViewController {
+            if let indexPath = sender as? NSIndexPath {
+                switch indexPath.row {
+                case 2:
+                    controller.urlType = .TermsAndConditions
+                    break
+                case 3:
+                    controller.urlType = .PrivacyPolicy
+                    break
+                case 4:
+                    controller.urlType = .About
+                    break
+                default: break
+                }
+            }
+        }
     }
-    */
+
 
 }

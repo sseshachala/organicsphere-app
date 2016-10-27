@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1BCA30779610ECAC990FEE886BD06BDC"
+               BlueprintIdentifier = "FA2CC387128F0C16DB38ABCE9CB002F5"
                BuildableName = "Pods_Organic_Sphere.framework"
                BlueprintName = "Pods-Organic Sphere"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1BCA30779610ECAC990FEE886BD06BDC"
+            BlueprintIdentifier = "FA2CC387128F0C16DB38ABCE9CB002F5"
             BuildableName = "Pods_Organic_Sphere.framework"
             BlueprintName = "Pods-Organic Sphere"
             ReferencedContainer = "container:Pods.xcodeproj">

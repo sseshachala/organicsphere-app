@@ -164,7 +164,9 @@ open class SideMenuManager : NSObject {
         
         let exitPanGesture = UIPanGestureRecognizer()
         exitPanGesture.addTarget(SideMenuTransition.self, action:#selector(SideMenuTransition.handleHideMenuPan(_:)))
-        forMenu.view.addGestureRecognizer(exitPanGesture)
+        if(leftSide) {
+            forMenu.view.addGestureRecognizer(exitPanGesture)
+        }
         forMenu.transitioningDelegate = SideMenuTransition.singleton
         forMenu.modalPresentationStyle = .overFullScreen
         forMenu.leftSide = leftSide

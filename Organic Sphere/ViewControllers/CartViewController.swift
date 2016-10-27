@@ -9,14 +9,20 @@
 import UIKit
 
 class CartViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    @IBOutlet weak var codButton: UIButton!
     
-    let products = ["Cinnamon Bark", "Kasuri Methi Leaves", "Bay Leaf", "Mustard Yellow", "Fenu Greek", "Rai", "Red Chilli Whole", "Flack Seed", "Ajwain"]
+    var products = ["Cinnamon Bark", "Kasuri Methi Leaves", "Bay Leaf", "Mustard Yellow", "Fenu Greek", "Rai", "Red Chilli Whole", "Flack Seed", "Ajwain"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.title = "Shopping Cart"
         
+    }
+    
+    
+    override func viewDidLayoutSubviews() {
+        codButton.layer.cornerRadius = codButton.frame.width * 0.12
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -47,7 +53,10 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        
+        if editingStyle == .delete {
+            products.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .right)
+        }
     }
     
     
