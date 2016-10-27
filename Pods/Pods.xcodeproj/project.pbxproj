@@ -10,82 +10,15 @@
 	<string>46</string>
 	<key>objects</key>
 	<dict>
-		<key>00BAA691EFCBCF51D31819805B36B86D</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>Alamofire</string>
-			<key>target</key>
-			<string>79C040AFDDCE1BCBF6D8B5EB0B85887F</string>
-			<key>targetProxy</key>
-			<string>9A0CCC921B367890D8F9A0DA09AB7F87</string>
-		</dict>
-		<key>04943D25F7A9779F262C5AF8B1E8FCE5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AB16F5B280914FC73F1B5998B1B0EBD4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>05B62265A411A476C10CF8957846CD86</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>NVActivityIndicatorAnimationBallScale.swift</string>
-			<key>path</key>
-			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallScale.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>05FD20BF37FFBD336836FE7D7D002122</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NVActivityIndicatorView-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0683E65ED38BC8040432F6DF9731C409</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>D808AE532588EB0E5A347CD909660A56</string>
-				<string>D2F8BB2ECD47F1F0BD1D0658689CF2A2</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>06B719A6D24EFBDDB3C7C245225AFC38</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EB0ED378B47EAACEE8FC86471F04FADE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>070374204E491EF7E794313D14C6950B</key>
+		<key>024B57C6330E8DF100611BAA78BD3CA7</key>
 		<dict>
 			<key>buildConfigurationList</key>
-			<string>C865F57BCC28C8C18BDDD6A609883FCF</string>
+			<string>45A08FB40FD2CDCC9E22A85801B07444</string>
 			<key>buildPhases</key>
 			<array>
-				<string>71409E0F8DABC2802D1217237E0C5A1C</string>
-				<string>085EA7B98D3DE43C70C31A946236D615</string>
-				<string>1A04C8BD54C80A44C8258DBA28A70F87</string>
+				<string>DEB7A3E39874968791D6E51D97929A43</string>
+				<string>5CA41201D1F5534F48FCD76C05D0464B</string>
+				<string>BEB64B8CFBAF93FEEA2F1359443AB49F</string>
 			</array>
 			<key>buildRules</key>
 			<array/>
@@ -94,78 +27,13 @@
 			<key>isa</key>
 			<string>PBXNativeTarget</string>
 			<key>name</key>
-			<string>NVActivityIndicatorView</string>
+			<string>SideMenu</string>
 			<key>productName</key>
-			<string>NVActivityIndicatorView</string>
+			<string>SideMenu</string>
 			<key>productReference</key>
-			<string>6578000C6629ED64D85B796B82FF0665</string>
+			<string>830DA1100BD768BD074ADE370FD05F0C</string>
 			<key>productType</key>
 			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>082CE2435DFE67942DB46E62CDBB5ECA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AFC197819094D527DED097C4FE85408A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>085EA7B98D3DE43C70C31A946236D615</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>1C094E3F5798F8ED3C086FFC96AD2278</string>
-				<string>D119CD348CA067B30327F8A36796A216</string>
-				<string>F83380343ED8F5AD37BB251CEA8CC436</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>087D847703CB32B15D6CF08E362ACD54</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>NetworkReachabilityManager.swift</string>
-			<key>path</key>
-			<string>Source/NetworkReachabilityManager.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>08EA0C0F6526F4B947FDFA299A8F8502</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>UISideMenuNavigationController.swift</string>
-			<key>path</key>
-			<string>Pod/Classes/UISideMenuNavigationController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0923B113D6A57D638691AFBFA8953956</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SideMenu-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>09BBDFA1777795D6DEEAC249C6C36DB5</key>
 		<dict>
@@ -180,7 +48,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>0B7433E8073385BE1F9A5BEC20A75E5F</key>
+		<key>09D158108817773879B47624C8DFF903</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -189,78 +57,27 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>NVActivityIndicatorAnimationBallGridPulse.swift</string>
+			<string>SideMenuManager.swift</string>
 			<key>path</key>
-			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallGridPulse.swift</string>
+			<string>Pod/Classes/SideMenuManager.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>0B9AF2E1E58CE4B1D4376AFF4D3A1C38</key>
+		<key>0AFD87D1619A5FE576FC5A17A7331767</key>
 		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>SideMenu</string>
-			<key>target</key>
-			<string>BFF650E2547345B75C12859F91D768D5</string>
-			<key>targetProxy</key>
-			<string>60A73D9866E5ECAEE5AE7294E5F3F81F</string>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Alamofire.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>0C1B4E9FFB8B81E8833A3BAD537B1990</key>
 		<dict>
 			<key>fileRef</key>
-			<string>7F710AD5B343A19F0BB2BDB6F02D2903</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0DE7733FD28B34AAAF3EEC40B37A2E95</key>
-		<dict>
-			<key>fileRef</key>
-			<string>4A684B22564319DCA101787D4ABA6591</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0DF00C27E13700493D0BEDC91B0D579E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>NVActivityIndicatorAnimationBlank.swift</string>
-			<key>path</key>
-			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBlank.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0ECED79AEE226B94ADC14BB590503D79</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>NVActivityIndicatorAnimationLineScale.swift</string>
-			<key>path</key>
-			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineScale.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0EF2F5DC0FD6BDB5A00AE3F2C76F1F9B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>35D48EA7853384B399CBD6CAB3C6A1A4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>103ED0BA9CC2C25DBCE29986BAABF0F1</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EC32878090C4B2B93381956161EC0930</string>
+			<string>9D8A990840D1C97DC166175F5DA79D23</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -297,37 +114,9 @@
 		<key>12118C354EFA36292F82A8D0CFCE45B2</key>
 		<dict>
 			<key>fileRef</key>
-			<string>C4853661CEE08C3FC1E6F31070F1CFA6</string>
+			<string>25541895F1A104BE06F5D8C1C73C4785</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>122DA2E5084A4393C29BE363C764795C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E5E9260013FA223D81B907D9285F6EA1</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1256D0939EC89B7D7BF63B47E5C4886D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>NVActivityIndicatorAnimationBallScaleMultiple.swift</string>
-			<key>path</key>
-			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallScaleMultiple.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>12914D756594D15C6F2CA12FE5F89F1B</key>
 		<dict>
@@ -411,6 +200,26 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
+		<key>1370116B8C25C74667B4F59EE9892C05</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>82FFB91CE72CFA60E7E3661CF7BC2B5D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>13B4BB92FEFB827CFAB8BF8490EB7F1A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>616BEB51ECCAD129BDBCB7A956B56CC6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
 		<key>15E16B5688DF31E888CB13CF4C7C5B27</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -422,39 +231,82 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>1A04C8BD54C80A44C8258DBA28A70F87</key>
+		<key>165B6AD133FEB04E15393CD1EBE7DDD6</key>
 		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>F6CB378D9C5784AC71C58598312D58EF</string>
-			</array>
+			<key>baseConfigurationReference</key>
+			<string>B44A1CCB17D474B8FAB072C69B8F2F76</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=appletvos*]</key>
+				<string></string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string></string>
+				<key>CODE_SIGN_IDENTITY[sdk=watchos*]</key>
+				<string></string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/SwiftSpinner/SwiftSpinner-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/SwiftSpinner/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/SwiftSpinner/SwiftSpinner.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>PRODUCT_NAME</key>
+				<string>SwiftSpinner</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>SWIFT_VERSION</key>
+				<string>3.0</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
 			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>1C094E3F5798F8ED3C086FFC96AD2278</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EC32878090C4B2B93381956161EC0930</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>1E0D2442687E74D15DDC0CFF66F6CFB3</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>3D44683F8C1651D4591E093803248FDC</string>
-				<string>D61C4957663CA1759CC78DE02A330BA0</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
 			<string>Release</string>
+		</dict>
+		<key>1E5CD6C16D0CA0E0FCC6745F98A9688C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>XCConfigurationList</string>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>SwiftSpinner.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>1E80DD1F3D9B2826D21E1503D535591D</key>
 		<dict>
@@ -468,13 +320,6 @@
 			<string>Pods-Organic Sphere-acknowledgements.plist</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1FA074B1C720551D33768B8DFD51DB10</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EC32878090C4B2B93381956161EC0930</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
 		</dict>
 		<key>2009BA5809E098713BB5067F900CB805</key>
 		<dict>
@@ -490,27 +335,32 @@
 				</array>
 			</dict>
 		</dict>
-		<key>20E2FB3A440E38B3C99496EF5E725349</key>
+		<key>23A656EA4DBF7B0856E01912272A26E0</key>
 		<dict>
-			<key>fileRef</key>
-			<string>B9B14633F9E573B0AB17B7267219533F</string>
+			<key>buildConfigurationList</key>
+			<string>5811DF30F697CECA3BFB97E7D45941B5</string>
+			<key>buildPhases</key>
+			<array>
+				<string>DBFC73308B67F3F47E1AC021E9FC9D77</string>
+				<string>464EAE61029553E1DD110727553AB1D6</string>
+				<string>7E2EA7E8102B80E3AEEF285DDE5A0E01</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>SwiftSpinner</string>
+			<key>productName</key>
+			<string>SwiftSpinner</string>
+			<key>productReference</key>
+			<string>C78670B96AC5DBEDDE0ECA33B9201713</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
 		</dict>
-		<key>20FA310BC6A28451A32647C71676BB03</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Alamofire.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>21222FD0B15D4A96A5D8FBACE6ABEF32</key>
+		<key>25541895F1A104BE06F5D8C1C73C4785</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -519,50 +369,28 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>UITableViewVibrantCell.swift</string>
+			<string>Request.swift</string>
 			<key>path</key>
-			<string>Pod/Classes/UITableViewVibrantCell.swift</string>
+			<string>Source/Request.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>21E5D969083E91D6F6E07317D5C4204C</key>
+		<key>29EF3CE3BA4C108946FCEE49058C9871</key>
 		<dict>
-			<key>fileRef</key>
-			<string>86A449EFF951942B9EEE979437D8F784</string>
+			<key>children</key>
+			<array>
+				<string>58796774BF43A7D687CB42A7D50B8895</string>
+				<string>DDE5E39D678162843251D32C23D2DE08</string>
+				<string>448114BE168982EA761FD8602CE28208</string>
+			</array>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>22F415A66EDB98A0A4BA42617743BF31</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>SwiftSpinner</string>
 			<key>path</key>
-			<string>SideMenu.modulemap</string>
+			<string>SwiftSpinner</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>24BF4420466AD685C39E0BEBF927A365</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BD13031D534E1E05FB0F5ABDEEA1F79D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>26A486D4A34465219C782D520C899CC6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C202A82A07B963D455956E5FFDCC7674</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>2C24A8987DEBD1C02E61F97783BB22F7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DB74B223C0D49BD60C1D7F98BB91E020</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
 		</dict>
 		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
 		<dict>
@@ -578,108 +406,42 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
-		<key>3479629F2DA36F445A3488A5731BEFCC</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>F624B08DE7C5DD07DD0FCE2B9508F896</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=appletvos*]</key>
-				<string></string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string></string>
-				<key>CODE_SIGN_IDENTITY[sdk=watchos*]</key>
-				<string></string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/NVActivityIndicatorView/NVActivityIndicatorView-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/NVActivityIndicatorView/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/NVActivityIndicatorView/NVActivityIndicatorView.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>PRODUCT_NAME</key>
-				<string>NVActivityIndicatorView</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>3542106C942B8B2E4B99127E3C3E7E02</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A32E5E0112590E2A3280CEE0295E0EF7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>35D48EA7853384B399CBD6CAB3C6A1A4</key>
+		<key>2EE936CC85507DEDCBBFECA3FF21CE38</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>NVActivityIndicatorAnimationBallClipRotatePulse.swift</string>
+			<string>sourcecode.c.objc</string>
 			<key>path</key>
-			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallClipRotatePulse.swift</string>
+			<string>SideMenu-dummy.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>38B80EF113786A3B997455F88FBB4653</key>
+		<key>34277B08C6AC945EEB4058AB8DD05D84</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>SideMenuTransition.swift</string>
+			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>Pod/Classes/SideMenuTransition.swift</string>
+			<string>SideMenu-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>37BC7F02DE881463BBF47E6ADE46D640</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -697,40 +459,71 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>38D6FCCCEA374291906E65921218E820</key>
+		<key>38BEB907DD0297386B88CC3B483285DC</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>children</key>
+			<array>
+				<string>788D457B284EC4A08FDBC9540EABCD2A</string>
+				<string>E05BA98865AFA5DF6EF182A0F3E4B82E</string>
+				<string>8793766A1D3C524B16A6396DBFB56565</string>
+				<string>2EE936CC85507DEDCBBFECA3FF21CE38</string>
+				<string>796C12530475A1929F8737AB395461B6</string>
+				<string>34277B08C6AC945EEB4058AB8DD05D84</string>
+			</array>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
+			<string>PBXGroup</string>
 			<key>name</key>
-			<string>NVActivityIndicatorAnimationLineSpinFadeLoader.swift</string>
+			<string>Support Files</string>
 			<key>path</key>
-			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineSpinFadeLoader.swift</string>
+			<string>../Target Support Files/SideMenu</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>390576DE34735BFFBB675133FDDB5168</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C150807D6CC209C3C01CD8F9925B6A9B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
 		</dict>
 		<key>3982B850C43B41BA6D25F440F0412E9B</key>
 		<dict>
 			<key>fileRef</key>
-			<string>F742173F50D38B3AB00077694EEC2AFE</string>
+			<string>AB7A11F11175FDB91D6DDB1E3C7E3C9D</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>39EB21759CB6D9A44A66D96B714C4DDC</key>
+		<key>3BA93078207C1025431706B095B82FF5</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>AFError.swift</string>
+			<string>sourcecode.c.objc</string>
 			<key>path</key>
-			<string>Source/AFError.swift</string>
+			<string>Alamofire-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3CE28F82BA04AF3A17ED065093905142</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>A18902553AB52C62568433DB9D99C710</string>
+				<string>B3C7A062EBAB9A73FDFEE877DD3DA1FC</string>
+				<string>29EF3CE3BA4C108946FCEE49058C9871</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -748,10 +541,98 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
-		<key>3D44683F8C1651D4591E093803248FDC</key>
+		<key>3F3E61EDA38DABC86CF468B12AC323A5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4009514001515D78A639D13E85FA6A9B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-Organic SphereTests-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>404FDEFCEC02E6E7B67DA6F2695A2E47</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>TaskDelegate.swift</string>
+			<key>path</key>
+			<string>Source/TaskDelegate.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>433CD3331B6C3787F473C941B61FC68F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E6EE98446B568159EE277B68FD442AF0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>448114BE168982EA761FD8602CE28208</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3F3E61EDA38DABC86CF468B12AC323A5</string>
+				<string>1E5CD6C16D0CA0E0FCC6745F98A9688C</string>
+				<string>B44A1CCB17D474B8FAB072C69B8F2F76</string>
+				<string>EDB2CC6D9296B2C1E58EBBAA9FE70F01</string>
+				<string>99D09B283AFE4524EA79BC94D15D377F</string>
+				<string>4B48074174AFEFB7DBDCE284D539095C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/SwiftSpinner</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>45A08FB40FD2CDCC9E22A85801B07444</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>45BFE4AE2678B31C9231A85C29D1DB15</string>
+				<string>D874396343062E6C87631A30795161B8</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>45BFE4AE2678B31C9231A85C29D1DB15</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>8268F7AD6183ED5B913424BF5455A57E</string>
+			<string>8793766A1D3C524B16A6396DBFB56565</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=appletvos*]</key>
@@ -816,159 +697,62 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>4009514001515D78A639D13E85FA6A9B</key>
+		<key>464EAE61029553E1DD110727553AB1D6</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>13B4BB92FEFB827CFAB8BF8490EB7F1A</string>
+				<string>9E755F2580536C6AFD6E11DDC537C771</string>
+			</array>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-Organic SphereTests-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
 		</dict>
-		<key>42979E9ED00C0ADF4FEC08A2FB53A12D</key>
+		<key>49EF835D432F2AB4687DB158AE2D89BC</key>
 		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
 			<key>includeInIndex</key>
-			<string>1</string>
+			<string>0</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>ParameterEncoding.swift</string>
+			<string>Pods_Organic_SphereTests.framework</string>
 			<key>path</key>
-			<string>Source/ParameterEncoding.swift</string>
+			<string>Pods-Organic SphereTests.framework</string>
 			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
-		<key>43E2B6A9A0F66E6C7A221FB64F400B31</key>
+		<key>4B48074174AFEFB7DBDCE284D539095C</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SwiftSpinner-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4C1C1D28E78E2A8B916A5F7759D0CE3F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6D2CD5C742D3564649DEB76E7C70AD8B</string>
+				<string>DA965C759A42C2A08EAEFF200B0899A4</string>
+				<string>49EF835D432F2AB4687DB158AE2D89BC</string>
+				<string>830DA1100BD768BD074ADE370FD05F0C</string>
+				<string>C78670B96AC5DBEDDE0ECA33B9201713</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
 			<key>name</key>
-			<string>NVActivityIndicatorView.swift</string>
-			<key>path</key>
-			<string>NVActivityIndicatorView/NVActivityIndicatorView.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>44F796D0246FE31C71838D2766D07269</key>
-		<dict>
-			<key>fileRef</key>
-			<string>05B62265A411A476C10CF8957846CD86</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>4582B0B2D8A9C2B61EB5D48B1646B8DC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>93D44FDEF5EA66E4F70AE14DF55C83D4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>45C8CE74B8E494CBB474AB96BB3F1D71</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>NVActivityIndicatorView</string>
-			<key>target</key>
-			<string>070374204E491EF7E794313D14C6950B</string>
-			<key>targetProxy</key>
-			<string>EDDCD39554C8CD15AC0C6DFB1BD8A962</string>
-		</dict>
-		<key>46AB4CDF0F11F0F71F3906D65759E4D1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SideMenu-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>48104CE2789017173C8DC74F8176B24E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E3C7DFE78AB42545A749AAFCEDE11671</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>486AECD736F218A792CA168F88B3D70F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>NVActivityIndicatorAnimationBallTrianglePath.swift</string>
-			<key>path</key>
-			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallTrianglePath.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>49D9BFF6BC08AB6C09E766E93095A978</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0923B113D6A57D638691AFBFA8953956</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>4A684B22564319DCA101787D4ABA6591</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>NVActivityIndicatorPresenter.swift</string>
-			<key>path</key>
-			<string>NVActivityIndicatorView/NVActivityIndicatorPresenter.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4B7AE5939194CB4CB73C4143E844E7CE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>519020EBF76C70C567713DE0D29B4F0C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>NVActivityIndicatorView.modulemap</string>
+			<string>Products</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -986,26 +770,34 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
-		<key>543E40F88588B19CB4952AF3E5F02DD9</key>
+		<key>5811DF30F697CECA3BFB97E7D45941B5</key>
 		<dict>
-			<key>fileRef</key>
-			<string>38D6FCCCEA374291906E65921218E820</string>
+			<key>buildConfigurations</key>
+			<array>
+				<string>F6096FBB165A8F2FD938F4A6772E5C85</string>
+				<string>165B6AD133FEB04E15393CD1EBE7DDD6</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
+			<string>XCConfigurationList</string>
 		</dict>
-		<key>546A13BD16C42E7E9D81A12AF7446B31</key>
+		<key>58796774BF43A7D687CB42A7D50B8895</key>
 		<dict>
-			<key>fileRef</key>
-			<string>1256D0939EC89B7D7BF63B47E5C4886D</string>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>5893ACE2EF2F02613791FEF222F355C6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>08EA0C0F6526F4B947FDFA299A8F8502</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>SwiftSpinner.h</string>
+			<key>path</key>
+			<string>SwiftSpinner/SwiftSpinner.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>58D2E593C06A763FAD4508D8F2A43625</key>
 		<dict>
@@ -1017,21 +809,6 @@
 			<string>sourcecode.c.objc</string>
 			<key>path</key>
 			<string>Pods-Organic SphereTests-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5986D54B6124F737DB81BBDD9CA2AE06</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>NVActivityIndicatorAnimationLineScalePulseOutRapid.swift</string>
-			<key>path</key>
-			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineScalePulseOutRapid.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1072,53 +849,18 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>5BA7AF67C1AAD2BB8E02333103C897C8</key>
+		<key>5CA41201D1F5534F48FCD76C05D0464B</key>
 		<dict>
-			<key>children</key>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
 			<array>
-				<string>4B7AE5939194CB4CB73C4143E844E7CE</string>
-				<string>22F415A66EDB98A0A4BA42617743BF31</string>
-				<string>8268F7AD6183ED5B913424BF5455A57E</string>
-				<string>46AB4CDF0F11F0F71F3906D65759E4D1</string>
-				<string>DB96F9F584861FE7C2F5E435DA12B94D</string>
-				<string>0923B113D6A57D638691AFBFA8953956</string>
+				<string>8B8258E5F494AF1D171CFAAACC776E03</string>
 			</array>
 			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>../Target Support Files/SideMenu</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5BB55C3C733A014C025C4AAC1261A4AF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>Alamofire.swift</string>
-			<key>path</key>
-			<string>Source/Alamofire.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5BF675A168132FD52AED630F977FE906</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>UIKit.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
 		</dict>
 		<key>5CAA6201C06FCE6BB0E413074F8757CC</key>
 		<dict>
@@ -1133,7 +875,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>5E8CC6BFC276E1315D6AF6EC6D6228B7</key>
+		<key>614F2B8A824E18798595CBD9C5C272E8</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1142,13 +884,26 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>NVActivityIndicatorAnimationBallClipRotateMultiple.swift</string>
+			<string>SessionManager.swift</string>
 			<key>path</key>
-			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallClipRotateMultiple.swift</string>
+			<string>Source/SessionManager.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>5FAA444A81B2ABAD25C3E4BE40289DC4</key>
+		<key>616BEB51ECCAD129BDBCB7A956B56CC6</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>6182EF2F20248436265DEF396F848733</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1157,29 +912,16 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>ResponseSerialization.swift</string>
+			<string>UITableViewVibrantCell.swift</string>
 			<key>path</key>
-			<string>Source/ResponseSerialization.swift</string>
+			<string>Pod/Classes/UITableViewVibrantCell.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>60A73D9866E5ECAEE5AE7294E5F3F81F</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>BFF650E2547345B75C12859F91D768D5</string>
-			<key>remoteInfo</key>
-			<string>SideMenu</string>
 		</dict>
 		<key>62143065F94E53F437DCE5D7A998D66D</key>
 		<dict>
 			<key>fileRef</key>
-			<string>39EB21759CB6D9A44A66D96B714C4DDC</string>
+			<string>8866AF4A557C4C041F56EC63F1FC546B</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -1196,18 +938,66 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>6354C94BBEC0177F8152559522536877</key>
+		<key>631DD5C98CA48ACF828F2D6C482FF1D8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>SwiftSpinner</string>
+			<key>target</key>
+			<string>23A656EA4DBF7B0856E01912272A26E0</string>
+			<key>targetProxy</key>
+			<string>71A3C32BB3B2668708E95ADE09C40462</string>
+		</dict>
+		<key>637CB1013C48F6AAB105744D2527ACF2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>09D158108817773879B47624C8DFF903</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>65285CA8F2121DA2DC5E62B9F3DF2ED7</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>ServerTrustPolicy.swift</string>
 			<key>path</key>
-			<string>Alamofire.modulemap</string>
+			<string>Source/ServerTrustPolicy.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>6578000C6629ED64D85B796B82FF0665</key>
+		<key>6C2E1500E7DD44EE8A605FF7ED1886A9</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>79C040AFDDCE1BCBF6D8B5EB0B85887F</string>
+			<key>remoteInfo</key>
+			<string>Alamofire</string>
+		</dict>
+		<key>6D171287E8E5584AD87D48121CB8C7C6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Alamofire-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6D2CD5C742D3564649DEB76E7C70AD8B</key>
 		<dict>
 			<key>explicitFileType</key>
 			<string>wrapper.framework</string>
@@ -1216,63 +1006,11 @@
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>name</key>
-			<string>NVActivityIndicatorView.framework</string>
+			<string>Alamofire.framework</string>
 			<key>path</key>
-			<string>NVActivityIndicatorView.framework</string>
+			<string>Alamofire.framework</string>
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>6825DAC32C7241E0C6E6411CC8BBCD48</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>NVActivityIndicatorAnimationBallSpinFadeLoader.swift</string>
-			<key>path</key>
-			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallSpinFadeLoader.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>69BF5355E9D07F58109A3D4176F1472F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E89FB7F9681773E34DF6C565BFECAF28</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6C0D734E4BF66131ED04DD3DFDA8DD7B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>SessionManager.swift</string>
-			<key>path</key>
-			<string>Source/SessionManager.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6C3C75DA4C68F516B1113F0AEEE57620</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>NVActivityIndicatorAnimationBallScaleRippleMultiple.swift</string>
-			<key>path</key>
-			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallScaleRippleMultiple.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>70FE58787F178E0336123A151442818E</key>
 		<dict>
@@ -1287,83 +1025,45 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>71409E0F8DABC2802D1217237E0C5A1C</key>
+		<key>71A3C32BB3B2668708E95ADE09C40462</key>
 		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>23A656EA4DBF7B0856E01912272A26E0</string>
+			<key>remoteInfo</key>
+			<string>SwiftSpinner</string>
+		</dict>
+		<key>71D4EAF78CFD757635DED1A353E002E0</key>
+		<dict>
+			<key>children</key>
 			<array>
-				<string>FD8576358FEFCD8D5DB06250C4E74F61</string>
-				<string>04943D25F7A9779F262C5AF8B1E8FCE5</string>
-				<string>9C9A940FE37BDD7FF2C46E300B4CC50B</string>
-				<string>B13B6C7F918E126531C92AC020425DAF</string>
-				<string>0EF2F5DC0FD6BDB5A00AE3F2C76F1F9B</string>
-				<string>06B719A6D24EFBDDB3C7C245225AFC38</string>
-				<string>9C47D7B2E6F4936E398C95EE8126F62A</string>
-				<string>C2DA51CE44CF10851E4EBF7A335317BD</string>
-				<string>2C24A8987DEBD1C02E61F97783BB22F7</string>
-				<string>F2BCB2AFBC41D2F2A8C83D1E50F87102</string>
-				<string>69BF5355E9D07F58109A3D4176F1472F</string>
-				<string>48104CE2789017173C8DC74F8176B24E</string>
-				<string>44F796D0246FE31C71838D2766D07269</string>
-				<string>546A13BD16C42E7E9D81A12AF7446B31</string>
-				<string>B736565605128E02DA6AA330E1F4991C</string>
-				<string>D5E4964DFD4CA2B3284AF82377EFEC53</string>
-				<string>AC14CEB61A560EC5892258B744407134</string>
-				<string>EF3C8B4C598AE17E9AB8C05E229ACA7F</string>
-				<string>BE003DAD463AEFE72845ADECAF52F084</string>
-				<string>A39BCDF97C44287602EA34354A7A14E5</string>
-				<string>9B743EAD1F74F6431447FCB0BF9CADC7</string>
-				<string>26A486D4A34465219C782D520C899CC6</string>
-				<string>20E2FB3A440E38B3C99496EF5E725349</string>
-				<string>91853226A8DAE2F95B930CFC95A5E8AD</string>
-				<string>24BF4420466AD685C39E0BEBF927A365</string>
-				<string>F82CE68CE9A576FC1AE5050E502F7624</string>
-				<string>BF5198D496FF5E94EE89F4CCC9D509D4</string>
-				<string>543E40F88588B19CB4952AF3E5F02DD9</string>
-				<string>D64B18A6C4311FA3D5D70F3A4533808E</string>
-				<string>AB113A73A99E990A43B6CB7250E9FBF8</string>
-				<string>BFA002817172F0822B34083885374466</string>
-				<string>A53D594E16C16EED7A720744A51447AE</string>
-				<string>4582B0B2D8A9C2B61EB5D48B1646B8DC</string>
-				<string>0DE7733FD28B34AAAF3EEC40B37A2E95</string>
-				<string>082CE2435DFE67942DB46E62CDBB5ECA</string>
-				<string>FF5C303958E03191519AC200542EA2D3</string>
-				<string>C467C938514C69178764001A851A82E2</string>
-				<string>21E5D969083E91D6F6E07317D5C4204C</string>
+				<string>0AFD87D1619A5FE576FC5A17A7331767</string>
+				<string>9600E4201BD60B1E929F59C873CF6EB9</string>
+				<string>3BA93078207C1025431706B095B82FF5</string>
+				<string>F541F8652EC76087C886B47E2FDE2A4C</string>
+				<string>6D171287E8E5584AD87D48121CB8C7C6</string>
+				<string>37BC7F02DE881463BBF47E6ADE46D640</string>
 			</array>
 			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>725A0D84BBE172434748E398E13B36DE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
+			<string>PBXGroup</string>
 			<key>name</key>
-			<string>Validation.swift</string>
+			<string>Support Files</string>
 			<key>path</key>
-			<string>Source/Validation.swift</string>
+			<string>../Target Support Files/Alamofire</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>73C10B374CCE779D0B8862999CD584F3</key>
+		<key>73C2012B864C77BB1DF140BD925B3D97</key>
 		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>49D9BFF6BC08AB6C09E766E93095A978</string>
-			</array>
+			<key>fileRef</key>
+			<string>6182EF2F20248436265DEF396F848733</string>
 			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>7401C7150F9E2AF9C033875B19F52136</key>
 		<dict>
@@ -1386,9 +1086,48 @@
 			<key>productName</key>
 			<string>Pods-Organic SphereTests</string>
 			<key>productReference</key>
-			<string>D48D0E13FC86076EF55C49DD8C878CBF</string>
+			<string>49EF835D432F2AB4687DB158AE2D89BC</string>
 			<key>productType</key>
 			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>77A6526F71CBD3B8B2CAD94460554A67</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>024B57C6330E8DF100611BAA78BD3CA7</string>
+			<key>remoteInfo</key>
+			<string>SideMenu</string>
+		</dict>
+		<key>788D457B284EC4A08FDBC9540EABCD2A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>796C12530475A1929F8737AB395461B6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SideMenu-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
 		<dict>
@@ -1411,11 +1150,11 @@
 			<key>productName</key>
 			<string>Alamofire</string>
 			<key>productReference</key>
-			<string>B51F0DEE1ABBD2BCB6F46D3A933C4272</string>
+			<string>6D2CD5C742D3564649DEB76E7C70AD8B</string>
 			<key>productType</key>
 			<string>com.apple.product-type.framework</string>
 		</dict>
-		<key>7A8B3F7CFA8267BB943A4C9A15897545</key>
+		<key>7C21E130AF96674568C5F84B1CACD84A</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1424,38 +1163,16 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>MultipartFormData.swift</string>
+			<string>Validation.swift</string>
 			<key>path</key>
-			<string>Source/MultipartFormData.swift</string>
+			<string>Source/Validation.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>7CA5A9BA5246FDA8227233E310029392</key>
 		<dict>
 			<key>fileRef</key>
-			<string>5BB55C3C733A014C025C4AAC1261A4AF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>7D30261F42FCDBDAB88E18AE6BFF8E73</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>NVActivityIndicatorAnimationBallZigZagDeflect.swift</string>
-			<key>path</key>
-			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallZigZagDeflect.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7D6769520CE666D6818D0E821A799C9B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>21222FD0B15D4A96A5D8FBACE6ABEF32</string>
+			<string>929D77319A8685202A4232DA63B209FC</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -1464,9 +1181,9 @@
 			<key>children</key>
 			<array>
 				<string>93A4A3777CF96A4AAC1D13BA6DCCEA73</string>
-				<string>122DA2E5084A4393C29BE363C764795C</string>
-				<string>F8415199100BB1F60DEB008F8C7FB1AD</string>
-				<string>E88D586A97A7A6F01551DA573226A8A4</string>
+				<string>433CD3331B6C3787F473C941B61FC68F</string>
+				<string>3CE28F82BA04AF3A17ED065093905142</string>
+				<string>4C1C1D28E78E2A8B916A5F7759D0CE3F</string>
 				<string>38B88A2EFA2E055801B7E412455A78C1</string>
 			</array>
 			<key>isa</key>
@@ -1474,38 +1191,37 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>7F612C2C02E23DB4B93EF705250CBE7D</key>
+		<key>7E2EA7E8102B80E3AEEF285DDE5A0E01</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C9447169359180BD2908BAC81C2577DA</string>
+				<string>A1BF0C2AE834EA9B2946606C7F0DECE7</string>
+			</array>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NVActivityIndicatorView-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
 		</dict>
-		<key>7F710AD5B343A19F0BB2BDB6F02D2903</key>
+		<key>7EC994CDC2D681BA26389F78A7E4B325</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
+			<string>wrapper.framework</string>
 			<key>name</key>
-			<string>Notifications.swift</string>
+			<string>UIKit.framework</string>
 			<key>path</key>
-			<string>Source/Notifications.swift</string>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework</string>
 			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>DEVELOPER_DIR</string>
 		</dict>
 		<key>7F93EF234CD87F7448472375CC1EFA96</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>20FA310BC6A28451A32647C71676BB03</string>
+			<string>9600E4201BD60B1E929F59C873CF6EB9</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=appletvos*]</key>
@@ -1570,33 +1286,113 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>8268F7AD6183ED5B913424BF5455A57E</key>
+		<key>8066A8655894B58F94AFDBD1904388E9</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>baseConfigurationReference</key>
+			<string>F2B1F476827541517157C7A346BFF9D1</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=appletvos*]</key>
+				<string></string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string></string>
+				<key>CODE_SIGN_IDENTITY[sdk=watchos*]</key>
+				<string></string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-Organic Sphere/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>10.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-Organic Sphere/Pods-Organic Sphere.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_Organic_Sphere</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>SideMenu.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>835B917A329775E872D9433D8DB87C81</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
+			<string>XCBuildConfiguration</string>
 			<key>name</key>
-			<string>NVActivityIndicatorAnimationOrbit.swift</string>
+			<string>Release</string>
+		</dict>
+		<key>81585DD0D1238282AC72C38D5BF28C0A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DDE5E39D678162843251D32C23D2DE08</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>82FFB91CE72CFA60E7E3661CF7BC2B5D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F11A584F9741D97B52BD5AEB4A9127DE</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>830DA1100BD768BD074ADE370FD05F0C</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>SideMenu.framework</string>
 			<key>path</key>
-			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationOrbit.swift</string>
+			<string>SideMenu.framework</string>
 			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>85350F1533DB5162AF08CF8C0E3E8A12</key>
 		<dict>
@@ -1670,7 +1466,38 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>86A449EFF951942B9EEE979437D8F784</key>
+		<key>86ED08F33B7D357932A9AB743E9D9EA7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C05E54ECC114633744B295CA48C0CFF8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8793766A1D3C524B16A6396DBFB56565</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>SideMenu.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>87FB584F5109C7D37E835897D2938017</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>SideMenu</string>
+			<key>target</key>
+			<string>024B57C6330E8DF100611BAA78BD3CA7</string>
+			<key>targetProxy</key>
+			<string>77A6526F71CBD3B8B2CAD94460554A67</string>
+		</dict>
+		<key>8866AF4A557C4C041F56EC63F1FC546B</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1679,31 +1506,22 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>NVActivityIndicatorViewable.swift</string>
+			<string>AFError.swift</string>
 			<key>path</key>
-			<string>NVActivityIndicatorView/NVActivityIndicatorViewable.swift</string>
+			<string>Source/AFError.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>86ED08F33B7D357932A9AB743E9D9EA7</key>
+		<key>8A86E4B585EAA3E03A29BA40377E4B88</key>
 		<dict>
-			<key>fileRef</key>
-			<string>921C1242DE0F8137677F364726623208</string>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>875AA7A454E309515D46B9A8C34AD76F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Alamofire-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>Alamofire</string>
+			<key>target</key>
+			<string>79C040AFDDCE1BCBF6D8B5EB0B85887F</string>
+			<key>targetProxy</key>
+			<string>6C2E1500E7DD44EE8A605FF7ED1886A9</string>
 		</dict>
 		<key>8B5AC8AA895A1BBF8A567066B3FAAD48</key>
 		<dict>
@@ -1777,40 +1595,19 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
-		<key>8D463A0A4C65C02FDD5211F0F3C6F8B8</key>
+		<key>8B8258E5F494AF1D171CFAAACC776E03</key>
 		<dict>
 			<key>fileRef</key>
-			<string>C314F217DB2C4D1DA7F8DF725A005AB7</string>
+			<string>616BEB51ECCAD129BDBCB7A956B56CC6</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>8E99041B0849F311D3E5FFDC87BB3F0E</key>
+		<key>8D463A0A4C65C02FDD5211F0F3C6F8B8</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>fileRef</key>
+			<string>3BA93078207C1025431706B095B82FF5</string>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>SideMenuManager.swift</string>
-			<key>path</key>
-			<string>Pod/Classes/SideMenuManager.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8E9B0C3921219C18AF0EC635277DCFFD</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NVActivityIndicatorView-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>8F11BE29B0D30EF17A99BFDB3FA05F76</key>
 		<dict>
@@ -1825,1105 +1622,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>8F2558784041B7CF92080BD9CECC4171</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>NVActivityIndicatorAnimationBallScaleRipple.swift</string>
-			<key>path</key>
-			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallScaleRipple.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>907AB123FBC8BC9340D5B7350CE828DF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AFAB42811CF25249C01F87AD83E1EA4D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>910E0195F5ABB313ED89578130C7BE72</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-Organic SphereTests-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>91853226A8DAE2F95B930CFC95A5E8AD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0ECED79AEE226B94ADC14BB590503D79</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>921C1242DE0F8137677F364726623208</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>Response.swift</string>
-			<key>path</key>
-			<string>Source/Response.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>93A4A3777CF96A4AAC1D13BA6DCCEA73</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>text.script.ruby</string>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>name</key>
-			<string>Podfile</string>
-			<key>path</key>
-			<string>../Podfile</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-			<key>xcLanguageSpecificationIdentifier</key>
-			<string>xcode.lang.ruby</string>
-		</dict>
-		<key>93D44FDEF5EA66E4F70AE14DF55C83D4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>NVActivityIndicatorAnimationTriangleSkewSpin.swift</string>
-			<key>path</key>
-			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationTriangleSkewSpin.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9469DF81ECB494E84675969B5E13374C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A45094927CF3EC3778D8C7AE37AF1740</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>9491D921D484F49FC266557EA05D2D55</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>1FA074B1C720551D33768B8DFD51DB10</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>94D27678292BBAD5843195DCC250EB02</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-Organic SphereTests-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>95CD102FAF436356EBC1849B2DDA29A3</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>F624B08DE7C5DD07DD0FCE2B9508F896</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=appletvos*]</key>
-				<string></string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string></string>
-				<key>CODE_SIGN_IDENTITY[sdk=watchos*]</key>
-				<string></string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/NVActivityIndicatorView/NVActivityIndicatorView-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/NVActivityIndicatorView/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/NVActivityIndicatorView/NVActivityIndicatorView.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>PRODUCT_NAME</key>
-				<string>NVActivityIndicatorView</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>979ACBFFDF972D10C0D613D2209D0828</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>NVActivityIndicatorAnimationBallZigZag.swift</string>
-			<key>path</key>
-			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallZigZag.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>98C0B5090D24F2CBD84B03950A274952</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>39EB21759CB6D9A44A66D96B714C4DDC</string>
-				<string>5BB55C3C733A014C025C4AAC1261A4AF</string>
-				<string>9B12270074B971BB0BBA41E46C65DA14</string>
-				<string>7A8B3F7CFA8267BB943A4C9A15897545</string>
-				<string>087D847703CB32B15D6CF08E362ACD54</string>
-				<string>7F710AD5B343A19F0BB2BDB6F02D2903</string>
-				<string>42979E9ED00C0ADF4FEC08A2FB53A12D</string>
-				<string>C4853661CEE08C3FC1E6F31070F1CFA6</string>
-				<string>921C1242DE0F8137677F364726623208</string>
-				<string>5FAA444A81B2ABAD25C3E4BE40289DC4</string>
-				<string>C23ABD3E70DC0C29A894740B872B8867</string>
-				<string>EDDEC5D0D158EB4437CA04D17B72D846</string>
-				<string>AFAB42811CF25249C01F87AD83E1EA4D</string>
-				<string>6C0D734E4BF66131ED04DD3DFDA8DD7B</string>
-				<string>9FF82035F02C0B50E2704D9FFF9828F4</string>
-				<string>F742173F50D38B3AB00077694EEC2AFE</string>
-				<string>725A0D84BBE172434748E398E13B36DE</string>
-				<string>A72F94E664EBB41B2607776576AEA8F7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Alamofire</string>
-			<key>path</key>
-			<string>Alamofire</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>98F021DFC5664F90FE74B2F3F6AF1A29</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>NVActivityIndicatorAnimationSemiCircleSpin.swift</string>
-			<key>path</key>
-			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationSemiCircleSpin.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9A0CCC921B367890D8F9A0DA09AB7F87</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>79C040AFDDCE1BCBF6D8B5EB0B85887F</string>
-			<key>remoteInfo</key>
-			<string>Alamofire</string>
-		</dict>
-		<key>9A82CD34D51DE1B1F3FFFE0A39CEA3A2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>B2A36750BD0BC1D66041ACBAD184593C</string>
-				<string>B1C70625794B74F686D4820B0FFA68CB</string>
-				<string>EEFB9B826CB278BEBAAC9072622B67E1</string>
-				<string>5893ACE2EF2F02613791FEF222F355C6</string>
-				<string>7D6769520CE666D6818D0E821A799C9B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>9B12270074B971BB0BBA41E46C65DA14</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>DispatchQueue+Alamofire.swift</string>
-			<key>path</key>
-			<string>Source/DispatchQueue+Alamofire.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9B743EAD1F74F6431447FCB0BF9CADC7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0DF00C27E13700493D0BEDC91B0D579E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9C47D7B2E6F4936E398C95EE8126F62A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0B7433E8073385BE1F9A5BEC20A75E5F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9C9A940FE37BDD7FF2C46E300B4CC50B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A455B520323416012506C24FF7E40E3B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9D78E3A615B01924B9A621BA21511730</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Pods_Organic_Sphere.framework</string>
-			<key>path</key>
-			<string>Pods-Organic Sphere.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>9FF82035F02C0B50E2704D9FFF9828F4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>TaskDelegate.swift</string>
-			<key>path</key>
-			<string>Source/TaskDelegate.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A1460E0BCE08D47D2B844D442DD989D1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>NVActivityIndicatorAnimationBallPulseSync.swift</string>
-			<key>path</key>
-			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallPulseSync.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A32E5E0112590E2A3280CEE0295E0EF7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-Organic Sphere-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A39BCDF97C44287602EA34354A7A14E5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7D30261F42FCDBDAB88E18AE6BFF8E73</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A45094927CF3EC3778D8C7AE37AF1740</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Alamofire-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A455B520323416012506C24FF7E40E3B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>NVActivityIndicatorAnimationBallClipRotate.swift</string>
-			<key>path</key>
-			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallClipRotate.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A53D594E16C16EED7A720744A51447AE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D1247CA04FA93F718EAF49C3EDD0A96D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A72F94E664EBB41B2607776576AEA8F7</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6354C94BBEC0177F8152559522536877</string>
-				<string>20FA310BC6A28451A32647C71676BB03</string>
-				<string>C314F217DB2C4D1DA7F8DF725A005AB7</string>
-				<string>875AA7A454E309515D46B9A8C34AD76F</string>
-				<string>A45094927CF3EC3778D8C7AE37AF1740</string>
-				<string>E993852EB017A717E0A84343FC327931</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>../Target Support Files/Alamofire</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A79AC30123B0C2177D67F6ED6A1B3215</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6C0D734E4BF66131ED04DD3DFDA8DD7B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AB113A73A99E990A43B6CB7250E9FBF8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F6DFCACC37035CEC8E56090106141B99</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AB16F5B280914FC73F1B5998B1B0EBD4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>NVActivityIndicatorAnimationBallBeat.swift</string>
-			<key>path</key>
-			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallBeat.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AC14CEB61A560EC5892258B744407134</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6825DAC32C7241E0C6E6411CC8BBCD48</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AF158CAAF4DD319009AFC855DC995D90</key>
-		<dict>
-			<key>fileRef</key>
-			<string>42979E9ED00C0ADF4FEC08A2FB53A12D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AFAB42811CF25249C01F87AD83E1EA4D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>SessionDelegate.swift</string>
-			<key>path</key>
-			<string>Source/SessionDelegate.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AFC197819094D527DED097C4FE85408A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>NVActivityIndicatorShape.swift</string>
-			<key>path</key>
-			<string>NVActivityIndicatorView/NVActivityIndicatorShape.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B13B6C7F918E126531C92AC020425DAF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5E8CC6BFC276E1315D6AF6EC6D6228B7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B1729F851F648EC60EE93CDB3C8BAEAD</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>C9F90C2C178321C30D5145422B636837</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>B1C70625794B74F686D4820B0FFA68CB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8E99041B0849F311D3E5FFDC87BB3F0E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B2A36750BD0BC1D66041ACBAD184593C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>46AB4CDF0F11F0F71F3906D65759E4D1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B3D0DC8B583CBF4F1BF36BE55F4EBE11</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>5CAA6201C06FCE6BB0E413074F8757CC</string>
-				<string>C71A91E4747D3436254A5D94EE968CAF</string>
-				<string>62289DDCDAE23BA7A53A0BA0DD63AF87</string>
-				<string>1E80DD1F3D9B2826D21E1503D535591D</string>
-				<string>A32E5E0112590E2A3280CEE0295E0EF7</string>
-				<string>F4A45FE4A82677CFD3112D2FDE487767</string>
-				<string>70FE58787F178E0336123A151442818E</string>
-				<string>F11A584F9741D97B52BD5AEB4A9127DE</string>
-				<string>DE817D5B518940E5FCFFA5B21816A00E</string>
-				<string>F2B1F476827541517157C7A346BFF9D1</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-Organic Sphere</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-Organic Sphere</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B51F0DEE1ABBD2BCB6F46D3A933C4272</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Alamofire.framework</string>
-			<key>path</key>
-			<string>Alamofire.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>B736565605128E02DA6AA330E1F4991C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8F2558784041B7CF92080BD9CECC4171</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B8154C96802336E5DDA5CEE97C3180A0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5FAA444A81B2ABAD25C3E4BE40289DC4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B9B14633F9E573B0AB17B7267219533F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>NVActivityIndicatorAnimationDelegate.swift</string>
-			<key>path</key>
-			<string>NVActivityIndicatorView/NVActivityIndicatorAnimationDelegate.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B9D77A0E6B777E06E9CB9FA2CDCB2658</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>3542106C942B8B2E4B99127E3C3E7E02</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>BB9968AF349CC20B37B48720DD0B443A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BD13031D534E1E05FB0F5ABDEEA1F79D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>NVActivityIndicatorAnimationLineScaleParty.swift</string>
-			<key>path</key>
-			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineScaleParty.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BE003DAD463AEFE72845ADECAF52F084</key>
-		<dict>
-			<key>fileRef</key>
-			<string>979ACBFFDF972D10C0D613D2209D0828</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BF5198D496FF5E94EE89F4CCC9D509D4</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5986D54B6124F737DB81BBDD9CA2AE06</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BFA002817172F0822B34083885374466</key>
-		<dict>
-			<key>fileRef</key>
-			<string>98F021DFC5664F90FE74B2F3F6AF1A29</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BFF650E2547345B75C12859F91D768D5</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>1E0D2442687E74D15DDC0CFF66F6CFB3</string>
-			<key>buildPhases</key>
-			<array>
-				<string>9A82CD34D51DE1B1F3FFFE0A39CEA3A2</string>
-				<string>9491D921D484F49FC266557EA05D2D55</string>
-				<string>73C10B374CCE779D0B8862999CD584F3</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>SideMenu</string>
-			<key>productName</key>
-			<string>SideMenu</string>
-			<key>productReference</key>
-			<string>FFFCA91DDA7F746EB36CA9E2967089FE</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>C0AEA97E7684DDAD56998C0AE198A433</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EDDEC5D0D158EB4437CA04D17B72D846</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C202A82A07B963D455956E5FFDCC7674</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>NVActivityIndicatorAnimationCubeTransition.swift</string>
-			<key>path</key>
-			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationCubeTransition.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C23ABD3E70DC0C29A894740B872B8867</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>Result.swift</string>
-			<key>path</key>
-			<string>Source/Result.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C2DA51CE44CF10851E4EBF7A335317BD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CD043F4D50327F9B368B8363CE4C3C42</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C314F217DB2C4D1DA7F8DF725A005AB7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Alamofire-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C467C938514C69178764001A851A82E2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>43E2B6A9A0F66E6C7A221FB64F400B31</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C4853661CEE08C3FC1E6F31070F1CFA6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>Request.swift</string>
-			<key>path</key>
-			<string>Source/Request.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C71A91E4747D3436254A5D94EE968CAF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods-Organic Sphere.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C7A3408350643ADE1018826C766EE356</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7A8B3F7CFA8267BB943A4C9A15897545</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C824AB55D703CFAD6B733E543DD039BD</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-Organic SphereTests-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C865F57BCC28C8C18BDDD6A609883FCF</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>3479629F2DA36F445A3488A5731BEFCC</string>
-				<string>95CD102FAF436356EBC1849B2DDA29A3</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>C9F90C2C178321C30D5145422B636837</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EC32878090C4B2B93381956161EC0930</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CD043F4D50327F9B368B8363CE4C3C42</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>NVActivityIndicatorAnimationBallPulse.swift</string>
-			<key>path</key>
-			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallPulse.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D119CD348CA067B30327F8A36796A216</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E0203FCF2E38F9E0B8C4E69853543A3E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D1247CA04FA93F718EAF49C3EDD0A96D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>NVActivityIndicatorAnimationSquareSpin.swift</string>
-			<key>path</key>
-			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationSquareSpin.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2F8BB2ECD47F1F0BD1D0658689CF2A2</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>F2B1F476827541517157C7A346BFF9D1</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=appletvos*]</key>
-				<string></string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string></string>
-				<key>CODE_SIGN_IDENTITY[sdk=watchos*]</key>
-				<string></string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-Organic Sphere/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>10.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-Organic Sphere/Pods-Organic Sphere.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_Organic_Sphere</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>D41D8CD98F00B204E9800998ECF8427E</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0730</string>
-				<key>LastUpgradeCheck</key>
-				<string>0700</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>2D8E8EC45A3A1A1D94AE762CB5028504</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>7DB346D0F39D3F0E887471402A8071AB</string>
-			<key>productRefGroup</key>
-			<string>E88D586A97A7A6F01551DA573226A8A4</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>79C040AFDDCE1BCBF6D8B5EB0B85887F</string>
-				<string>070374204E491EF7E794313D14C6950B</string>
-				<string>FA2CC387128F0C16DB38ABCE9CB002F5</string>
-				<string>7401C7150F9E2AF9C033875B19F52136</string>
-				<string>BFF650E2547345B75C12859F91D768D5</string>
-			</array>
-		</dict>
-		<key>D48D0E13FC86076EF55C49DD8C878CBF</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Pods_Organic_SphereTests.framework</string>
-			<key>path</key>
-			<string>Pods-Organic SphereTests.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>D5E4964DFD4CA2B3284AF82377EFEC53</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6C3C75DA4C68F516B1113F0AEEE57620</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D61C4957663CA1759CC78DE02A330BA0</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>8268F7AD6183ED5B913424BF5455A57E</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=appletvos*]</key>
-				<string></string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string></string>
-				<key>CODE_SIGN_IDENTITY[sdk=watchos*]</key>
-				<string></string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/SideMenu/SideMenu-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/SideMenu/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/SideMenu/SideMenu.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>PRODUCT_NAME</key>
-				<string>SideMenu</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>D64B18A6C4311FA3D5D70F3A4533808E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>835B917A329775E872D9433D8DB87C81</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D686C15A3A516D280708C3E19A0C9B97</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F11A584F9741D97B52BD5AEB4A9127DE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>D808AE532588EB0E5A347CD909660A56</key>
+		<key>8F5C42134CD945ACBC85609949544359</key>
 		<dict>
 			<key>baseConfigurationReference</key>
 			<string>DE817D5B518940E5FCFFA5B21816A00E</string>
@@ -2997,6 +1696,697 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
+		<key>907AB123FBC8BC9340D5B7350CE828DF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A571E124F68850B2DC7A5A33E1722DAE</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>910E0195F5ABB313ED89578130C7BE72</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-Organic SphereTests-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>929D77319A8685202A4232DA63B209FC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>Alamofire.swift</string>
+			<key>path</key>
+			<string>Source/Alamofire.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>93799C675017724FB6140DAEAF91DE9F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>BEDED00ACC9D185B15AEA772CBE325A5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>93A4A3777CF96A4AAC1D13BA6DCCEA73</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>text.script.ruby</string>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>name</key>
+			<string>Podfile</string>
+			<key>path</key>
+			<string>../Podfile</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.ruby</string>
+		</dict>
+		<key>9469DF81ECB494E84675969B5E13374C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6D171287E8E5584AD87D48121CB8C7C6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>94D27678292BBAD5843195DCC250EB02</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-Organic SphereTests-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9600E4201BD60B1E929F59C873CF6EB9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Alamofire.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>99D09B283AFE4524EA79BC94D15D377F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SwiftSpinner-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9D8A990840D1C97DC166175F5DA79D23</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>Notifications.swift</string>
+			<key>path</key>
+			<string>Source/Notifications.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9DB7E5C3AA6C2A4338C02EEECA260DEC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F77CA4DC0964E1435F536C9E67BCB6B6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9E755F2580536C6AFD6E11DDC537C771</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7EC994CDC2D681BA26389F78A7E4B325</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>A10B1C3E83B5F06637299F2AF374CF6F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>EDB2CC6D9296B2C1E58EBBAA9FE70F01</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>A18902553AB52C62568433DB9D99C710</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>8866AF4A557C4C041F56EC63F1FC546B</string>
+				<string>929D77319A8685202A4232DA63B209FC</string>
+				<string>CD6D52076E41BC01CDE2D5C8E4E26ACF</string>
+				<string>BA82323C3E6EDA5E87D97173D775E65D</string>
+				<string>A82703FD50EDE5CEB9F56A90EEBBFD62</string>
+				<string>9D8A990840D1C97DC166175F5DA79D23</string>
+				<string>E4E8B0AC3B66B2EE9974B095F0A045DA</string>
+				<string>25541895F1A104BE06F5D8C1C73C4785</string>
+				<string>C05E54ECC114633744B295CA48C0CFF8</string>
+				<string>CB826760D0A24BF5422F7A44EFAD789E</string>
+				<string>A18DBE190FD964B1B9718568BF8A1ECE</string>
+				<string>65285CA8F2121DA2DC5E62B9F3DF2ED7</string>
+				<string>A571E124F68850B2DC7A5A33E1722DAE</string>
+				<string>614F2B8A824E18798595CBD9C5C272E8</string>
+				<string>404FDEFCEC02E6E7B67DA6F2695A2E47</string>
+				<string>AB7A11F11175FDB91D6DDB1E3C7E3C9D</string>
+				<string>7C21E130AF96674568C5F84B1CACD84A</string>
+				<string>71D4EAF78CFD757635DED1A353E002E0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Alamofire</string>
+			<key>path</key>
+			<string>Alamofire</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A18DBE190FD964B1B9718568BF8A1ECE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>Result.swift</string>
+			<key>path</key>
+			<string>Source/Result.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A1BF0C2AE834EA9B2946606C7F0DECE7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>58796774BF43A7D687CB42A7D50B8895</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>A32E5E0112590E2A3280CEE0295E0EF7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-Organic Sphere-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A571E124F68850B2DC7A5A33E1722DAE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SessionDelegate.swift</string>
+			<key>path</key>
+			<string>Source/SessionDelegate.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A79AC30123B0C2177D67F6ED6A1B3215</key>
+		<dict>
+			<key>fileRef</key>
+			<string>614F2B8A824E18798595CBD9C5C272E8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>A82703FD50EDE5CEB9F56A90EEBBFD62</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>NetworkReachabilityManager.swift</string>
+			<key>path</key>
+			<string>Source/NetworkReachabilityManager.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AB7A11F11175FDB91D6DDB1E3C7E3C9D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>Timeline.swift</string>
+			<key>path</key>
+			<string>Source/Timeline.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AB82CD58C1B4467F33299505F831F4A4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C2E6A56285F4A5B659465344771D978B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>AF158CAAF4DD319009AFC855DC995D90</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E4E8B0AC3B66B2EE9974B095F0A045DA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B1729F851F648EC60EE93CDB3C8BAEAD</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C9F90C2C178321C30D5145422B636837</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B3C7A062EBAB9A73FDFEE877DD3DA1FC</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>09D158108817773879B47624C8DFF903</string>
+				<string>C2E6A56285F4A5B659465344771D978B</string>
+				<string>F77CA4DC0964E1435F536C9E67BCB6B6</string>
+				<string>6182EF2F20248436265DEF396F848733</string>
+				<string>38BEB907DD0297386B88CC3B483285DC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>SideMenu</string>
+			<key>path</key>
+			<string>SideMenu</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B3D0DC8B583CBF4F1BF36BE55F4EBE11</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>5CAA6201C06FCE6BB0E413074F8757CC</string>
+				<string>C71A91E4747D3436254A5D94EE968CAF</string>
+				<string>62289DDCDAE23BA7A53A0BA0DD63AF87</string>
+				<string>1E80DD1F3D9B2826D21E1503D535591D</string>
+				<string>A32E5E0112590E2A3280CEE0295E0EF7</string>
+				<string>F4A45FE4A82677CFD3112D2FDE487767</string>
+				<string>70FE58787F178E0336123A151442818E</string>
+				<string>F11A584F9741D97B52BD5AEB4A9127DE</string>
+				<string>DE817D5B518940E5FCFFA5B21816A00E</string>
+				<string>F2B1F476827541517157C7A346BFF9D1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-Organic Sphere</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-Organic Sphere</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B44A1CCB17D474B8FAB072C69B8F2F76</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>SwiftSpinner.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B8154C96802336E5DDA5CEE97C3180A0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CB826760D0A24BF5422F7A44EFAD789E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B823EDF0DFEE949F3B621690BD3CB073</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>8F5C42134CD945ACBC85609949544359</string>
+				<string>8066A8655894B58F94AFDBD1904388E9</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>BA82323C3E6EDA5E87D97173D775E65D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>MultipartFormData.swift</string>
+			<key>path</key>
+			<string>Source/MultipartFormData.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BB936265011E4C3950D93FC156A1C690</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2EE936CC85507DEDCBBFECA3FF21CE38</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>BEB64B8CFBAF93FEEA2F1359443AB49F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C852B00F63E48EAA7DABBD5C577E62A7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>BEDED00ACC9D185B15AEA772CBE325A5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A32E5E0112590E2A3280CEE0295E0EF7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C05E54ECC114633744B295CA48C0CFF8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>Response.swift</string>
+			<key>path</key>
+			<string>Source/Response.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C0AEA97E7684DDAD56998C0AE198A433</key>
+		<dict>
+			<key>fileRef</key>
+			<string>65285CA8F2121DA2DC5E62B9F3DF2ED7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C150807D6CC209C3C01CD8F9925B6A9B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>616BEB51ECCAD129BDBCB7A956B56CC6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C2E6A56285F4A5B659465344771D978B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SideMenuTransition.swift</string>
+			<key>path</key>
+			<string>Pod/Classes/SideMenuTransition.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C71A91E4747D3436254A5D94EE968CAF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods-Organic Sphere.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C78670B96AC5DBEDDE0ECA33B9201713</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>SwiftSpinner.framework</string>
+			<key>path</key>
+			<string>SwiftSpinner.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>C7A3408350643ADE1018826C766EE356</key>
+		<dict>
+			<key>fileRef</key>
+			<string>BA82323C3E6EDA5E87D97173D775E65D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C824AB55D703CFAD6B733E543DD039BD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-Organic SphereTests-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C852B00F63E48EAA7DABBD5C577E62A7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>34277B08C6AC945EEB4058AB8DD05D84</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>C9447169359180BD2908BAC81C2577DA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4B48074174AFEFB7DBDCE284D539095C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>C9F90C2C178321C30D5145422B636837</key>
+		<dict>
+			<key>fileRef</key>
+			<string>616BEB51ECCAD129BDBCB7A956B56CC6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CB826760D0A24BF5422F7A44EFAD789E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>ResponseSerialization.swift</string>
+			<key>path</key>
+			<string>Source/ResponseSerialization.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CD6D52076E41BC01CDE2D5C8E4E26ACF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>DispatchQueue+Alamofire.swift</string>
+			<key>path</key>
+			<string>Source/DispatchQueue+Alamofire.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D41D8CD98F00B204E9800998ECF8427E</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastSwiftUpdateCheck</key>
+				<string>0730</string>
+				<key>LastUpgradeCheck</key>
+				<string>0700</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>2D8E8EC45A3A1A1D94AE762CB5028504</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>7DB346D0F39D3F0E887471402A8071AB</string>
+			<key>productRefGroup</key>
+			<string>4C1C1D28E78E2A8B916A5F7759D0CE3F</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>79C040AFDDCE1BCBF6D8B5EB0B85887F</string>
+				<string>F7702D3220247DAC49036782A0B19721</string>
+				<string>7401C7150F9E2AF9C033875B19F52136</string>
+				<string>024B57C6330E8DF100611BAA78BD3CA7</string>
+				<string>23A656EA4DBF7B0856E01912272A26E0</string>
+			</array>
+		</dict>
+		<key>D874396343062E6C87631A30795161B8</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>8793766A1D3C524B16A6396DBFB56565</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=appletvos*]</key>
+				<string></string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string></string>
+				<key>CODE_SIGN_IDENTITY[sdk=watchos*]</key>
+				<string></string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/SideMenu/SideMenu-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/SideMenu/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/SideMenu/SideMenu.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>PRODUCT_NAME</key>
+				<string>SideMenu</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>SWIFT_VERSION</key>
+				<string>3.0</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
 		<key>D985E57BCB22C612DEB6B37B5721109B</key>
 		<dict>
 			<key>buildActionMask</key>
@@ -3010,33 +2400,34 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>DB74B223C0D49BD60C1D7F98BB91E020</key>
+		<key>DA965C759A42C2A08EAEFF200B0899A4</key>
 		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
 			<key>includeInIndex</key>
-			<string>1</string>
+			<string>0</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>NVActivityIndicatorAnimationBallPulseRise.swift</string>
+			<string>Pods_Organic_Sphere.framework</string>
 			<key>path</key>
-			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallPulseRise.swift</string>
+			<string>Pods-Organic Sphere.framework</string>
 			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
-		<key>DB96F9F584861FE7C2F5E435DA12B94D</key>
+		<key>DBFC73308B67F3F47E1AC021E9FC9D77</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>A10B1C3E83B5F06637299F2AF374CF6F</string>
+				<string>81585DD0D1238282AC72C38D5BF28C0A</string>
+			</array>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SideMenu-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
 		</dict>
 		<key>DCD694DCDA313A4A24A1A8515F74BE67</key>
 		<dict>
@@ -3048,7 +2439,7 @@
 		<key>DDA5A606A0B7062DEA5E47CD9FA65A3D</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>20FA310BC6A28451A32647C71676BB03</string>
+			<string>9600E4201BD60B1E929F59C873CF6EB9</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=appletvos*]</key>
@@ -3111,6 +2502,21 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
+		<key>DDE5E39D678162843251D32C23D2DE08</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SwiftSpinner.swift</string>
+			<key>path</key>
+			<string>SwiftSpinner/SwiftSpinner.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>DE817D5B518940E5FCFFA5B21816A00E</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -3124,69 +2530,54 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>DEB7A3E39874968791D6E51D97929A43</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>BB936265011E4C3950D93FC156A1C690</string>
+				<string>637CB1013C48F6AAB105744D2527ACF2</string>
+				<string>AB82CD58C1B4467F33299505F831F4A4</string>
+				<string>9DB7E5C3AA6C2A4338C02EEECA260DEC</string>
+				<string>73C2012B864C77BB1DF140BD925B3D97</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
 		<key>DF1BBF94997A2F4248B42B25EA919EC2</key>
 		<dict>
 			<key>fileRef</key>
-			<string>C23ABD3E70DC0C29A894740B872B8867</string>
+			<string>A18DBE190FD964B1B9718568BF8A1ECE</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>E0203FCF2E38F9E0B8C4E69853543A3E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>QuartzCore.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/QuartzCore.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>E122875F17C4FF868B0C9F0B1CE1DA91</key>
+		<key>E05BA98865AFA5DF6EF182A0F3E4B82E</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>NVActivityIndicatorAnimationLineScalePulseOut.swift</string>
 			<key>path</key>
-			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineScalePulseOut.swift</string>
+			<string>SideMenu.modulemap</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>E1F583CB4A68A928CD197250AA752926</key>
 		<dict>
 			<key>fileRef</key>
-			<string>9FF82035F02C0B50E2704D9FFF9828F4</string>
+			<string>404FDEFCEC02E6E7B67DA6F2695A2E47</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>E2A1C34237B4E928E5F85C097F4C2551</key>
 		<dict>
 			<key>fileRef</key>
-			<string>9B12270074B971BB0BBA41E46C65DA14</string>
+			<string>CD6D52076E41BC01CDE2D5C8E4E26ACF</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>E3C7DFE78AB42545A749AAFCEDE11671</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>NVActivityIndicatorAnimationBallRotateChase.swift</string>
-			<key>path</key>
-			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallRotateChase.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>E3D1B380A8CFA485D048EE9821758C5A</key>
 		<dict>
@@ -3201,20 +2592,34 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>E4E8B0AC3B66B2EE9974B095F0A045DA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>ParameterEncoding.swift</string>
+			<key>path</key>
+			<string>Source/ParameterEncoding.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>E59BF19C0AFA68B741552319FC478C7B</key>
 		<dict>
 			<key>fileRef</key>
-			<string>087D847703CB32B15D6CF08E362ACD54</string>
+			<string>A82703FD50EDE5CEB9F56A90EEBBFD62</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>E5E9260013FA223D81B907D9285F6EA1</key>
+		<key>E6EE98446B568159EE277B68FD442AF0</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>EC32878090C4B2B93381956161EC0930</string>
-				<string>E0203FCF2E38F9E0B8C4E69853543A3E</string>
-				<string>5BF675A168132FD52AED630F977FE906</string>
+				<string>616BEB51ECCAD129BDBCB7A956B56CC6</string>
+				<string>7EC994CDC2D681BA26389F78A7E4B325</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -3222,19 +2627,6 @@
 			<string>iOS</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E655350B76BBEC357DAE81ADD8B830F0</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>103ED0BA9CC2C25DBCE29986BAABF0F1</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
 		</dict>
 		<key>E72E7977875C2D251FC62736BBDDC389</key>
 		<dict>
@@ -3311,51 +2703,6 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
-		<key>E88D586A97A7A6F01551DA573226A8A4</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B51F0DEE1ABBD2BCB6F46D3A933C4272</string>
-				<string>6578000C6629ED64D85B796B82FF0665</string>
-				<string>9D78E3A615B01924B9A621BA21511730</string>
-				<string>D48D0E13FC86076EF55C49DD8C878CBF</string>
-				<string>FFFCA91DDA7F746EB36CA9E2967089FE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E89FB7F9681773E34DF6C565BFECAF28</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>NVActivityIndicatorAnimationBallRotate.swift</string>
-			<key>path</key>
-			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallRotate.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E993852EB017A717E0A84343FC327931</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>EA3A4EC50E7F838526B6850A56BC45DA</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -3369,131 +2716,16 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>EAEC0EFECDCF84A593B387B953BDC004</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FFF9A9C215C57B51EA7C76E4EB255A8E</string>
-				<string>AB16F5B280914FC73F1B5998B1B0EBD4</string>
-				<string>A455B520323416012506C24FF7E40E3B</string>
-				<string>5E8CC6BFC276E1315D6AF6EC6D6228B7</string>
-				<string>35D48EA7853384B399CBD6CAB3C6A1A4</string>
-				<string>EB0ED378B47EAACEE8FC86471F04FADE</string>
-				<string>0B7433E8073385BE1F9A5BEC20A75E5F</string>
-				<string>CD043F4D50327F9B368B8363CE4C3C42</string>
-				<string>DB74B223C0D49BD60C1D7F98BB91E020</string>
-				<string>A1460E0BCE08D47D2B844D442DD989D1</string>
-				<string>E89FB7F9681773E34DF6C565BFECAF28</string>
-				<string>E3C7DFE78AB42545A749AAFCEDE11671</string>
-				<string>05B62265A411A476C10CF8957846CD86</string>
-				<string>1256D0939EC89B7D7BF63B47E5C4886D</string>
-				<string>8F2558784041B7CF92080BD9CECC4171</string>
-				<string>6C3C75DA4C68F516B1113F0AEEE57620</string>
-				<string>6825DAC32C7241E0C6E6411CC8BBCD48</string>
-				<string>486AECD736F218A792CA168F88B3D70F</string>
-				<string>979ACBFFDF972D10C0D613D2209D0828</string>
-				<string>7D30261F42FCDBDAB88E18AE6BFF8E73</string>
-				<string>0DF00C27E13700493D0BEDC91B0D579E</string>
-				<string>C202A82A07B963D455956E5FFDCC7674</string>
-				<string>B9B14633F9E573B0AB17B7267219533F</string>
-				<string>0ECED79AEE226B94ADC14BB590503D79</string>
-				<string>BD13031D534E1E05FB0F5ABDEEA1F79D</string>
-				<string>E122875F17C4FF868B0C9F0B1CE1DA91</string>
-				<string>5986D54B6124F737DB81BBDD9CA2AE06</string>
-				<string>38D6FCCCEA374291906E65921218E820</string>
-				<string>835B917A329775E872D9433D8DB87C81</string>
-				<string>F6DFCACC37035CEC8E56090106141B99</string>
-				<string>98F021DFC5664F90FE74B2F3F6AF1A29</string>
-				<string>D1247CA04FA93F718EAF49C3EDD0A96D</string>
-				<string>93D44FDEF5EA66E4F70AE14DF55C83D4</string>
-				<string>4A684B22564319DCA101787D4ABA6591</string>
-				<string>AFC197819094D527DED097C4FE85408A</string>
-				<string>43E2B6A9A0F66E6C7A221FB64F400B31</string>
-				<string>86A449EFF951942B9EEE979437D8F784</string>
-				<string>ED7976174646B30B2DEAB6E7237B17F0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>NVActivityIndicatorView</string>
-			<key>path</key>
-			<string>NVActivityIndicatorView</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EB0ED378B47EAACEE8FC86471F04FADE</key>
+		<key>EDB2CC6D9296B2C1E58EBBAA9FE70F01</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>NVActivityIndicatorAnimationBallGridBeat.swift</string>
+			<string>sourcecode.c.objc</string>
 			<key>path</key>
-			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallGridBeat.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EC32878090C4B2B93381956161EC0930</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>ED7976174646B30B2DEAB6E7237B17F0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BB9968AF349CC20B37B48720DD0B443A</string>
-				<string>519020EBF76C70C567713DE0D29B4F0C</string>
-				<string>F624B08DE7C5DD07DD0FCE2B9508F896</string>
-				<string>8E9B0C3921219C18AF0EC635277DCFFD</string>
-				<string>7F612C2C02E23DB4B93EF705250CBE7D</string>
-				<string>05FD20BF37FFBD336836FE7D7D002122</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>../Target Support Files/NVActivityIndicatorView</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EDDCD39554C8CD15AC0C6DFB1BD8A962</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>070374204E491EF7E794313D14C6950B</string>
-			<key>remoteInfo</key>
-			<string>NVActivityIndicatorView</string>
-		</dict>
-		<key>EDDEC5D0D158EB4437CA04D17B72D846</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ServerTrustPolicy.swift</string>
-			<key>path</key>
-			<string>Source/ServerTrustPolicy.swift</string>
+			<string>SwiftSpinner-dummy.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -3510,20 +2742,6 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>EEFB9B826CB278BEBAAC9072622B67E1</key>
-		<dict>
-			<key>fileRef</key>
-			<string>38B80EF113786A3B997455F88FBB4653</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EF3C8B4C598AE17E9AB8C05E229ACA7F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>486AECD736F218A792CA168F88B3D70F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
 		<key>EFDF3B631BBB965A372347705CA14854</key>
 		<dict>
 			<key>buildActionMask</key>
@@ -3531,19 +2749,6 @@
 			<key>files</key>
 			<array>
 				<string>9469DF81ECB494E84675969B5E13374C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>F1191DF3F8BD60201C54E0DEE11AC37B</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>D686C15A3A516D280708C3E19A0C9B97</string>
 			</array>
 			<key>isa</key>
 			<string>PBXHeadersBuildPhase</string>
@@ -3576,13 +2781,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>F2BCB2AFBC41D2F2A8C83D1E50F87102</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A1460E0BCE08D47D2B844D442DD989D1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
 		<key>F4A45FE4A82677CFD3112D2FDE487767</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -3596,135 +2794,104 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>F624B08DE7C5DD07DD0FCE2B9508F896</key>
+		<key>F541F8652EC76087C886B47E2FDE2A4C</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
+			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>NVActivityIndicatorView.xcconfig</string>
+			<string>Alamofire-prefix.pch</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>F6CB378D9C5784AC71C58598312D58EF</key>
+		<key>F6096FBB165A8F2FD938F4A6772E5C85</key>
 		<dict>
-			<key>fileRef</key>
-			<string>05FD20BF37FFBD336836FE7D7D002122</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
+			<key>baseConfigurationReference</key>
+			<string>B44A1CCB17D474B8FAB072C69B8F2F76</string>
+			<key>buildSettings</key>
 			<dict>
-				<key>ATTRIBUTES</key>
+				<key>CODE_SIGN_IDENTITY[sdk=appletvos*]</key>
+				<string></string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string></string>
+				<key>CODE_SIGN_IDENTITY[sdk=watchos*]</key>
+				<string></string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/SwiftSpinner/SwiftSpinner-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/SwiftSpinner/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
 				<array>
-					<string>Public</string>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
 				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/SwiftSpinner/SwiftSpinner.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>SwiftSpinner</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>SWIFT_VERSION</key>
+				<string>3.0</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
 			</dict>
-		</dict>
-		<key>F6DFCACC37035CEC8E56090106141B99</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
+			<string>XCBuildConfiguration</string>
 			<key>name</key>
-			<string>NVActivityIndicatorAnimationPacman.swift</string>
-			<key>path</key>
-			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationPacman.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>Debug</string>
 		</dict>
-		<key>F742173F50D38B3AB00077694EEC2AFE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>Timeline.swift</string>
-			<key>path</key>
-			<string>Source/Timeline.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F7925634EC74D08967BDF9F997205E10</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>8E99041B0849F311D3E5FFDC87BB3F0E</string>
-				<string>38B80EF113786A3B997455F88FBB4653</string>
-				<string>08EA0C0F6526F4B947FDFA299A8F8502</string>
-				<string>21222FD0B15D4A96A5D8FBACE6ABEF32</string>
-				<string>5BA7AF67C1AAD2BB8E02333103C897C8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>SideMenu</string>
-			<key>path</key>
-			<string>SideMenu</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F82CE68CE9A576FC1AE5050E502F7624</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E122875F17C4FF868B0C9F0B1CE1DA91</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F83380343ED8F5AD37BB251CEA8CC436</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5BF675A168132FD52AED630F977FE906</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F8415199100BB1F60DEB008F8C7FB1AD</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>98C0B5090D24F2CBD84B03950A274952</string>
-				<string>EAEC0EFECDCF84A593B387B953BDC004</string>
-				<string>F7925634EC74D08967BDF9F997205E10</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F9F782BA27359151D28ECEA55AF2918A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EC32878090C4B2B93381956161EC0930</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FA2CC387128F0C16DB38ABCE9CB002F5</key>
+		<key>F7702D3220247DAC49036782A0B19721</key>
 		<dict>
 			<key>buildConfigurationList</key>
-			<string>0683E65ED38BC8040432F6DF9731C409</string>
+			<string>B823EDF0DFEE949F3B621690BD3CB073</string>
 			<key>buildPhases</key>
 			<array>
-				<string>B9D77A0E6B777E06E9CB9FA2CDCB2658</string>
-				<string>E655350B76BBEC357DAE81ADD8B830F0</string>
-				<string>F1191DF3F8BD60201C54E0DEE11AC37B</string>
+				<string>93799C675017724FB6140DAEAF91DE9F</string>
+				<string>390576DE34735BFFBB675133FDDB5168</string>
+				<string>1370116B8C25C74667B4F59EE9892C05</string>
 			</array>
 			<key>buildRules</key>
 			<array/>
 			<key>dependencies</key>
 			<array>
-				<string>00BAA691EFCBCF51D31819805B36B86D</string>
-				<string>45C8CE74B8E494CBB474AB96BB3F1D71</string>
-				<string>0B9AF2E1E58CE4B1D4376AFF4D3A1C38</string>
+				<string>8A86E4B585EAA3E03A29BA40377E4B88</string>
+				<string>87FB584F5109C7D37E835897D2938017</string>
+				<string>631DD5C98CA48ACF828F2D6C482FF1D8</string>
 			</array>
 			<key>isa</key>
 			<string>PBXNativeTarget</string>
@@ -3733,25 +2900,11 @@
 			<key>productName</key>
 			<string>Pods-Organic Sphere</string>
 			<key>productReference</key>
-			<string>9D78E3A615B01924B9A621BA21511730</string>
+			<string>DA965C759A42C2A08EAEFF200B0899A4</string>
 			<key>productType</key>
 			<string>com.apple.product-type.framework</string>
 		</dict>
-		<key>FD8576358FEFCD8D5DB06250C4E74F61</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FFF9A9C215C57B51EA7C76E4EB255A8E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FF5C303958E03191519AC200542EA2D3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8E9B0C3921219C18AF0EC635277DCFFD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FFF9A9C215C57B51EA7C76E4EB255A8E</key>
+		<key>F77CA4DC0964E1435F536C9E67BCB6B6</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -3760,31 +2913,23 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>NVActivityIndicatorAnimationAudioEqualizer.swift</string>
+			<string>UISideMenuNavigationController.swift</string>
 			<key>path</key>
-			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationAudioEqualizer.swift</string>
+			<string>Pod/Classes/UISideMenuNavigationController.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>FFFCA91DDA7F746EB36CA9E2967089FE</key>
+		<key>F9F782BA27359151D28ECEA55AF2918A</key>
 		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
+			<key>fileRef</key>
+			<string>616BEB51ECCAD129BDBCB7A956B56CC6</string>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SideMenu.framework</string>
-			<key>path</key>
-			<string>SideMenu.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>FFFDD494EE6D1B83DDAF5F2721F685A6</key>
 		<dict>
 			<key>fileRef</key>
-			<string>725A0D84BBE172434748E398E13B36DE</string>
+			<string>7C21E130AF96674568C5F84B1CACD84A</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>

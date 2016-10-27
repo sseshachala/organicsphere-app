@@ -9,8 +9,7 @@ target 'Organic Sphere' do
 
     pod 'SideMenu'
     pod 'Alamofire', '~> 4.0'
-    pod 'NVActivityIndicatorView'
-
+    pod 'SwiftSpinner'
 
   target 'Organic SphereTests' do
     inherit! :search_paths

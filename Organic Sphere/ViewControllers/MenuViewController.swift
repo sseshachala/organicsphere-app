@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SideMenu
 
 class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var tableView: UITableView!
@@ -47,7 +48,14 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "ToOSWebViewController", sender: indexPath)
+        switch indexPath.row {
+        case 2, 3 ,4:
+            performSegue(withIdentifier: "ToOSWebViewController", sender: indexPath)
+            break
+        default:
+            dismiss(animated: true, completion: nil)
+            break
+        }
         
     }
     

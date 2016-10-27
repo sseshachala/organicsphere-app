@@ -7,10 +7,11 @@
 //
 
 import UIKit
-import NVActivityIndicatorView
+import SwiftSpinner
 
 class OSWebViewController: UIViewController, UIWebViewDelegate {
 
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var webView: UIWebView!
     
     enum URLS : String {
@@ -20,32 +21,35 @@ class OSWebViewController: UIViewController, UIWebViewDelegate {
     }
     
     var urlType:URLS? = nil
-//    var title:String? = nil
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         if let url = urlType?.rawValue {
             webView.loadRequest(URLRequest(url: URL(string: url)!))
-            
-            let activityData = ActivityData()
-            
-            NVActivityIndicatorPresenter.sharedInstance.startAnimating(activityData)
         }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
+    override func viewDidLayoutSubviews() {
+        activityIndicator.startAnimating()
+        activityIndicator.isHidden = false
+        webView.isHidden = true
+//        SwiftSpinner.show("Loading...")
+    }
+
     func webViewDidFinishLoad(_ webView: UIWebView) {
-        NVActivityIndicatorPresenter.sharedInstance.stopAnimating()
+        activityIndicator.stopAnimating()
+        activityIndicator.isHidden = true
+        webView.isHidden = false
+//        SwiftSpinner.hide()
     }
     
     func webView(_ webView: UIWebView, didFailLoadWithError error: Error) {
-        NVActivityIndicatorPresenter.sharedInstance.stopAnimating()
+        activityIndicator.stopAnimating()
+        activityIndicator.isHidden = true
+        webView.isHidden = false
+//        SwiftSpinner.hide()
     }
 
     /*

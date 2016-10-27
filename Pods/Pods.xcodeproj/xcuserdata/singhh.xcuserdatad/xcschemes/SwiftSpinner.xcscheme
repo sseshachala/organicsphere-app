@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '070374204E491EF7E794313D14C6950B'
-               BlueprintName = 'NVActivityIndicatorView'
+               BlueprintIdentifier = '23A656EA4DBF7B0856E01912272A26E0'
+               BlueprintName = 'SwiftSpinner'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'NVActivityIndicatorView.framework'>
+               BuildableName = 'SwiftSpinner.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

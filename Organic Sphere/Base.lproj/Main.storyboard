@@ -445,16 +445,22 @@
                                     <outlet property="delegate" destination="wRy-aO-cPH" id="fd6-En-jrE"/>
                                 </connections>
                             </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="N0M-00-tgb">
+                                <color key="color" red="0.3294117647" green="0.61176470589999998" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Y8c-0c-GMg" firstAttribute="top" secondItem="Xue-sc-11V" secondAttribute="bottom" id="4qc-BC-Aag"/>
                             <constraint firstItem="Xue-sc-11V" firstAttribute="leading" secondItem="Qbm-ro-3Lk" secondAttribute="leading" id="9qW-lc-hAz"/>
                             <constraint firstItem="Xue-sc-11V" firstAttribute="top" secondItem="Qbm-ro-3Lk" secondAttribute="top" id="Pbe-u1-2Ln"/>
+                            <constraint firstItem="N0M-00-tgb" firstAttribute="centerX" secondItem="Qbm-ro-3Lk" secondAttribute="centerX" id="Uiv-eD-6Qb"/>
+                            <constraint firstItem="N0M-00-tgb" firstAttribute="centerY" secondItem="Qbm-ro-3Lk" secondAttribute="centerY" id="aYZ-rz-JKN"/>
                             <constraint firstAttribute="trailing" secondItem="Xue-sc-11V" secondAttribute="trailing" id="zdK-kD-2dS"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="N0M-00-tgb" id="dD3-Lz-8KR"/>
                         <outlet property="webView" destination="Xue-sc-11V" id="m0K-hg-Dbt"/>
                     </connections>
                 </viewController>
