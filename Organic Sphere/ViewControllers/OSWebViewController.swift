@@ -20,6 +20,7 @@ class OSWebViewController: UIViewController, UIWebViewDelegate {
     }
     
     var urlType:URLS? = nil
+//    var title:String? = nil
     
     
     override func viewDidLoad() {

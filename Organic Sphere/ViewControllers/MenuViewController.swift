@@ -58,6 +58,7 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if  let controller = segue.destination as? OSWebViewController {
             if let indexPath = sender as? NSIndexPath {
+                controller.title = menuDataSource[indexPath.row]
                 switch indexPath.row {
                 case 2:
                     controller.urlType = .TermsAndConditions
