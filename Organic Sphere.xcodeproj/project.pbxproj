@@ -241,7 +241,7 @@
 				TargetAttributes = {
 					5A6C85FF1DC010B800C42D04 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = U7F32ZTPWT;
+						DevelopmentTeam = FW7F9SP7S7;
 						ProvisioningStyle = Automatic;
 					};
 					5A6C86161DC010B800C42D04 = {
@@ -541,7 +541,7 @@
 			baseConfigurationReference = 726DAB9F387207D018A6734E /* Pods-Organic Sphere.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = U7F32ZTPWT;
+				DEVELOPMENT_TEAM = FW7F9SP7S7;
 				INFOPLIST_FILE = "Organic Sphere/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Arsh.Organic-Sphere";
@@ -555,7 +555,7 @@
 			baseConfigurationReference = 7E308E3A4298B184B29DD1EE /* Pods-Organic Sphere.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = U7F32ZTPWT;
+				DEVELOPMENT_TEAM = FW7F9SP7S7;
 				INFOPLIST_FILE = "Organic Sphere/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Arsh.Organic-Sphere";
