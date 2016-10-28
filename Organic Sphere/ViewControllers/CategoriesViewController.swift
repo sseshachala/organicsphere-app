@@ -11,7 +11,8 @@ import SideMenu
 
 class CategoriesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    var categoriesDataSource = ["100% NATURAL", "CEREALS","SPICES","PULSES","FLOURS","BASKET", "ARCANUT", "SUGAR BAGGASE"]
+    @IBOutlet weak var tableView: UITableView!
+    var categoriesDataSource:[OSCategory] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +31,17 @@ class CategoriesViewController: UIViewController, UITableViewDelegate, UITableVi
         SideMenuManager.menuFadeStatusBar = false
         
         OSLocationManager.sharedInstance.intializeLocationManager()
+        
+        OSNetworkManager.sharedInstance.getCategories() {
+            categories, error in
+            if let errorResponse = error {
+                print(errorResponse)
+            }
+            else {
+                self.categoriesDataSource = categories
+                self.tableView.reloadData()
+            }
+        }
 
     
     }
@@ -44,8 +56,8 @@ class CategoriesViewController: UIViewController, UITableViewDelegate, UITableVi
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "categoryCell", for: indexPath)
-        cell.textLabel?.text = categoriesDataSource[indexPath.row]
-        cell.detailTextLabel?.text = "Organic Sphere"
+        cell.textLabel?.text = categoriesDataSource[indexPath.row].prodCatName
+        cell.detailTextLabel?.text = categoriesDataSource[indexPath.row].parentName
         cell.imageView?.image = UIImage(named: "lentils")
         cell.accessoryView = UIImageView(image: UIImage(named: "disclosure"))
         return cell
@@ -61,7 +73,9 @@ class CategoriesViewController: UIViewController, UITableViewDelegate, UITableVi
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let productsController = segue.destination as? ProductsViewController  {
             if let indexPath = sender as? IndexPath {
-                productsController.selectedProduct = categoriesDataSource[indexPath.row]
+                if let productName = categoriesDataSource[indexPath.row].prodCatName {
+                    productsController.selectedProduct = productName
+                }
             }
         }
     }
