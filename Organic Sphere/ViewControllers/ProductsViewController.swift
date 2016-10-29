@@ -7,20 +7,36 @@
 //
 
 import UIKit
+import NVActivityIndicatorView
 
 class ProductsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    @IBOutlet weak var tableView: UITableView!
     var selectedProduct = "Products"
     var selectedCategory:OSCategory = OSCategory()
-    let products = ["Cinnamon Bark", "Kasuri Methi Leaves", "Bay Leaf", "Mustard Yellow", "Fenu Greek", "Rai", "Red Chilli Whole", "Flack Seed", "Ajwain"]
+    var products:[OSProductList] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = selectedProduct
+        
+        fetchProducts()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func fetchProducts () {
+        NVActivityIndicatorPresenter.sharedInstance.startAnimating(ActivityData())
+        let productService = OSProductService()
+        productService.getProductsFor(categoryId: selectedCategory.id!, pageNumber: 1) {
+            productList, error in
+            
+            NVActivityIndicatorPresenter.sharedInstance.stopAnimating()
+            
+            if let _ = error {
+                
+            } else {
+                self.products = productList
+                self.tableView.reloadData()
+            }
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -33,13 +49,19 @@ class ProductsViewController: UIViewController, UITableViewDataSource, UITableVi
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "productCell", for: indexPath)
-        cell.textLabel?.text = products[indexPath.row]
-        cell.detailTextLabel?.text = "Organic Sphere"
+        cell.textLabel?.text = products[indexPath.row].product_name
+        cell.detailTextLabel?.text = products[indexPath.row].prodCatName
         cell.imageView?.image = UIImage(named: "lentils")
         
         //Set custom label to the accessory view
-        let priceLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
-        priceLabel.text = "$1.83"
+        let priceLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 50))
+        priceLabel.textAlignment = NSTextAlignment.right
+        if let price = products[indexPath.row].terms_fob_price_c {
+            priceLabel.text = price.hasPrefix("$") ? "\(price)" : "$\(price)"
+        }
+        else {
+            priceLabel.text = "Not Available"
+        }
         priceLabel.textColor = UIColor().osGreenColor()
         
         cell.accessoryView = priceLabel
@@ -58,7 +80,7 @@ class ProductsViewController: UIViewController, UITableViewDataSource, UITableVi
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let productDetailsController = segue.destination as? ProductDetailsViewController  {
             if let indexPath = sender as? IndexPath {
-                productDetailsController.selectedProduct = products[indexPath.row]
+                productDetailsController.selectedProduct = products[indexPath.row].product_name!
             }
         }
     }

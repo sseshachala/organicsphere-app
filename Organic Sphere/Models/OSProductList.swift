@@ -86,5 +86,11 @@ class OSProductList: NSObject {
         email_address = dict["email_address"] as? [String]
         _version_ = dict["_version_"] as? String
 
+        validateData()
+    }
+    
+    func validateData() {
+        //Remove $ from the model
+        terms_fob_price_c = terms_fob_price_c?.replacingOccurrences(of: "$", with: "")
     }
 }
