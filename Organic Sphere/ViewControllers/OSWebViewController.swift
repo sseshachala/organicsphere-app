@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SwiftSpinner
+//import SwiftSpinner
 
 class OSWebViewController: UIViewController, UIWebViewDelegate {
 

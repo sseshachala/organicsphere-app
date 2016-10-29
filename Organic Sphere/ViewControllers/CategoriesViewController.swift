@@ -8,6 +8,7 @@
 
 import UIKit
 import SideMenu
+import NVActivityIndicatorView
 
 class CategoriesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -32,8 +33,11 @@ class CategoriesViewController: UIViewController, UITableViewDelegate, UITableVi
         
         OSLocationManager.sharedInstance.intializeLocationManager()
         
-        OSNetworkManager.sharedInstance.getCategories() {
+        let categoryService = OSCategoryService()
+//        SwiftSpinner.show("Loading Categories")
+        categoryService.getCategories() {
             categories, error in
+//            SwiftSpinner.hide()
             if let errorResponse = error {
                 print(errorResponse)
             }

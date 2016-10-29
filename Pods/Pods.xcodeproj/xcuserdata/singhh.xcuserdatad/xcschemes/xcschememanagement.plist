@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>NVActivityIndicatorView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Organic Sphere.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -24,11 +29,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>SwiftSpinner.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>SwiftyJSON.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,12 +37,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1AFC783E144858C3983E140F5D243610</key>
+		<key>070374204E491EF7E794313D14C6950B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2F265A4DB5519F43F2A870C72E5C59DF</key>
+		<key>5647F4351159F8E44C502AE65FCED4BC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>672575A76569D64FD8BE92308126A346</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -57,12 +62,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7E0382A274CB26327E3C74DD640622C5</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B94E3840BF3225A700D3B77E3B96BEF5</key>
+		<key>FDA51195C9D39E9D8AD1F844CD12E5C2</key>
 		<dict>
 			<key>primary</key>
 			<true/>

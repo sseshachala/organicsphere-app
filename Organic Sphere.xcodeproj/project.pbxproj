@@ -24,6 +24,8 @@
 		5A6C862F1DC0329400C42D04 /* OSColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6C862E1DC0329400C42D04 /* OSColors.swift */; };
 		5A6C86311DC0353F00C42D04 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6C86301DC0353F00C42D04 /* ProductsViewController.swift */; };
 		5A6C86331DC03AC600C42D04 /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6C86321DC03AC600C42D04 /* ProductDetailsViewController.swift */; };
+		5AC6E3571DC507330096C442 /* OSProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC6E3561DC507330096C442 /* OSProduct.swift */; };
+		5AC6E35A1DC50AFD0096C442 /* OSCategoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC6E3591DC50AFD0096C442 /* OSCategoryService.swift */; };
 		D10E47B4792A65B48B446D34 /* Pods_Organic_SphereTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39466B08DC01132F871DD4A9 /* Pods_Organic_SphereTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +64,8 @@
 		5A6C862E1DC0329400C42D04 /* OSColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSColors.swift; sourceTree = "<group>"; };
 		5A6C86301DC0353F00C42D04 /* ProductsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductsViewController.swift; path = ViewControllers/ProductsViewController.swift; sourceTree = "<group>"; };
 		5A6C86321DC03AC600C42D04 /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductDetailsViewController.swift; path = ViewControllers/ProductDetailsViewController.swift; sourceTree = "<group>"; };
+		5AC6E3561DC507330096C442 /* OSProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OSProduct.swift; path = Models/OSProduct.swift; sourceTree = "<group>"; };
+		5AC6E3591DC50AFD0096C442 /* OSCategoryService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OSCategoryService.swift; path = Services/OSCategoryService.swift; sourceTree = "<group>"; };
 		726DAB9F387207D018A6734E /* Pods-Organic Sphere.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Organic Sphere.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Organic Sphere/Pods-Organic Sphere.debug.xcconfig"; sourceTree = "<group>"; };
 		7E308E3A4298B184B29DD1EE /* Pods-Organic Sphere.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Organic Sphere.release.xcconfig"; path = "Pods/Target Support Files/Pods-Organic Sphere/Pods-Organic Sphere.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				5A3D3BA81DC2F99A00880138 /* OSCategory.swift */,
+				5AC6E3561DC507330096C442 /* OSProduct.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -146,6 +151,7 @@
 		5A6C86021DC010B800C42D04 /* Organic Sphere */ = {
 			isa = PBXGroup;
 			children = (
+				5AC6E3581DC50AC00096C442 /* ServiceLayer */,
 				5A3D3BA71DC2F97100880138 /* Models */,
 				5A5C7AD41DC1AD2500643F5D /* Managers */,
 				5A6C862D1DC031F000C42D04 /* Categories */,
@@ -188,6 +194,14 @@
 				5A6C862E1DC0329400C42D04 /* OSColors.swift */,
 			);
 			name = Categories;
+			sourceTree = "<group>";
+		};
+		5AC6E3581DC50AC00096C442 /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				5AC6E3591DC50AFD0096C442 /* OSCategoryService.swift */,
+			);
+			name = ServiceLayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -398,8 +412,10 @@
 				5A6C86291DC0183500C42D04 /* MenuViewController.swift in Sources */,
 				5A6C86311DC0353F00C42D04 /* ProductsViewController.swift in Sources */,
 				5A6C862F1DC0329400C42D04 /* OSColors.swift in Sources */,
+				5AC6E3571DC507330096C442 /* OSProduct.swift in Sources */,
 				5A3D3BA61DC2F87200880138 /* OSNetworkManager.swift in Sources */,
 				5A5C7AD61DC1AD5200643F5D /* OSLocationManager.swift in Sources */,
+				5AC6E35A1DC50AFD0096C442 /* OSCategoryService.swift in Sources */,
 				5A6C86271DC0181F00C42D04 /* CategoriesViewController.swift in Sources */,
 				5A5C7ACF1DC18F6F00643F5D /* OSWebViewController.swift in Sources */,
 				5A6C86041DC010B800C42D04 /* AppDelegate.swift in Sources */,

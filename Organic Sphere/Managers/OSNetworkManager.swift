@@ -27,35 +27,17 @@ class OSNetworkManager: NSObject {
     }()
     
     
-    func getCategories(completionHandler:@escaping (_ response:[OSCategory], _ error:Error?) -> Void) {
+    func getCategories(completionHandler:@escaping (_ response:JSON, _ error:Error?) -> Void) {
         Alamofire.request(URLMapping.Categories.rawValue, method: .get, parameters: nil, encoding: JSONEncoding.default)
             .responseJSON { response in
                 //to get status code
                 
                 switch response.result {
                 case .success(let value):
-                    completionHandler(self.categories(json: JSON(value)), nil)
+                    completionHandler(JSON(value), nil)
                 case .failure(let error):
                     completionHandler([], error)
                 }
         }
     }
-    
-    func categories(json:JSON) -> [OSCategory]{
-        var arrayOfCategoryObjects:[OSCategory] = []
-        if let jsonRootObject = json["heirarchyArr"].array {
-            for parentsJsonObject in jsonRootObject {
-                if let subCategoriesObject = parentsJsonObject["subcats"].array {
-                    for subcategory in subCategoriesObject {
-                        let dictionaryObject = subcategory.dictionaryObject
-                        let category = OSCategory()
-                        category.parse(dict: dictionaryObject as! [String : String])
-                        arrayOfCategoryObjects.append(category)
-                    }
-                }
-            }
-        }
-        return arrayOfCategoryObjects
-    }
-
 }
