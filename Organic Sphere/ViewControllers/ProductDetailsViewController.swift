@@ -22,6 +22,7 @@ class ProductDetailsViewController: UIViewController {
     @IBOutlet weak var categoriesLabel: UILabel!
     @IBOutlet weak var tagsLabel: UILabel!
     @IBOutlet weak var buyButton: UIButton!
+    @IBOutlet weak var productView: UIView!
     
     var selectedProduct:OSProductList = OSProductList()
     
@@ -55,6 +56,8 @@ class ProductDetailsViewController: UIViewController {
         } else {
             tagsLabel.text = "Tags: No available tags at the moment"
         }
+        
+        productView.backgroundColor = UIColor(white: 0, alpha: 0.5)
     }
     
     func makeButtonCircular(button:UIButton) {
@@ -95,18 +98,29 @@ class ProductDetailsViewController: UIViewController {
         }
     }
     @IBAction func buyButtonTapped(_ sender: AnyObject) {
-//        present(SideMenuManager.menuLeftNavigationController!, animated: true, completion: nil)
-        
-        OSLocationManager.sharedInstance.manager.requestLocation()
-    }
-    /*
-    // MARK: - Navigation
+//        present(SideMenuManager.menuRightNavigationController!, animated: true, completion: nil)
+        selectedProduct.orderedQuantity = Int(productOrderCountLabel.text!)!
+        let _ = SweetAlert().showAlert("Success", subTitle: "Successfuly added \(selectedProduct.orderedQuantity) \(selectedProduct.product_name!) to cart!", style: AlertStyle.success)
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        let _ = navigationController?.popToRootViewController(animated: true)
+        if OSCartService.sharedInstance.postalCode == nil {
+            OSLocationManager.sharedInstance.manager.requestLocation()
+        }
+        OSCartService.sharedInstance.productsInCart.append(selectedProduct)
     }
-    */
+
+    func showAlert() {
+        let alertController = UIAlertController(title: "Confirmation", message: "Are you sure you want to add ", preferredStyle: .alert)
+        
+        let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alertController.addAction(defaultAction)
+        
+        present(alertController, animated: true, completion: nil)
+    }
+    
+//    func delay(_ delay:Double, closure:@escaping ()->()) {
+//        let when = DispatchTime.now() + delay
+//        DispatchQueue.main.asyncAfter(deadline: when, execute: closure)
+//    }
 
 }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5405D6F1E88F5F54DCD933B6 /* Pods_Organic_Sphere.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 477ECBF31681466501B2352B /* Pods_Organic_Sphere.framework */; };
+		5A249D3B1DC5574300AE4F44 /* SweetAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A249D3A1DC5574300AE4F44 /* SweetAlert.swift */; };
 		5A3D3BA61DC2F87200880138 /* OSNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3D3BA51DC2F87200880138 /* OSNetworkManager.swift */; };
 		5A3D3BA91DC2F99A00880138 /* OSCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3D3BA81DC2F99A00880138 /* OSCategory.swift */; };
 		5A5C7ACF1DC18F6F00643F5D /* OSWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5C7ACE1DC18F6F00643F5D /* OSWebViewController.swift */; };
@@ -48,6 +49,7 @@
 		1BFFF05B821572F60E433544 /* Pods-Organic SphereTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Organic SphereTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Organic SphereTests/Pods-Organic SphereTests.debug.xcconfig"; sourceTree = "<group>"; };
 		39466B08DC01132F871DD4A9 /* Pods_Organic_SphereTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Organic_SphereTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		477ECBF31681466501B2352B /* Pods_Organic_Sphere.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Organic_Sphere.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A249D3A1DC5574300AE4F44 /* SweetAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SweetAlert.swift; sourceTree = "<group>"; };
 		5A3D3BA51DC2F87200880138 /* OSNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OSNetworkManager.swift; path = Managers/OSNetworkManager.swift; sourceTree = "<group>"; };
 		5A3D3BA81DC2F99A00880138 /* OSCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OSCategory.swift; path = Models/OSCategory.swift; sourceTree = "<group>"; };
 		5A5C7ACE1DC18F6F00643F5D /* OSWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OSWebViewController.swift; path = ViewControllers/OSWebViewController.swift; sourceTree = "<group>"; };
@@ -220,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				5AC6E3651DC537BA0096C442 /* ENMBadgedBarButtonItem.swift */,
+				5A249D3A1DC5574300AE4F44 /* SweetAlert.swift */,
 			);
 			name = Subclassing;
 			sourceTree = "<group>";
@@ -445,6 +448,7 @@
 				5AC6E35E1DC5240A0096C442 /* OSProductList.swift in Sources */,
 				5AC6E3691DC5435D0096C442 /* OSCartService.swift in Sources */,
 				5A6C86331DC03AC600C42D04 /* ProductDetailsViewController.swift in Sources */,
+				5A249D3B1DC5574300AE4F44 /* SweetAlert.swift in Sources */,
 				5A3D3BA91DC2F99A00880138 /* OSCategory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

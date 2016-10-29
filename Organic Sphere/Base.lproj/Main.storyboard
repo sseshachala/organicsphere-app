@@ -383,6 +383,7 @@
                         <outlet property="productImageView" destination="Chp-l2-FWH" id="chg-eQ-zsH"/>
                         <outlet property="productNameLabel" destination="HRT-h3-h9k" id="uuu-7W-DX9"/>
                         <outlet property="productOrderCountLabel" destination="NHG-ol-wOJ" id="CIq-Fc-SBk"/>
+                        <outlet property="productView" destination="6AQ-og-r4M" id="feK-ZU-woC"/>
                         <outlet property="tagsLabel" destination="Xdl-5d-9FJ" id="kb9-Df-hPJ"/>
                     </connections>
                 </viewController>
@@ -616,6 +617,9 @@
                     <navigationItem key="navigationItem" id="nXG-Tx-Xpi"/>
                     <connections>
                         <outlet property="codButton" destination="jsf-u2-luG" id="oXv-Cb-ILz"/>
+                        <outlet property="tableView" destination="81i-Lz-sMC" id="hiP-Ji-y4B"/>
+                        <outlet property="tax" destination="U41-n5-cpi" id="3ub-YW-f9A"/>
+                        <outlet property="totalPrice" destination="rYK-ew-7iB" id="Q3O-qg-mk5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bvq-db-NPf" userLabel="First Responder" sceneMemberID="firstResponder"/>

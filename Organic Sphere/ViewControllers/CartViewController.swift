@@ -11,13 +11,22 @@ import UIKit
 class CartViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var codButton: UIButton!
     
-    var products = ["Cinnamon Bark", "Kasuri Methi Leaves", "Bay Leaf", "Mustard Yellow", "Fenu Greek", "Rai", "Red Chilli Whole", "Flack Seed", "Ajwain"]
+    @IBOutlet weak var tax: UILabel!
+    @IBOutlet weak var totalPrice: UILabel!
+    @IBOutlet weak var tableView: UITableView!
+    var products = OSCartService.sharedInstance.productsInCart
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.title = "Shopping Cart"
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        products = OSCartService.sharedInstance.productsInCart
+        tableView.reloadData()
     }
     
     
@@ -29,19 +38,49 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
         return 60
     }
     
+    func numberOfSections(in tableView: UITableView) -> Int
+    {
+        var numOfSections: Int = 0
+        if products.count > 0
+        {
+            tableView.separatorStyle = .singleLine
+            numOfSections = 1
+            tableView.backgroundView = nil
+        }
+        else
+        {
+            let noDataLabel: UILabel = UILabel(frame: CGRect(x: 0, y: 0, width: tableView.bounds.size.width, height: tableView.bounds.size.height))
+            noDataLabel.text = "No products in the cart"
+            noDataLabel.textColor = UIColor.black
+            noDataLabel.textAlignment = .center
+            tableView.backgroundView = noDataLabel
+            tableView.separatorStyle = .none
+        }
+        return numOfSections
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return products.count
     }
     
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cartCell", for: indexPath)
-        cell.textLabel?.text = products[indexPath.row]
-        cell.detailTextLabel?.text = "Organic Sphere"
+        cell.textLabel?.text = products[indexPath.row].product_name
+        cell.detailTextLabel?.text = products[indexPath.row].prodCatName
         cell.imageView?.image = UIImage(named: "lentils")
         
         //Set custom label to the accessory view
-        let priceLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
-        priceLabel.text = "$1.83"
+        let priceLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 75, height: 50))
+        priceLabel.textAlignment = NSTextAlignment.right
+        
+        if let price = products[indexPath.row].terms_fob_price_c {
+            priceLabel.text = price.hasPrefix("$") ? "\(price)" : "$\(price)"
+        }
+        else {
+            priceLabel.text = "Not Available"
+        }
+        
         priceLabel.textColor = UIColor().osGreenColor()
         
         cell.accessoryView = priceLabel
