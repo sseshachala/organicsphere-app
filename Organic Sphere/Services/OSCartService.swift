@@ -20,7 +20,7 @@ class OSCartService: NSObject {
     var wasOrderPlaced = false
     var taxValue: Double = 0.0
     var taxValueType = "%"
-    var zipCode:String?
+    var postalCode:String?
     var orderDescription:String?
     var fullName:String?
     var address:String?

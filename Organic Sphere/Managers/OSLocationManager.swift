@@ -75,22 +75,7 @@ class OSLocationManager: NSObject, CLLocationManagerDelegate {
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-    
-        for location in locations {
-            
-            print("**********************")
-            print("Long \(location.coordinate.longitude)")
-            print("Lati \(location.coordinate.latitude)")
-            print("Alt \(location.altitude)")
-            print("Sped \(location.speed)")
-            print("Accu \(location.horizontalAccuracy)")
-            
-            print("**********************")
-            
-            
-        }
-        
-        
+     
         CLGeocoder().reverseGeocodeLocation(manager.location!, completionHandler: {(placemarks, error)-> Void in
             if error != nil {
                 print("Reverse geocoder failed with error: \(error?.localizedDescription)")
@@ -99,13 +84,39 @@ class OSLocationManager: NSObject, CLLocationManagerDelegate {
             
             if let placemark = placemarks?[0] {
                 manager.stopUpdatingLocation()
-                let postalCode = (placemark.postalCode != nil) ? placemark.postalCode : ""
-                print("Postal code updated to: \(postalCode)")
+                
+                self.saveAddress(placemark: placemark)
+                print("**********************")
+                print(OSCartService.sharedInstance.address)
+                print("**********************")
             }else{
                 print("No placemarks found.")
             }
         })
     }
-
-
+    
+    func saveAddress(placemark: CLPlacemark) {
+        var fullAddress = ""
+        
+        if let streetAddress = placemark.name {
+            fullAddress.append(streetAddress)
+            fullAddress.append(", ")
+        }
+        if let subAdmnistrativeArea = placemark.subAdministrativeArea {
+            fullAddress.append(subAdmnistrativeArea)
+            fullAddress.append(" ")
+        }
+        if let administrativeArea = placemark.administrativeArea {
+            fullAddress.append(administrativeArea)
+            fullAddress.append(", ")
+        }
+        if let country = placemark.country {
+            fullAddress.append(country)
+        }
+        OSCartService.sharedInstance.address = fullAddress
+        //Set postal code if it exists
+        if let postalCode = placemark.postalCode {
+            OSCartService.sharedInstance.postalCode = postalCode
+        }
+    }
 }
