@@ -39,6 +39,27 @@ class ProductsViewController: UIViewController, UITableViewDataSource, UITableVi
         }
     }
     
+    func numberOfSections(in tableView: UITableView) -> Int
+    {
+        var numOfSections: Int = 0
+        if products.count > 0
+        {
+            tableView.separatorStyle = .singleLine
+            numOfSections = 1
+            tableView.backgroundView = nil
+        }
+        else
+        {
+            let noDataLabel: UILabel = UILabel(frame: CGRect(x: 0, y: 0, width: tableView.bounds.size.width, height: tableView.bounds.size.height))
+            noDataLabel.text = "No products available"
+            noDataLabel.textColor = UIColor.black
+            noDataLabel.textAlignment = .center
+            tableView.backgroundView = noDataLabel
+            tableView.separatorStyle = .none
+        }
+        return numOfSections
+    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
     }
@@ -80,7 +101,7 @@ class ProductsViewController: UIViewController, UITableViewDataSource, UITableVi
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let productDetailsController = segue.destination as? ProductDetailsViewController  {
             if let indexPath = sender as? IndexPath {
-                productDetailsController.selectedProduct = products[indexPath.row].product_name!
+                productDetailsController.selectedProduct = products[indexPath.row]
             }
         }
     }

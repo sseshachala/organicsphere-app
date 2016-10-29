@@ -28,6 +28,8 @@
 		5AC6E35A1DC50AFD0096C442 /* OSCategoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC6E3591DC50AFD0096C442 /* OSCategoryService.swift */; };
 		5AC6E35E1DC5240A0096C442 /* OSProductList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC6E35D1DC5240A0096C442 /* OSProductList.swift */; };
 		5AC6E3601DC528380096C442 /* OSProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC6E35F1DC528380096C442 /* OSProductService.swift */; };
+		5AC6E3661DC537BA0096C442 /* ENMBadgedBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC6E3651DC537BA0096C442 /* ENMBadgedBarButtonItem.swift */; };
+		5AC6E3691DC5435D0096C442 /* OSCartService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC6E3681DC5435D0096C442 /* OSCartService.swift */; };
 		D10E47B4792A65B48B446D34 /* Pods_Organic_SphereTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39466B08DC01132F871DD4A9 /* Pods_Organic_SphereTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +72,8 @@
 		5AC6E3591DC50AFD0096C442 /* OSCategoryService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OSCategoryService.swift; path = Services/OSCategoryService.swift; sourceTree = "<group>"; };
 		5AC6E35D1DC5240A0096C442 /* OSProductList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OSProductList.swift; path = Models/OSProductList.swift; sourceTree = "<group>"; };
 		5AC6E35F1DC528380096C442 /* OSProductService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OSProductService.swift; path = Services/OSProductService.swift; sourceTree = "<group>"; };
+		5AC6E3651DC537BA0096C442 /* ENMBadgedBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENMBadgedBarButtonItem.swift; sourceTree = "<group>"; };
+		5AC6E3681DC5435D0096C442 /* OSCartService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OSCartService.swift; path = Services/OSCartService.swift; sourceTree = "<group>"; };
 		726DAB9F387207D018A6734E /* Pods-Organic Sphere.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Organic Sphere.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Organic Sphere/Pods-Organic Sphere.debug.xcconfig"; sourceTree = "<group>"; };
 		7E308E3A4298B184B29DD1EE /* Pods-Organic Sphere.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Organic Sphere.release.xcconfig"; path = "Pods/Target Support Files/Pods-Organic Sphere/Pods-Organic Sphere.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -156,6 +160,7 @@
 		5A6C86021DC010B800C42D04 /* Organic Sphere */ = {
 			isa = PBXGroup;
 			children = (
+				5AC6E3671DC537E60096C442 /* Subclassing */,
 				5AC6E3581DC50AC00096C442 /* ServiceLayer */,
 				5A3D3BA71DC2F97100880138 /* Models */,
 				5A5C7AD41DC1AD2500643F5D /* Managers */,
@@ -206,8 +211,17 @@
 			children = (
 				5AC6E3591DC50AFD0096C442 /* OSCategoryService.swift */,
 				5AC6E35F1DC528380096C442 /* OSProductService.swift */,
+				5AC6E3681DC5435D0096C442 /* OSCartService.swift */,
 			);
 			name = ServiceLayer;
+			sourceTree = "<group>";
+		};
+		5AC6E3671DC537E60096C442 /* Subclassing */ = {
+			isa = PBXGroup;
+			children = (
+				5AC6E3651DC537BA0096C442 /* ENMBadgedBarButtonItem.swift */,
+			);
+			name = Subclassing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -418,6 +432,7 @@
 				5A6C86291DC0183500C42D04 /* MenuViewController.swift in Sources */,
 				5A6C86311DC0353F00C42D04 /* ProductsViewController.swift in Sources */,
 				5A6C862F1DC0329400C42D04 /* OSColors.swift in Sources */,
+				5AC6E3661DC537BA0096C442 /* ENMBadgedBarButtonItem.swift in Sources */,
 				5AC6E3571DC507330096C442 /* OSProduct.swift in Sources */,
 				5AC6E3601DC528380096C442 /* OSProductService.swift in Sources */,
 				5A3D3BA61DC2F87200880138 /* OSNetworkManager.swift in Sources */,
@@ -428,6 +443,7 @@
 				5A6C86041DC010B800C42D04 /* AppDelegate.swift in Sources */,
 				5A6ACF7C1DC1730E00083C0F /* CartViewController.swift in Sources */,
 				5AC6E35E1DC5240A0096C442 /* OSProductList.swift in Sources */,
+				5AC6E3691DC5435D0096C442 /* OSCartService.swift in Sources */,
 				5A6C86331DC03AC600C42D04 /* ProductDetailsViewController.swift in Sources */,
 				5A3D3BA91DC2F99A00880138 /* OSCategory.swift in Sources */,
 			);

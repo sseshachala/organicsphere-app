@@ -23,14 +23,38 @@ class ProductDetailsViewController: UIViewController {
     @IBOutlet weak var tagsLabel: UILabel!
     @IBOutlet weak var buyButton: UIButton!
     
-    var selectedProduct = "Product"
+    var selectedProduct:OSProductList = OSProductList()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Product Details"
         
-        productNameLabel.text = selectedProduct
-        productCategoryLabel.text = "Organic Sphere"
+        setAllTheLabels()
+    }
+    
+    func setAllTheLabels() {
+        //Set product name
+        productNameLabel.text = selectedProduct.product_name
+        //Set categor/company
+        productCategoryLabel.text = selectedProduct.company_name
+        ///set price
+        if let price = selectedProduct.terms_fob_price_c {
+            priceLabel.text = "$\(price)"
+        } else {
+            priceLabel.text = "Not available."
+        }
+        //Set category
+        if let categoryName = selectedProduct.prodCatName {
+            categoriesLabel.text = "Category: \(categoryName)"
+        } else {
+            categoriesLabel.text = "Category: Category not available."
+        }
+        //Set Tags
+        if let tags = selectedProduct.tags_c {
+            tagsLabel.text = "Tags: \(tags)"
+        } else {
+            tagsLabel.text = "Tags: No available tags at the moment"
+        }
     }
     
     func makeButtonCircular(button:UIButton) {
@@ -53,7 +77,7 @@ class ProductDetailsViewController: UIViewController {
     @IBAction func descreaseProductCountButtonTapped(_ sender: AnyObject) {
         if let currentOrderCountText = productOrderCountLabel.text {
             if var currentOrderCount = Int(currentOrderCountText) {
-                if currentOrderCount > 0 {
+                if currentOrderCount > 1 {
                     currentOrderCount -= 1
                     productOrderCountLabel.text = "\(currentOrderCount)"
                 }

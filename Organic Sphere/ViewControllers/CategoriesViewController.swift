@@ -11,14 +11,14 @@ import SideMenu
 import NVActivityIndicatorView
 
 class CategoriesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    
+//    @IBOutlet weak var cartButton: ENMBadgedBarButtonItem!
     @IBOutlet weak var tableView: UITableView!
     var categoriesDataSource:[OSCategory] = []
     let refreshControl = UIRefreshControl()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
         navigationController?.navigationBar.topItem?.title = "Categories"
         
@@ -38,6 +38,9 @@ class CategoriesViewController: UIViewController, UITableViewDelegate, UITableVi
         
         //Get ctegories
         fetchCategories(isFromPullToRefresh: false)
+        
+        //
+//        cartButton.badgeValue = "10"
     }
     
     func addRefreshControl() {
@@ -71,6 +74,27 @@ class CategoriesViewController: UIViewController, UITableViewDelegate, UITableVi
     
     func handleRefresh(refreshControl: UIRefreshControl) {
         fetchCategories(isFromPullToRefresh: true)
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int
+    {
+        var numOfSections: Int = 0
+        if categoriesDataSource.count > 0
+        {
+            tableView.separatorStyle = .singleLine
+            numOfSections = 1
+            tableView.backgroundView = nil
+        }
+        else
+        {
+            let noDataLabel: UILabel = UILabel(frame: CGRect(x: 0, y: 0, width: tableView.bounds.size.width, height: tableView.bounds.size.height))
+            noDataLabel.text = "No categories available at the moment"
+            noDataLabel.textColor = UIColor.black
+            noDataLabel.textAlignment = .center
+            tableView.backgroundView = noDataLabel
+            tableView.separatorStyle = .none
+        }
+        return numOfSections
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

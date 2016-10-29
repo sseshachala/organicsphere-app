@@ -47,6 +47,7 @@ class OSProductList: NSObject {
     var productCatId: String?
     var email_address: [String]?
     var _version_: String?
+    var orderedQuantity = 1
     
     func parse(dict: [String: Any]){
         vendor_sku_c = dict["vendor_sku_c"] as? String
