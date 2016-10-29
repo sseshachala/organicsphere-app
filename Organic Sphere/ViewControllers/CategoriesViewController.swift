@@ -14,6 +14,7 @@ class CategoriesViewController: UIViewController, UITableViewDelegate, UITableVi
 
     @IBOutlet weak var tableView: UITableView!
     var categoriesDataSource:[OSCategory] = []
+    let refreshControl = UIRefreshControl()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,12 +33,32 @@ class CategoriesViewController: UIViewController, UITableViewDelegate, UITableVi
         SideMenuManager.menuFadeStatusBar = false
         
         OSLocationManager.sharedInstance.intializeLocationManager()
+        //Add refresh control to the table
+        addRefreshControl()
+        
+        //Get ctegories
+        fetchCategories(isFromPullToRefresh: false)
+    }
+    
+    func addRefreshControl() {
+        // set up the refresh control
+        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refreshControl.addTarget(self, action: #selector(CategoriesViewController.handleRefresh(refreshControl:)), for: UIControlEvents.valueChanged)
+        self.tableView?.addSubview(refreshControl)
+    }
+    
+    func fetchCategories(isFromPullToRefresh:Bool) {
+        
+        if !isFromPullToRefresh {
+            NVActivityIndicatorPresenter.sharedInstance.startAnimating(ActivityData())
+        }
         
         let categoryService = OSCategoryService()
-//        SwiftSpinner.show("Loading Categories")
         categoryService.getCategories() {
             categories, error in
-//            SwiftSpinner.hide()
+            //End Refreshing
+            isFromPullToRefresh ? self.refreshControl.endRefreshing() : NVActivityIndicatorPresenter.sharedInstance.stopAnimating()
+            //Handle request success/failure
             if let errorResponse = error {
                 print(errorResponse)
             }
@@ -46,8 +67,10 @@ class CategoriesViewController: UIViewController, UITableViewDelegate, UITableVi
                 self.tableView.reloadData()
             }
         }
-
+    }
     
+    func handleRefresh(refreshControl: UIRefreshControl) {
+        fetchCategories(isFromPullToRefresh: true)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -79,6 +102,7 @@ class CategoriesViewController: UIViewController, UITableViewDelegate, UITableVi
             if let indexPath = sender as? IndexPath {
                 if let productName = categoriesDataSource[indexPath.row].prodCatName {
                     productsController.selectedProduct = productName
+                    productsController.selectedCategory = categoriesDataSource[indexPath.row]
                 }
             }
         }

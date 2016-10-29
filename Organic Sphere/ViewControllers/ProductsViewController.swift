@@ -11,6 +11,7 @@ import UIKit
 class ProductsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     var selectedProduct = "Products"
+    var selectedCategory:OSCategory = OSCategory()
     let products = ["Cinnamon Bark", "Kasuri Methi Leaves", "Bay Leaf", "Mustard Yellow", "Fenu Greek", "Rai", "Red Chilli Whole", "Flack Seed", "Ajwain"]
     override func viewDidLoad() {
         super.viewDidLoad()

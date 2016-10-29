@@ -65,4 +65,5 @@ class OSProduct: NSObject {
         horizontal_variants_c = dict["horizontal_variants_c"]
         vertical_variants_c = dict["vertical_variants_c"]
         variants_c = dict["variants_c"]
-    }}
+    }
+}
