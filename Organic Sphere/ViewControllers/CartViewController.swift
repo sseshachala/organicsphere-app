@@ -16,6 +16,7 @@ protocol OrderConfirmation {
 class CartViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, OrderConfirmation {
     @IBOutlet weak var codButton: UIButton!
     
+    @IBOutlet weak var deliveryChargesLabel: UILabel!
     @IBOutlet weak var tax: UILabel!
     @IBOutlet weak var totalPrice: UILabel!
     @IBOutlet weak var tableView: UITableView!
@@ -42,6 +43,13 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
         products = OSCartService.sharedInstance.productsInCart
         self.tax.text = "\(OSCartService.sharedInstance.taxValue)\(OSCartService.sharedInstance.taxValueType)"
         self.totalPrice.text = "$\(OSCartService.sharedInstance.totalPrice())"
+        
+        if OSCartService.sharedInstance.totalPrice() < 100 {
+            deliveryChargesLabel.text = "$20"
+        } else {
+            deliveryChargesLabel.text = "$0"
+        }
+        
         tableView.reloadData()
     }
     
