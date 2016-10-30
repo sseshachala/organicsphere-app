@@ -25,7 +25,7 @@ class OSWebViewController: UIViewController, UIWebViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.webView.delegate = self
         if let url = urlType?.rawValue {
             webView.loadRequest(URLRequest(url: URL(string: url)!))
         }
@@ -35,21 +35,25 @@ class OSWebViewController: UIViewController, UIWebViewDelegate {
         activityIndicator.startAnimating()
         activityIndicator.isHidden = false
         webView.isHidden = true
-//        SwiftSpinner.show("Loading...")
+    }
+    
+    func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
+        if request.url?.absoluteString == URLS.TermsAndConditions.rawValue || request.url?.absoluteString == URLS.About.rawValue || request.url?.absoluteString == URLS.PrivacyPolicy.rawValue {
+            return true
+        }
+        return false
     }
 
     func webViewDidFinishLoad(_ webView: UIWebView) {
         activityIndicator.stopAnimating()
         activityIndicator.isHidden = true
         webView.isHidden = false
-//        SwiftSpinner.hide()
     }
     
     func webView(_ webView: UIWebView, didFailLoadWithError error: Error) {
         activityIndicator.stopAnimating()
         activityIndicator.isHidden = true
         webView.isHidden = false
-//        SwiftSpinner.hide()
     }
 
     /*
