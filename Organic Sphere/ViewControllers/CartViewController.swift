@@ -26,6 +26,8 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         products = OSCartService.sharedInstance.productsInCart
+        self.tax.text = "\(OSCartService.sharedInstance.taxValue)\(OSCartService.sharedInstance.taxValueType)"
+        self.totalPrice.text = "$\(OSCartService.sharedInstance.totalPrice())"
         tableView.reloadData()
     }
     
@@ -67,7 +69,7 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cartCell", for: indexPath)
         cell.textLabel?.text = products[indexPath.row].product_name
-        cell.detailTextLabel?.text = products[indexPath.row].prodCatName
+        cell.detailTextLabel?.text = "Order Quantity: \(products[indexPath.row].orderedQuantity)"
         cell.imageView?.image = UIImage(named: "lentils")
         
         //Set custom label to the accessory view
@@ -75,7 +77,8 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
         priceLabel.textAlignment = NSTextAlignment.right
         
         if let price = products[indexPath.row].terms_fob_price_c {
-            priceLabel.text = price.hasPrefix("$") ? "\(price)" : "$\(price)"
+            let totalPriceOfProduct = "\(Double(products[indexPath.row].orderedQuantity) * Double(price)!)"
+            priceLabel.text = price.hasPrefix("$") ? "\(totalPriceOfProduct)" : "$\(totalPriceOfProduct)"
         }
         else {
             priceLabel.text = "Not Available"
@@ -94,7 +97,8 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             products.remove(at: indexPath.row)
-            tableView.deleteRows(at: [indexPath], with: .right)
+            OSCartService.sharedInstance.productsInCart.remove(at: indexPath.row)
+            tableView.reloadData()
         }
     }
     

@@ -16,6 +16,8 @@ class CategoriesViewController: UIViewController, UITableViewDelegate, UITableVi
     @IBOutlet weak var tableView: UITableView!
     var categoriesDataSource:[OSCategory] = []
     let refreshControl = UIRefreshControl()
+    var rightBarButton: ENMBadgedBarButtonItem?
+    var errorDescription:String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +42,11 @@ class CategoriesViewController: UIViewController, UITableViewDelegate, UITableVi
         fetchCategories(isFromPullToRefresh: false)
         
         //
-//        cartButton.badgeValue = "10"
+        setUpRightBarButton()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        rightBarButton?.badgeValue = "\(OSCartService.sharedInstance.productsInCart.count)"
     }
     
     func addRefreshControl() {
@@ -63,12 +69,15 @@ class CategoriesViewController: UIViewController, UITableViewDelegate, UITableVi
             isFromPullToRefresh ? self.refreshControl.endRefreshing() : NVActivityIndicatorPresenter.sharedInstance.stopAnimating()
             //Handle request success/failure
             if let errorResponse = error {
-                print(errorResponse)
+                self.errorDescription = errorResponse.localizedDescription
             }
             else {
                 self.categoriesDataSource = categories
-                self.tableView.reloadData()
+                if self.categoriesDataSource.count == 0 {
+                    self.errorDescription = "No categories available at the moment"
+                }
             }
+            self.tableView.reloadData()
         }
     }
     
@@ -88,7 +97,7 @@ class CategoriesViewController: UIViewController, UITableViewDelegate, UITableVi
         else
         {
             let noDataLabel: UILabel = UILabel(frame: CGRect(x: 0, y: 0, width: tableView.bounds.size.width, height: tableView.bounds.size.height))
-            noDataLabel.text = "No categories available at the moment"
+            noDataLabel.text = errorDescription
             noDataLabel.textColor = UIColor.black
             noDataLabel.textAlignment = .center
             tableView.backgroundView = noDataLabel
@@ -130,6 +139,33 @@ class CategoriesViewController: UIViewController, UITableViewDelegate, UITableVi
                 }
             }
         }
+    }
+    
+    func setUpRightBarButton() {
+        let image = UIImage(named: "cart")
+        let button = UIButton(type: .custom)
+        if let knownImage = image {
+            button.frame = CGRect(x: 0.0, y: 0.0, width: knownImage.size.width, height: knownImage.size.height)
+        } else {
+            button.frame = CGRect.zero;
+        }
+        
+        button.setBackgroundImage(image, for: UIControlState())
+        button.addTarget(self,
+                         action: #selector(CategoriesViewController.rightButtonPressed(_:)),
+                         for: UIControlEvents.touchUpInside)
+        
+        let newBarButton = ENMBadgedBarButtonItem(customView: button, value: "\(OSCartService.sharedInstance.productsInCart.count)")
+        rightBarButton = newBarButton
+        navigationItem.rightBarButtonItem = rightBarButton
+        rightBarButton?.badgeBackgroundColor = UIColor.red
+        rightBarButton?.badgeTextColor = UIColor.white
+
+    }
+    
+    func rightButtonPressed(_ sender: UIButton) {
+        present(SideMenuManager.menuRightNavigationController!, animated: true, completion: nil)
+
     }
 
 }

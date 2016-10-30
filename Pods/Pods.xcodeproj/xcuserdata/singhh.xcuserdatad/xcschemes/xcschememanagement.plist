@@ -9,6 +9,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>CCBottomRefreshControl.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Masonry.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>NVActivityIndicatorView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,12 +52,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5647F4351159F8E44C502AE65FCED4BC</key>
+		<key>1657930304B84232F19A0D421D9E1A8A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>672575A76569D64FD8BE92308126A346</key>
+		<key>6D32D7C5507D53318F943205DFB7F938</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6ECC4C26E4F601B9791F68038A181ED4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,7 +77,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FDA51195C9D39E9D8AD1F844CD12E5C2</key>
+		<key>CA4A5F476C43C6DAD78200C3A62AC064</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DD1559592F5FECF5E008347EC681DF67</key>
 		<dict>
 			<key>primary</key>
 			<true/>

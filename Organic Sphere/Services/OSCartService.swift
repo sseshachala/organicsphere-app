@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class OSCartService: NSObject {
     
@@ -20,10 +21,16 @@ class OSCartService: NSObject {
     var wasOrderPlaced = false
     var taxValue: Double = 0.0
     var taxValueType = "%"
-    var postalCode:String?
+    var postalCode:String? {
+        didSet {
+            getTaxdetails(postalCode: postalCode!)
+        }
+    }
     var orderDescription:String?
     var fullName:String?
     var address:String?
+    
+    
     
     
     //Fetch Total Price
@@ -37,5 +44,19 @@ class OSCartService: NSObject {
             }
         }
         return totalPrice
+    }
+    
+    func getTaxdetails(postalCode:String) {
+        OSNetworkManager.sharedInstance.getTaxDetailsFor(postalCode: postalCode) {
+            responseJSON, error in
+            if let _ = error {
+                
+            } else {
+                if let tax = Double(responseJSON["taxrate"].stringValue) {
+                    self.taxValue = tax
+                    self.taxValueType = responseJSON["unit"].stringValue
+                }
+            }
+        }
     }
 }

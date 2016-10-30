@@ -11,7 +11,7 @@ target 'Organic Sphere' do
     pod 'Alamofire', '~> 4.0'
     pod 'SwiftyJSON'
     pod 'NVActivityIndicatorView'
-
+    pod 'CCBottomRefreshControl'
 
 
 

@@ -8,6 +8,7 @@
 
 import UIKit
 import NVActivityIndicatorView
+import CCBottomRefreshControl
 
 class ProductsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
@@ -15,27 +16,50 @@ class ProductsViewController: UIViewController, UITableViewDataSource, UITableVi
     var selectedProduct = "Products"
     var selectedCategory:OSCategory = OSCategory()
     var products:[OSProductList] = []
+    var errorDescription = ""
+    let refreshControl = UIRefreshControl()
+    var pageNumber = 1
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = selectedProduct
         
+        fetchProducts()
+        addRefreshControlToTheBottom()
+    }
+    
+    func addRefreshControlToTheBottom() {
+        // set up the refresh control
+        refreshControl.attributedTitle = NSAttributedString(string: "Loading more content")
+        refreshControl.addTarget(self, action: #selector(CategoriesViewController.handleRefresh(refreshControl:)), for: UIControlEvents.valueChanged)
+        self.tableView?.bottomRefreshControl = refreshControl
+    }
+    
+    func handleRefresh(refreshControl: UIRefreshControl) {
         fetchProducts()
     }
     
     func fetchProducts () {
         NVActivityIndicatorPresenter.sharedInstance.startAnimating(ActivityData())
         let productService = OSProductService()
-        productService.getProductsFor(categoryId: selectedCategory.id!, pageNumber: 1) {
+        productService.getProductsFor(categoryId: selectedCategory.id!, pageNumber: pageNumber) {
             productList, error in
-            
             NVActivityIndicatorPresenter.sharedInstance.stopAnimating()
-            
-            if let _ = error {
-                
+            if let errorResponse = error {
+                self.errorDescription = errorResponse.localizedDescription
             } else {
-                self.products = productList
-                self.tableView.reloadData()
+                self.products.append(contentsOf: productList)
+                self.pageNumber += 1
+                if productList.count == 0 {
+                    self.tableView.bottomRefreshControl = nil
+                } else {
+                    self.refreshControl.endRefreshing()
+                }
+                if self.products.count == 0 {
+                    self.errorDescription = "No products available"
+                }
             }
+            self.tableView.reloadData()
         }
     }
     
@@ -51,7 +75,7 @@ class ProductsViewController: UIViewController, UITableViewDataSource, UITableVi
         else
         {
             let noDataLabel: UILabel = UILabel(frame: CGRect(x: 0, y: 0, width: tableView.bounds.size.width, height: tableView.bounds.size.height))
-            noDataLabel.text = "No products available"
+            noDataLabel.text = errorDescription
             noDataLabel.textColor = UIColor.black
             noDataLabel.textAlignment = .center
             tableView.backgroundView = noDataLabel
