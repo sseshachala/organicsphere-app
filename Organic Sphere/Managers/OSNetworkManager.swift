@@ -20,6 +20,8 @@ class OSNetworkManager: NSObject {
         static func routeProductListFor(categoryId: String, pageNumber:Int) -> String {
             return "https://devqa.b2bsphere.com/api/v1/rest/catalog/categoryProducts/\(categoryId)/\(pageNumber)/10"
         }
+        static let routePhoneNumberList = "https://devqa.b2bsphere.com/api/v1/rest/organicsphere/phonenumbers"
+        static let routeStaticTextOfApp = "https://devqa.b2bsphere.com/api/v1/rest/organicsphere/"
     }
     
     //MARK: Shared Instance
@@ -40,6 +42,14 @@ class OSNetworkManager: NSObject {
     
     func getProducList(categoryId: String, pageNumber: Int, completionHandler:@escaping (_ response:JSON, _ error:Error?) -> Void) {
         GET(apiUrl: APIRoutes.routeProductListFor(categoryId: categoryId, pageNumber: pageNumber), completionHandler: completionHandler)
+    }
+    
+    func getPhoneNumbers(completionHandler:@escaping (_ response:JSON, _ error:Error?) -> Void) {
+        GET(apiUrl: APIRoutes.routePhoneNumberList, completionHandler: completionHandler)
+    }
+    
+    func getApplicationStaticText(completionHandler:@escaping (_ response:JSON, _ error:Error?) -> Void) {
+        GET(apiUrl: APIRoutes.routeStaticTextOfApp, completionHandler: completionHandler)
     }
     
     private func GET(apiUrl: String, completionHandler:@escaping (_ response:JSON, _ error:Error?) -> Void) {

@@ -7,27 +7,59 @@
 //
 
 import UIKit
-//import SwiftSpinner
+import SwiftyJSON
 
 class OSWebViewController: UIViewController, UIWebViewDelegate {
 
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var webView: UIWebView!
     
-    enum URLS : String {
-        case TermsAndConditions = "https://organic.b2bsphere.com/terms-conditions/",
-        About = "https://organic.b2bsphere.com/about-us/",
-        PrivacyPolicy = "https://organic.b2bsphere.com/privacy-policy/"
+    enum URLS {
+        case TermsAndConditions ,
+        About ,
+        PrivacyPolicy
     }
     
     var urlType:URLS? = nil
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.webView.delegate = self
-        if let url = urlType?.rawValue {
-            webView.loadRequest(URLRequest(url: URL(string: url)!))
+        
+        fetchStaticTexts()
+    }
+    
+    func fetchStaticTexts() {
+        OSNetworkManager.sharedInstance.getApplicationStaticText {
+            responseJSON, error in
+            if let errorResponse = error {
+                let _ = SweetAlert().showAlert("Failure", subTitle: "Failed to load the content.\nError: \(errorResponse)", style: AlertStyle.error)
+                let _ = self.navigationController?.popViewController(animated: true)
+            }
+            else {
+                if self.urlType == URLS.TermsAndConditions {
+                    self.loadWebView(htmlString: responseJSON["tos"].string)
+                } else if self.urlType == URLS.About {
+                    self.loadWebView(htmlString: responseJSON["aboutUs"].string)
+                } else if self.urlType == URLS.PrivacyPolicy {
+                    self.loadWebView(htmlString: responseJSON["pp"].string)
+                }
+                else {
+                    let _ = SweetAlert().showAlert("Failure", subTitle: "Failed to load the content.", style: AlertStyle.error)
+                    let _ = self.navigationController?.popViewController(animated: true)
+                }
+                
+            }
+        }
+    }
+    
+    func loadWebView(htmlString: String?) {
+        if let html = htmlString {
+            webView.loadHTMLString(html, baseURL: nil)
+        } else {
+            let _ = SweetAlert().showAlert("Failure", subTitle: "Failed to load the content.", style: AlertStyle.error)
+            let _ = self.navigationController?.popViewController(animated: true)
+
         }
     }
     
@@ -35,13 +67,6 @@ class OSWebViewController: UIViewController, UIWebViewDelegate {
         activityIndicator.startAnimating()
         activityIndicator.isHidden = false
         webView.isHidden = true
-    }
-    
-    func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
-        if request.url?.absoluteString == URLS.TermsAndConditions.rawValue || request.url?.absoluteString == URLS.About.rawValue || request.url?.absoluteString == URLS.PrivacyPolicy.rawValue {
-            return true
-        }
-        return false
     }
 
     func webViewDidFinishLoad(_ webView: UIWebView) {
@@ -55,15 +80,5 @@ class OSWebViewController: UIViewController, UIWebViewDelegate {
         activityIndicator.isHidden = true
         webView.isHidden = false
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

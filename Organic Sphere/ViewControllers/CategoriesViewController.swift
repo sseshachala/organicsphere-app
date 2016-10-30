@@ -35,6 +35,9 @@ class CategoriesViewController: UIViewController, UITableViewDelegate, UITableVi
         SideMenuManager.menuFadeStatusBar = false
         
         OSLocationManager.sharedInstance.intializeLocationManager()
+        //Initialize Get phone Numbers API
+        OSCartService.sharedInstance.getPhoneNumbers()
+        
         //Add refresh control to the table
         addRefreshControl()
         

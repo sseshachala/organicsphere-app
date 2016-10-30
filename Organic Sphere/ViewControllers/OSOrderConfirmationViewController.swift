@@ -20,7 +20,7 @@ class OSOrderConfirmationViewController: UIViewController, UITextFieldDelegate, 
     @IBOutlet weak var confirmOrderButton: UIButton!
     @IBOutlet weak var crossButtonClicked: UIButton!
     var overlayRect = CGRect()
-    var phoneNumber = ""
+    var phoneNumber = ["4082039960","8327975259"]
     var delegate: OrderConfirmation?
 
     override func viewDidLoad() {
@@ -195,7 +195,14 @@ class OSOrderConfirmationViewController: UIViewController, UITextFieldDelegate, 
             let controller = MFMessageComposeViewController()
             controller.subject = "Mobile Organic Sphere Order"
             controller.body = "This is the message body. And will be replaced by the order details."
-            controller.recipients = [phoneNumber]
+            
+            if OSCartService.sharedInstance.phoneNumbersToSendOrderTo.count == 0{
+                controller.recipients = phoneNumber
+            }
+            else {
+                controller.recipients = OSCartService.sharedInstance.phoneNumbersToSendOrderTo
+            }
+            
             controller.messageComposeDelegate = self
             present(controller, animated: true, completion: nil)
         }
@@ -213,7 +220,6 @@ class OSOrderConfirmationViewController: UIViewController, UITextFieldDelegate, 
             let _ = SweetAlert().showAlert("Success", subTitle: "Order was sent successfully!", style: AlertStyle.success)
             dismiss(animated: true, completion: nil)
             delegate?.didConfirmOder()
-//            let _ = presentingViewController?.navigationController?.popToRootViewController(animated: true)
         }
     }
     

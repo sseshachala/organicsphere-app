@@ -29,8 +29,7 @@ class OSCartService: NSObject {
     var orderDescription:String?
     var fullName:String?
     var address:String?
-    
-    
+    var phoneNumbersToSendOrderTo:[String] = []
     
     
     //Fetch Total Price
@@ -55,6 +54,23 @@ class OSCartService: NSObject {
                 if let tax = Double(responseJSON["taxrate"].stringValue) {
                     self.taxValue = tax
                     self.taxValueType = responseJSON["unit"].stringValue
+                }
+            }
+        }
+    }
+    
+    // get phone Numbers
+    func getPhoneNumbers() {
+        OSNetworkManager.sharedInstance.getPhoneNumbers() {
+            responseJSON, error in
+            if let _ = error {
+                
+            } else {
+                if let phoneNmber = responseJSON["phone1"].string {
+                    self.phoneNumbersToSendOrderTo.append(phoneNmber)
+                }
+                if let phoneNmber = responseJSON["phone2"].string {
+                    self.phoneNumbersToSendOrderTo.append(phoneNmber)
                 }
             }
         }

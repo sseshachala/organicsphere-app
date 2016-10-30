@@ -25,17 +25,20 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
 
         self.title = "Shopping Cart"
-        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        reloadViewWithAllCurrentValues()
+    }
+    
+    func reloadViewWithAllCurrentValues() {
         codButton.isEnabled = products.count > 0
         if codButton.isEnabled {
             codButton.backgroundColor = UIColor().osGreenColor()
         } else {
             codButton.backgroundColor = UIColor.gray
         }
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
         products = OSCartService.sharedInstance.productsInCart
         self.tax.text = "\(OSCartService.sharedInstance.taxValue)\(OSCartService.sharedInstance.taxValueType)"
         self.totalPrice.text = "$\(OSCartService.sharedInstance.totalPrice())"
@@ -109,7 +112,7 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
         if editingStyle == .delete {
             products.remove(at: indexPath.row)
             OSCartService.sharedInstance.productsInCart.remove(at: indexPath.row)
-            tableView.reloadData()
+            reloadViewWithAllCurrentValues()
         }
     }
     
@@ -133,9 +136,6 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
         // Get the new view controller using segue.destinationViewController.
         if let controller = segue.destination as? OSOrderConfirmationViewController {
             controller.delegate = self
-            if let phoneNumber = products.first?.main_contact {
-                controller.phoneNumber = phoneNumber
-            }
         }
     }
 
