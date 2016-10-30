@@ -193,8 +193,8 @@ class OSOrderConfirmationViewController: UIViewController, UITextFieldDelegate, 
     @IBAction func confirmatioTapped(_ sender: AnyObject) {
         if (MFMessageComposeViewController.canSendText()) {
             let controller = MFMessageComposeViewController()
-            controller.subject = "Mobile Organic Sphere Order"
-            controller.body = "This is the message body. And will be replaced by the order details."
+            controller.subject = "Organic Sphere Mobile Order"
+            controller.body = createOrderMessageFormat()
             
             if OSCartService.sharedInstance.phoneNumbersToSendOrderTo.count == 0{
                 controller.recipients = phoneNumber
@@ -227,8 +227,24 @@ class OSOrderConfirmationViewController: UIViewController, UITextFieldDelegate, 
         self.navigationController?.isNavigationBarHidden = false
     }
     
+    func createOrderMessageFormat() -> String {
+        var messageFormat = ""
+        for product in OSCartService.sharedInstance.productsInCart {
+            messageFormat.append("\(product.product_name!), \(product.orderedQuantity)\n\n")
+        }
+        messageFormat.append("Total Bill: $\(OSCartService.sharedInstance.totalPrice())\n")
+        messageFormat.append("Tax: \(OSCartService.sharedInstance.taxValue)\(OSCartService.sharedInstance.taxValueType)\n")
+        messageFormat.append("Delivery Charges: $\(OSCartService.sharedInstance.totalPrice() < 100 ? 20 : 0)\n")
+        
+        messageFormat.append("\n")
+        
+        messageFormat.append("\(nameTextField.text!)\n")
+        messageFormat.append("Delivery Date and time\n")
+        messageFormat.append("\(addressTextView.text!)\n")
+        
+        return messageFormat;
+    }
     
-
     /*
     // MARK: - Navigation
 
