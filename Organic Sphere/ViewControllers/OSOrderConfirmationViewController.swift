@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import MessageUI
 
-class OSOrderConfirmationViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate {
+
+class OSOrderConfirmationViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate, MFMessageComposeViewControllerDelegate {
     
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var addressTextView: UITextView!
@@ -18,6 +20,9 @@ class OSOrderConfirmationViewController: UIViewController, UITextFieldDelegate, 
     @IBOutlet weak var confirmOrderButton: UIButton!
     @IBOutlet weak var crossButtonClicked: UIButton!
     var overlayRect = CGRect()
+    var phoneNumber = ""
+    var delegate: OrderConfirmation?
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -74,9 +79,6 @@ class OSOrderConfirmationViewController: UIViewController, UITextFieldDelegate, 
         textView.layer.masksToBounds = true
     }
     
-    @IBAction func confirmatioTapped(_ sender: AnyObject) {
-        self.dismiss(animated: true, completion: nil)
-    }
     @IBAction func crossButtonTapped(_ sender: AnyObject) {
         self.dismiss(animated: true, completion: nil)
     }
@@ -186,6 +188,37 @@ class OSOrderConfirmationViewController: UIViewController, UITextFieldDelegate, 
     
     func keyboardDidHide(notification: NSNotification) {
         overlayView.frame = overlayRect
+    }
+    
+    @IBAction func confirmatioTapped(_ sender: AnyObject) {
+        if (MFMessageComposeViewController.canSendText()) {
+            let controller = MFMessageComposeViewController()
+            controller.subject = "Mobile Organic Sphere Order"
+            controller.body = "This is the message body. And will be replaced by the order details."
+            controller.recipients = [phoneNumber]
+            controller.messageComposeDelegate = self
+            present(controller, animated: true, completion: nil)
+        }
+    }
+    
+    func messageComposeViewController(_ controller: MFMessageComposeViewController, didFinishWith result: MessageComposeResult) {
+        //... handle sms screen actions
+        self.dismiss(animated: true, completion: nil)
+        switch result {
+        case .cancelled:
+            let _ = SweetAlert().showAlert("Failure", subTitle: "Order was cancelled by the user.", style: AlertStyle.warning)
+        case .failed:
+            let _ = SweetAlert().showAlert("Failure", subTitle: "Failed to place the order because the system was unable to send the message.", style: AlertStyle.error)
+        case .sent:
+            let _ = SweetAlert().showAlert("Success", subTitle: "Order was sent successfully!", style: AlertStyle.success)
+            dismiss(animated: true, completion: nil)
+            delegate?.didConfirmOder()
+//            let _ = presentingViewController?.navigationController?.popToRootViewController(animated: true)
+        }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = false
     }
     
     

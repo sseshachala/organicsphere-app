@@ -9,7 +9,11 @@
 import UIKit
 import NVActivityIndicatorView
 
-class CartViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+protocol OrderConfirmation {
+    func didConfirmOder()
+}
+
+class CartViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, OrderConfirmation {
     @IBOutlet weak var codButton: UIButton!
     
     @IBOutlet weak var tax: UILabel!
@@ -114,17 +118,25 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
         
     }
     
+    func didConfirmOder() {
+        OSCartService.sharedInstance.productsInCart = []
+        let _ = navigationController?.popToRootViewController(animated: true)
+    }
     
     
     
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if let controller = segue.destination as? OSOrderConfirmationViewController {
+            controller.delegate = self
+            if let phoneNumber = products.first?.main_contact {
+                controller.phoneNumber = phoneNumber
+            }
+        }
     }
-    */
 
 }
