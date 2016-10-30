@@ -22,8 +22,12 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
 
         self.title = "Shopping Cart"
         
-//        NVActivityIndicatorPresenter.sharedInstance.startAnimating(ActivityData())
-        
+        codButton.isEnabled = products.count > 0
+        if codButton.isEnabled {
+            codButton.backgroundColor = UIColor().osGreenColor()
+        } else {
+            codButton.backgroundColor = UIColor.gray
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {

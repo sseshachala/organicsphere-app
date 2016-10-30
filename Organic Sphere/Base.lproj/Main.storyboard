@@ -591,7 +591,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="81i-Lz-sMC" firstAttribute="leading" secondItem="e6d-Sv-Hys" secondAttribute="leading" id="B7R-3Y-xiG"/>
-                            <constraint firstItem="81i-Lz-sMC" firstAttribute="top" secondItem="e6d-Sv-Hys" secondAttribute="top" constant="64" id="IKY-V7-4dP"/>
+                            <constraint firstItem="81i-Lz-sMC" firstAttribute="top" secondItem="e6d-Sv-Hys" secondAttribute="top" id="IKY-V7-4dP"/>
                             <constraint firstAttribute="trailing" secondItem="JdM-2D-Ef1" secondAttribute="trailing" id="QHc-9s-jhj"/>
                             <constraint firstItem="JdM-2D-Ef1" firstAttribute="leading" secondItem="e6d-Sv-Hys" secondAttribute="leading" id="g54-IT-eSb"/>
                             <constraint firstItem="5Rz-K7-0DI" firstAttribute="top" secondItem="JdM-2D-Ef1" secondAttribute="bottom" id="jQK-QQ-atr"/>
@@ -630,21 +630,10 @@
                                             <constraint firstAttribute="height" constant="25" id="BiM-Vt-VzO"/>
                                         </constraints>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                         <connections>
                                             <outlet property="delegate" destination="THt-9S-YuL" id="SDI-lI-fbM"/>
-                                        </connections>
-                                    </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" placeholder="Address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s5s-Pb-vqB">
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="47" id="Y6G-qY-uyl"/>
-                                        </constraints>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
-                                        <connections>
-                                            <outlet property="delegate" destination="THt-9S-YuL" id="B8l-ug-PVb"/>
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" placeholder="PIN" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FjW-ct-ZFa">
@@ -652,21 +641,10 @@
                                             <constraint firstAttribute="height" constant="25" id="unS-FL-24E"/>
                                         </constraints>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                         <connections>
                                             <outlet property="delegate" destination="THt-9S-YuL" id="Wqp-rZ-oV1"/>
-                                        </connections>
-                                    </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" placeholder="Description" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dBS-78-h3Z">
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="68" id="ync-UF-aQn"/>
-                                        </constraints>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
-                                        <connections>
-                                            <outlet property="delegate" destination="THt-9S-YuL" id="GkU-fB-Z86"/>
                                         </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6p1-DB-ckE">
@@ -683,28 +661,58 @@
                                             <action selector="confirmatioTapped:" destination="THt-9S-YuL" eventType="touchUpInside" id="8mn-Il-ELa"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcA-5Y-3uV">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="cVV-p1-1vZ"/>
+                                            <constraint firstAttribute="height" constant="44" id="eSB-ad-reV"/>
+                                        </constraints>
+                                        <state key="normal" image="cross"/>
+                                        <connections>
+                                            <action selector="crossButtonTapped:" destination="THt-9S-YuL" eventType="touchUpInside" id="RnT-FK-zoP"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aJI-I0-gxg">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="47" id="x15-7s-JyZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="next"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="THt-9S-YuL" id="Fad-dt-L0Y"/>
+                                        </connections>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ee0-13-f7g">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="68" id="OtB-aC-4ks"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="THt-9S-YuL" id="JIL-Un-xsW"/>
+                                        </connections>
+                                    </textView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="dBS-78-h3Z" firstAttribute="top" secondItem="FjW-ct-ZFa" secondAttribute="bottom" constant="20" id="29q-H9-Gry"/>
                                     <constraint firstItem="rGL-Jt-3oQ" firstAttribute="top" secondItem="6h3-Cb-xbN" secondAttribute="top" constant="27" id="8Rq-gc-f4y"/>
+                                    <constraint firstItem="Ee0-13-f7g" firstAttribute="leading" secondItem="6h3-Cb-xbN" secondAttribute="leading" constant="37" id="9mm-zH-Ji2"/>
                                     <constraint firstItem="rGL-Jt-3oQ" firstAttribute="leading" secondItem="6h3-Cb-xbN" secondAttribute="leading" constant="37" id="E4d-Rj-jaS"/>
+                                    <constraint firstItem="aJI-I0-gxg" firstAttribute="top" secondItem="rGL-Jt-3oQ" secondAttribute="bottom" constant="17" id="FBE-de-pdS"/>
                                     <constraint firstAttribute="bottom" secondItem="6p1-DB-ckE" secondAttribute="bottom" constant="28" id="Jlu-ab-plu"/>
-                                    <constraint firstItem="s5s-Pb-vqB" firstAttribute="leading" secondItem="6h3-Cb-xbN" secondAttribute="leading" constant="37" id="Ko6-nz-EgX"/>
-                                    <constraint firstItem="dBS-78-h3Z" firstAttribute="top" secondItem="FjW-ct-ZFa" secondAttribute="bottom" constant="20" id="S30-80-SKC"/>
+                                    <constraint firstItem="FjW-ct-ZFa" firstAttribute="top" secondItem="aJI-I0-gxg" secondAttribute="bottom" constant="15" id="S3g-tw-SEf"/>
                                     <constraint firstItem="6p1-DB-ckE" firstAttribute="centerX" secondItem="6h3-Cb-xbN" secondAttribute="centerX" id="U0r-zw-v3i"/>
-                                    <constraint firstItem="dBS-78-h3Z" firstAttribute="leading" secondItem="6h3-Cb-xbN" secondAttribute="leading" constant="37" id="WqZ-2N-Iak"/>
-                                    <constraint firstItem="6p1-DB-ckE" firstAttribute="top" secondItem="dBS-78-h3Z" secondAttribute="bottom" constant="20" id="XJ8-2E-rnn"/>
-                                    <constraint firstItem="FjW-ct-ZFa" firstAttribute="top" secondItem="s5s-Pb-vqB" secondAttribute="bottom" constant="15" id="cbx-CO-dsa"/>
-                                    <constraint firstItem="FjW-ct-ZFa" firstAttribute="top" secondItem="s5s-Pb-vqB" secondAttribute="bottom" constant="15" id="g8f-js-bhm"/>
+                                    <constraint firstAttribute="trailing" secondItem="aJI-I0-gxg" secondAttribute="trailing" constant="38" id="UHB-9e-Vlt"/>
+                                    <constraint firstItem="6p1-DB-ckE" firstAttribute="top" secondItem="Ee0-13-f7g" secondAttribute="bottom" constant="20" id="aXO-dL-36h"/>
                                     <constraint firstAttribute="trailing" secondItem="FjW-ct-ZFa" secondAttribute="trailing" constant="38" id="glJ-2T-l7D"/>
-                                    <constraint firstAttribute="trailing" secondItem="s5s-Pb-vqB" secondAttribute="trailing" constant="38" id="loX-2K-bVC"/>
-                                    <constraint firstAttribute="trailing" secondItem="dBS-78-h3Z" secondAttribute="trailing" constant="38" id="m5E-NF-kGG"/>
+                                    <constraint firstItem="aJI-I0-gxg" firstAttribute="leading" secondItem="6h3-Cb-xbN" secondAttribute="leading" constant="37" id="nY7-v9-l7v"/>
+                                    <constraint firstItem="bcA-5Y-3uV" firstAttribute="top" secondItem="6h3-Cb-xbN" secondAttribute="top" constant="-5" id="nyk-Gm-RZV"/>
                                     <constraint firstItem="FjW-ct-ZFa" firstAttribute="leading" secondItem="6h3-Cb-xbN" secondAttribute="leading" constant="37" id="pMa-ye-LVZ"/>
-                                    <constraint firstItem="s5s-Pb-vqB" firstAttribute="top" secondItem="rGL-Jt-3oQ" secondAttribute="bottom" constant="17" id="sd0-bt-PHG"/>
-                                    <constraint firstItem="s5s-Pb-vqB" firstAttribute="top" secondItem="rGL-Jt-3oQ" secondAttribute="bottom" constant="17" id="uSn-qu-byE"/>
+                                    <constraint firstItem="Ee0-13-f7g" firstAttribute="top" secondItem="FjW-ct-ZFa" secondAttribute="bottom" constant="20" id="rAg-Ou-eiE"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ee0-13-f7g" secondAttribute="trailing" constant="38" id="xil-PS-IXD"/>
+                                    <constraint firstAttribute="trailing" secondItem="bcA-5Y-3uV" secondAttribute="trailing" constant="-5" id="ylY-h1-4YH"/>
                                     <constraint firstAttribute="trailing" secondItem="rGL-Jt-3oQ" secondAttribute="trailing" constant="38" id="zb9-9v-taz"/>
-                                    <constraint firstItem="6p1-DB-ckE" firstAttribute="top" secondItem="dBS-78-h3Z" secondAttribute="bottom" constant="20" id="zit-RB-Hr5"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -717,9 +725,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="addressTextField" destination="s5s-Pb-vqB" id="ViX-uU-U9G"/>
+                        <outlet property="addressTextView" destination="aJI-I0-gxg" id="csg-rH-gd3"/>
                         <outlet property="confirmOrderButton" destination="6p1-DB-ckE" id="Jh9-zH-hWk"/>
-                        <outlet property="desciptionTextField" destination="dBS-78-h3Z" id="0Oh-F1-agZ"/>
+                        <outlet property="crossButtonClicked" destination="bcA-5Y-3uV" id="wKm-gh-5eF"/>
+                        <outlet property="desciptionTextView" destination="Ee0-13-f7g" id="OSq-uY-NCP"/>
                         <outlet property="nameTextField" destination="rGL-Jt-3oQ" id="09y-db-nQx"/>
                         <outlet property="overlayView" destination="6h3-Cb-xbN" id="w3y-B4-fGK"/>
                         <outlet property="pinTextField" destination="FjW-ct-ZFa" id="UKT-3g-28i"/>
@@ -727,12 +736,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ayL-Nz-x3b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2088.8000000000002" y="-1512.5937031484259"/>
+            <point key="canvasLocation" x="2088.28125" y="-1512.890625"/>
         </scene>
     </scenes>
     <resources>
         <image name="cart" width="17" height="19"/>
         <image name="cereal" width="550" height="332"/>
+        <image name="cross" width="25" height="25"/>
         <image name="menu" width="18" height="12"/>
     </resources>
 </document>
