@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import NVActivityIndicatorView
 
 class CartViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var codButton: UIButton!
@@ -20,6 +21,8 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
 
         self.title = "Shopping Cart"
+        
+//        NVActivityIndicatorPresenter.sharedInstance.startAnimating(ActivityData())
         
     }
     
@@ -100,6 +103,11 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
             OSCartService.sharedInstance.productsInCart.remove(at: indexPath.row)
             tableView.reloadData()
         }
+    }
+    
+    
+    @IBAction func placeOrderButtonTapped(_ sender: AnyObject) {
+        
     }
     
     

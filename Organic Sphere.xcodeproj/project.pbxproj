@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5405D6F1E88F5F54DCD933B6 /* Pods_Organic_Sphere.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 477ECBF31681466501B2352B /* Pods_Organic_Sphere.framework */; };
 		5A249D3B1DC5574300AE4F44 /* SweetAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A249D3A1DC5574300AE4F44 /* SweetAlert.swift */; };
+		5A249D3D1DC5777900AE4F44 /* OSOrderConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A249D3C1DC5777900AE4F44 /* OSOrderConfirmationViewController.swift */; };
 		5A3D3BA61DC2F87200880138 /* OSNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3D3BA51DC2F87200880138 /* OSNetworkManager.swift */; };
 		5A3D3BA91DC2F99A00880138 /* OSCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3D3BA81DC2F99A00880138 /* OSCategory.swift */; };
 		5A5C7ACF1DC18F6F00643F5D /* OSWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5C7ACE1DC18F6F00643F5D /* OSWebViewController.swift */; };
@@ -50,6 +51,7 @@
 		39466B08DC01132F871DD4A9 /* Pods_Organic_SphereTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Organic_SphereTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		477ECBF31681466501B2352B /* Pods_Organic_Sphere.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Organic_Sphere.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A249D3A1DC5574300AE4F44 /* SweetAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SweetAlert.swift; sourceTree = "<group>"; };
+		5A249D3C1DC5777900AE4F44 /* OSOrderConfirmationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OSOrderConfirmationViewController.swift; path = ViewControllers/OSOrderConfirmationViewController.swift; sourceTree = "<group>"; };
 		5A3D3BA51DC2F87200880138 /* OSNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OSNetworkManager.swift; path = Managers/OSNetworkManager.swift; sourceTree = "<group>"; };
 		5A3D3BA81DC2F99A00880138 /* OSCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OSCategory.swift; path = Models/OSCategory.swift; sourceTree = "<group>"; };
 		5A5C7ACE1DC18F6F00643F5D /* OSWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OSWebViewController.swift; path = ViewControllers/OSWebViewController.swift; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 				5A6C86321DC03AC600C42D04 /* ProductDetailsViewController.swift */,
 				5A6ACF7B1DC1730E00083C0F /* CartViewController.swift */,
 				5A5C7ACE1DC18F6F00643F5D /* OSWebViewController.swift */,
+				5A249D3C1DC5777900AE4F44 /* OSOrderConfirmationViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -431,6 +434,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A249D3D1DC5777900AE4F44 /* OSOrderConfirmationViewController.swift in Sources */,
 				5A6C860C1DC010B800C42D04 /* Organic_Sphere.xcdatamodeld in Sources */,
 				5A6C86291DC0183500C42D04 /* MenuViewController.swift in Sources */,
 				5A6C86311DC0353F00C42D04 /* ProductsViewController.swift in Sources */,
