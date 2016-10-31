@@ -255,12 +255,13 @@ class OSOrderConfirmationViewController: UIViewController, UITextFieldDelegate, 
     func createOrderMessageFormat() -> String {
         var messageFormat = ""
         for product in OSCartService.sharedInstance.productsInCart {
-            messageFormat.append("\(product.product_name!), \(product.orderedQuantity)\n\n")
+            messageFormat.append("\(product.product_name!), Qty: \(product.orderedQuantity) Cost: $\(product.terms_fob_price_c)\n\n")
         }
         messageFormat.append("Total Bill: $\(OSCartService.sharedInstance.totalPrice())\n")
         messageFormat.append("Tax: \(OSCartService.sharedInstance.taxValue)\(OSCartService.sharedInstance.taxValueType)\n")
         messageFormat.append("Delivery Charges: $\(OSCartService.sharedInstance.totalPrice() < 100 ? 20 : 0)\n")
-        
+        let grandTotal = OSCartService.sharedInstance.totalPrice() + OSCartService.sharedInstance.totalPrice() < 100 ? 20 : 0 + Double(OSCartService.sharedInstance.taxValue) * OSCartService.sharedInstance.totalPrice()/100
+        messageFormat.append("Grand Total = $\(grandTotal)\n")
         messageFormat.append("\n")
         
         messageFormat.append("\(nameTextField.text!)\n")

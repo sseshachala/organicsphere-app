@@ -16,28 +16,26 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="splashImage" translatesAutoresizingMaskIntoConstraints="NO" id="ZbS-0T-KqF">
-                                <frame key="frameInset" minX="46" minY="203" width="930" height="960"/>
-                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashImage" translatesAutoresizingMaskIntoConstraints="NO" id="ZbS-0T-KqF"/>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="ZbS-0T-KqF" secondAttribute="trailing" constant="27" id="6p3-ig-erC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZbS-0T-KqF" secondAttribute="trailing" constant="28" id="6p3-ig-erC"/>
                             <constraint firstItem="ZbS-0T-KqF" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="183" id="H0x-45-N4Q"/>
-                            <constraint firstItem="ZbS-0T-KqF" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="27" id="K3s-cd-fEm"/>
+                            <constraint firstItem="ZbS-0T-KqF" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="26" id="K3s-cd-fEm"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="ZbS-0T-KqF" secondAttribute="bottom" constant="203" id="XCc-xZ-VHz"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="90" y="400"/>
         </scene>
     </scenes>
     <resources>
-        <image name="splashImage" width="468" height="324"/>
+        <image name="splashImage" width="1514" height="1125"/>
     </resources>
 </document>
