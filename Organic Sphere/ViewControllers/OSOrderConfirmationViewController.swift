@@ -39,14 +39,10 @@ class OSOrderConfirmationViewController: UIViewController, UITextFieldDelegate, 
 
     }
     
-    func addSavedValues() {
-        pinTextField.text = OSCartService.sharedInstance.postalCode
-        addressTextView.text = OSCartService.sharedInstance.address
-        nameTextField.text = OSCartService.sharedInstance.fullName
-        
-        checkIfPlaceholderTextIsNeeded(textView: addressTextView)
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = false
     }
-
+    
     override func viewDidLayoutSubviews() {
         confirmOrderButton.layer.cornerRadius = confirmOrderButton.frame.width * 0.12
         addBottomBorderTo(textField: nameTextField)
@@ -55,6 +51,15 @@ class OSOrderConfirmationViewController: UIViewController, UITextFieldDelegate, 
         addBottomBorderTo(textField: selectDateTimeField)
         overlayRect = overlayView.frame
         
+    }
+
+    
+    func addSavedValues() {
+        pinTextField.text = OSCartService.sharedInstance.postalCode
+        addressTextView.text = OSCartService.sharedInstance.address
+        nameTextField.text = OSCartService.sharedInstance.fullName
+        
+        checkIfPlaceholderTextIsNeeded(textView: addressTextView)
     }
     
     func addBottomBorderTo(textField: UITextField) {
@@ -245,10 +250,6 @@ class OSOrderConfirmationViewController: UIViewController, UITextFieldDelegate, 
             dismiss(animated: true, completion: nil)
             delegate?.didConfirmOder()
         }
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        self.navigationController?.isNavigationBarHidden = false
     }
     
     func createOrderMessageFormat() -> String {

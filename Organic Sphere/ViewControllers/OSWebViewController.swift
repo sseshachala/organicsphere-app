@@ -25,16 +25,17 @@ class OSWebViewController: UIViewController, UIWebViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.webView.delegate = self
-        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         fetchStaticTexts()
     }
     
     func fetchStaticTexts() {
         OSNetworkManager.sharedInstance.getApplicationStaticText {
             responseJSON, error in
-            if let errorResponse = error {
-                let _ = SweetAlert().showAlert("Failure", subTitle: "Failed to load the content.\nError: \(errorResponse)", style: AlertStyle.error)
-                let _ = self.navigationController?.popViewController(animated: true)
+            if let _ = error {
+                self.failedError()
             }
             else {
                 if self.urlType == URLS.TermsAndConditions {
@@ -45,8 +46,7 @@ class OSWebViewController: UIViewController, UIWebViewDelegate {
                     self.loadWebView(htmlString: responseJSON["pp"].string)
                 }
                 else {
-                    let _ = SweetAlert().showAlert("Failure", subTitle: "Failed to load the content.", style: AlertStyle.error)
-                    let _ = self.navigationController?.popViewController(animated: true)
+                    self.failedError()
                 }
                 
             }
@@ -57,9 +57,15 @@ class OSWebViewController: UIViewController, UIWebViewDelegate {
         if let html = htmlString {
             webView.loadHTMLString(html, baseURL: nil)
         } else {
-            let _ = SweetAlert().showAlert("Failure", subTitle: "Failed to load the content.", style: AlertStyle.error)
+            failedError()
+        }
+    }
+    
+    func failedError() {
+        //Chaining alerts with messages on button click
+        let _ = SweetAlert().showAlert("Failure", subTitle: "Failed to load the content.", style: AlertStyle.error, buttonTitle:"Ok") { (isOtherButton) -> Void in
             let _ = self.navigationController?.popViewController(animated: true)
-
+            
         }
     }
     
