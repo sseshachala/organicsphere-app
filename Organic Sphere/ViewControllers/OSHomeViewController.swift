@@ -14,7 +14,7 @@ class OSHomeViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        navigationController?.navigationBar.topItem?.title = "Home"
+        self.title = "Home"
     }
 
     
