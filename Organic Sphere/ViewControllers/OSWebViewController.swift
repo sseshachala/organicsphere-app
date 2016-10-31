@@ -68,6 +68,13 @@ class OSWebViewController: UIViewController, UIWebViewDelegate {
         activityIndicator.isHidden = false
         webView.isHidden = true
     }
+    
+    func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
+        if(request.url?.absoluteString == "about:blank"){
+            return true
+        }
+        return false
+    }
 
     func webViewDidFinishLoad(_ webView: UIWebView) {
         activityIndicator.stopAnimating()

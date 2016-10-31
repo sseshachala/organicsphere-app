@@ -263,7 +263,9 @@ class OSOrderConfirmationViewController: UIViewController, UITextFieldDelegate, 
         messageFormat.append("\n")
         
         messageFormat.append("\(nameTextField.text!)\n")
+        messageFormat.append("\n")
         messageFormat.append("Delivery Time: \(selectDateTimeField.text!)\n")
+        messageFormat.append("\n")
         messageFormat.append("\(addressTextView.text!)\n")
         
         return messageFormat;
