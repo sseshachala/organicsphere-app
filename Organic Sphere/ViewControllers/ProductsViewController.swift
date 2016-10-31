@@ -10,6 +10,7 @@ import UIKit
 import NVActivityIndicatorView
 import CCBottomRefreshControl
 
+
 class ProductsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
@@ -19,6 +20,8 @@ class ProductsViewController: UIViewController, UITableViewDataSource, UITableVi
     var errorDescription = ""
     let refreshControl = UIRefreshControl()
     var pageNumber = 1
+    var rightBarButton: ENMBadgedBarButtonItem?
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +29,12 @@ class ProductsViewController: UIViewController, UITableViewDataSource, UITableVi
         
         fetchProducts()
         addRefreshControlToTheBottom()
+        setUpRightBarButton()
+
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        rightBarButton?.badgeValue = "\(OSCartService.sharedInstance.productsInCart.count)"
     }
     
     func addRefreshControlToTheBottom() {
@@ -128,6 +137,32 @@ class ProductsViewController: UIViewController, UITableViewDataSource, UITableVi
                 productDetailsController.selectedProduct = products[indexPath.row]
             }
         }
+    }
+    
+    func setUpRightBarButton() {
+        let image = UIImage(named: "cart")
+        let button = UIButton(type: .custom)
+        if let knownImage = image {
+            button.frame = CGRect(x: 0.0, y: 0.0, width: knownImage.size.width, height: knownImage.size.height)
+        } else {
+            button.frame = CGRect.zero;
+        }
+        
+        button.setBackgroundImage(image, for: UIControlState())
+        button.addTarget(self,
+                         action: #selector(CategoriesViewController.rightButtonPressed(_:)),
+                         for: UIControlEvents.touchUpInside)
+        
+        let newBarButton = ENMBadgedBarButtonItem(customView: button, value: "\(OSCartService.sharedInstance.productsInCart.count)")
+        rightBarButton = newBarButton
+        navigationItem.rightBarButtonItem = rightBarButton
+        rightBarButton?.badgeBackgroundColor = UIColor.red
+        rightBarButton?.badgeTextColor = UIColor.white
+        
+    }
+    
+    func rightButtonPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "productListToCart", sender: self)
     }
 
 }

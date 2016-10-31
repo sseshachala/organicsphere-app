@@ -23,6 +23,8 @@ class ProductDetailsViewController: UIViewController {
     @IBOutlet weak var tagsLabel: UILabel!
     @IBOutlet weak var buyButton: UIButton!
     @IBOutlet weak var productView: UIView!
+    var rightBarButton: ENMBadgedBarButtonItem?
+
     
     var selectedProduct:OSProductList = OSProductList()
     
@@ -75,6 +77,12 @@ class ProductDetailsViewController: UIViewController {
         //Add border to label
         productOrderCountLabel.layer.borderColor = UIColor.gray.cgColor
         productOrderCountLabel.layer.borderWidth = 1
+        setUpRightBarButton()
+
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        rightBarButton?.badgeValue = "\(OSCartService.sharedInstance.productsInCart.count)"
     }
     
     @IBAction func descreaseProductCountButtonTapped(_ sender: AnyObject) {
@@ -105,6 +113,8 @@ class ProductDetailsViewController: UIViewController {
             OSLocationManager.sharedInstance.manager.requestLocation()
         }
         OSCartService.sharedInstance.productsInCart.append(selectedProduct)
+        rightBarButton?.badgeValue = "\(OSCartService.sharedInstance.productsInCart.count)"
+
     }
 
     func showAlert() {
@@ -120,5 +130,31 @@ class ProductDetailsViewController: UIViewController {
 //        let when = DispatchTime.now() + delay
 //        DispatchQueue.main.asyncAfter(deadline: when, execute: closure)
 //    }
+    
+    func setUpRightBarButton() {
+        let image = UIImage(named: "cart")
+        let button = UIButton(type: .custom)
+        if let knownImage = image {
+            button.frame = CGRect(x: 0.0, y: 0.0, width: knownImage.size.width, height: knownImage.size.height)
+        } else {
+            button.frame = CGRect.zero;
+        }
+        
+        button.setBackgroundImage(image, for: UIControlState())
+        button.addTarget(self,
+                         action: #selector(CategoriesViewController.rightButtonPressed(_:)),
+                         for: UIControlEvents.touchUpInside)
+        
+        let newBarButton = ENMBadgedBarButtonItem(customView: button, value: "\(OSCartService.sharedInstance.productsInCart.count)")
+        rightBarButton = newBarButton
+        navigationItem.rightBarButtonItem = rightBarButton
+        rightBarButton?.badgeBackgroundColor = UIColor.red
+        rightBarButton?.badgeTextColor = UIColor.white
+        
+    }
+    
+    func rightButtonPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "productDetailsToCart", sender: self)
+    }
 
 }

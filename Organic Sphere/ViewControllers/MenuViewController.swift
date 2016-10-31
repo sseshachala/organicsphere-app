@@ -26,8 +26,14 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     override func viewDidLayoutSubviews() {
         let viewForLogo = UIView(frame: CGRect(x:0, y:0, width: 100, height:100))
-        let splashImageView = UIImageView(frame: CGRect(x:tableView.frame.width/2 - 75, y:0, width: 150, height:100))
+        let verbageLabel = UILabel(frame: CGRect(x:0, y:0, width:self.tableView.frame.width, height:100))
+        verbageLabel.textColor = UIColor.white
+        verbageLabel.text = "Your neighborhood stores for Indian Organic groceries and healthy natural products"
+        verbageLabel.textAlignment = NSTextAlignment.center
+        verbageLabel.numberOfLines = 0
+        let splashImageView = UIImageView(frame: CGRect(x:tableView.frame.width/2 - 100, y:verbageLabel.frame.height, width: 200, height:150))
         splashImageView.image = UIImage(named: "splashImage")
+        viewForLogo.addSubview(verbageLabel)
         viewForLogo.addSubview(splashImageView)
         self.tableView.tableFooterView = viewForLogo
     }

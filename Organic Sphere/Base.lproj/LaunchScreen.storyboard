@@ -23,10 +23,10 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="ZbS-0T-KqF" secondAttribute="trailing" constant="28" id="6p3-ig-erC"/>
-                            <constraint firstItem="ZbS-0T-KqF" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="183" id="H0x-45-N4Q"/>
-                            <constraint firstItem="ZbS-0T-KqF" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="26" id="K3s-cd-fEm"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="ZbS-0T-KqF" secondAttribute="bottom" constant="203" id="XCc-xZ-VHz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZbS-0T-KqF" secondAttribute="trailing" id="6p3-ig-erC"/>
+                            <constraint firstItem="ZbS-0T-KqF" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="100" id="H0x-45-N4Q"/>
+                            <constraint firstItem="ZbS-0T-KqF" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="K3s-cd-fEm"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="ZbS-0T-KqF" secondAttribute="bottom" constant="100" id="XCc-xZ-VHz"/>
                         </constraints>
                     </view>
                 </viewController>

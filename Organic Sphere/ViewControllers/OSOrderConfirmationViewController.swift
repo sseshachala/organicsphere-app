@@ -47,11 +47,26 @@ class OSOrderConfirmationViewController: UIViewController, UITextFieldDelegate, 
     
     override func viewDidLayoutSubviews() {
         confirmOrderButton.layer.cornerRadius = confirmOrderButton.frame.width * 0.12
+        
+        //Add bottom border to fields
         addBottomBorderTo(textField: nameTextField)
         addBottomBorderToTextView(textView: addressTextView)
         addBottomBorderTo(textField: pinTextField)
         addBottomBorderTo(textField: selectDateTimeField)
         addBottomBorderTo(textField: phoneNumberTextField)
+        
+        //Add asterik to the text Field 
+        addAsterikTo(textField: nameTextField)
+        addAsterikTo(textField: phoneNumberTextField)
+        addAsterikTo(textField: selectDateTimeField)
+        addAsterikTo(textField: pinTextField)
+        
+        //Add Asterik to the text View 
+        let label = UILabel(frame: CGRect(x: addressTextView.frame.width - 20 , y: 0, width: 20, height: 20))
+        label.text = "*"
+        addressTextView.addSubview(label)
+        
+        
         overlayRect = overlayView.frame
         
     }
@@ -215,11 +230,11 @@ class OSOrderConfirmationViewController: UIViewController, UITextFieldDelegate, 
     }
     
     func keyboardWillShow(notification: NSNotification) {
-        overlayView.frame = CGRect(x: overlayView.frame.origin.x, y: 80, width: overlayView.frame.width, height: overlayView.frame.height )
+//        overlayView.frame = CGRect(x: overlayView.frame.origin.x, y: 80, width: overlayView.frame.width, height: overlayView.frame.height )
     }
     
     func keyboardDidHide(notification: NSNotification) {
-        overlayView.frame = overlayRect
+//        overlayView.frame = overlayRect
     }
     
     @IBAction func confirmatioTapped(_ sender: AnyObject) {
@@ -292,6 +307,13 @@ class OSOrderConfirmationViewController: UIViewController, UITextFieldDelegate, 
                 let _ = SweetAlert().showAlert("Failure", subTitle: "Failed to place the order because the system was unable to send the request.", style: AlertStyle.error)
             }
         }
+    }
+    
+    func addAsterikTo(textField: UITextField) {
+        textField.rightViewMode = UITextFieldViewMode.always
+        let label = UILabel(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
+        label.text = "*"
+        textField.rightView = label
     }
     
 }
