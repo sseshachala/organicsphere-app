@@ -698,19 +698,31 @@
                                             <outlet property="delegate" destination="THt-9S-YuL" id="SM1-Je-OI8"/>
                                         </connections>
                                     </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qIo-c1-MYa">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="2Y5-0c-QEO"/>
+                                            <constraint firstAttribute="height" constant="30" id="Lim-QL-xoS"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="6p1-DB-ckE" firstAttribute="top" secondItem="Uhe-fZ-Apb" secondAttribute="bottom" constant="56" id="2gI-3r-3cJ"/>
                                     <constraint firstItem="Uhe-fZ-Apb" firstAttribute="top" secondItem="FjW-ct-ZFa" secondAttribute="bottom" constant="22" id="8Gm-hy-swx"/>
                                     <constraint firstItem="rGL-Jt-3oQ" firstAttribute="top" secondItem="6h3-Cb-xbN" secondAttribute="top" constant="27" id="8Rq-gc-f4y"/>
+                                    <constraint firstAttribute="trailing" secondItem="qIo-c1-MYa" secondAttribute="trailing" constant="38" id="CrE-4H-Eo8"/>
                                     <constraint firstItem="rGL-Jt-3oQ" firstAttribute="leading" secondItem="6h3-Cb-xbN" secondAttribute="leading" constant="37" id="E4d-Rj-jaS"/>
                                     <constraint firstItem="aJI-I0-gxg" firstAttribute="top" secondItem="rGL-Jt-3oQ" secondAttribute="bottom" constant="17" id="FBE-de-pdS"/>
+                                    <constraint firstItem="qIo-c1-MYa" firstAttribute="top" secondItem="Uhe-fZ-Apb" secondAttribute="bottom" constant="18" id="FTf-pz-ghX"/>
                                     <constraint firstAttribute="bottom" secondItem="6p1-DB-ckE" secondAttribute="bottom" constant="28" id="Jlu-ab-plu"/>
                                     <constraint firstAttribute="trailing" secondItem="Uhe-fZ-Apb" secondAttribute="trailing" constant="38" id="RYE-Q7-goG"/>
+                                    <constraint firstItem="6p1-DB-ckE" firstAttribute="top" secondItem="qIo-c1-MYa" secondAttribute="bottom" constant="8" id="RcS-dT-T6i"/>
                                     <constraint firstItem="FjW-ct-ZFa" firstAttribute="top" secondItem="aJI-I0-gxg" secondAttribute="bottom" constant="15" id="S3g-tw-SEf"/>
                                     <constraint firstItem="6p1-DB-ckE" firstAttribute="centerX" secondItem="6h3-Cb-xbN" secondAttribute="centerX" id="U0r-zw-v3i"/>
                                     <constraint firstAttribute="trailing" secondItem="aJI-I0-gxg" secondAttribute="trailing" constant="38" id="UHB-9e-Vlt"/>
+                                    <constraint firstItem="qIo-c1-MYa" firstAttribute="leading" secondItem="6h3-Cb-xbN" secondAttribute="leading" constant="37" id="ZEW-AS-JyL"/>
                                     <constraint firstItem="Uhe-fZ-Apb" firstAttribute="leading" secondItem="6h3-Cb-xbN" secondAttribute="leading" constant="37" id="gac-dQ-csx"/>
                                     <constraint firstAttribute="trailing" secondItem="FjW-ct-ZFa" secondAttribute="trailing" constant="38" id="glJ-2T-l7D"/>
                                     <constraint firstItem="aJI-I0-gxg" firstAttribute="leading" secondItem="6h3-Cb-xbN" secondAttribute="leading" constant="37" id="nY7-v9-l7v"/>
@@ -735,6 +747,7 @@
                         <outlet property="crossButtonClicked" destination="bcA-5Y-3uV" id="wKm-gh-5eF"/>
                         <outlet property="nameTextField" destination="rGL-Jt-3oQ" id="09y-db-nQx"/>
                         <outlet property="overlayView" destination="6h3-Cb-xbN" id="w3y-B4-fGK"/>
+                        <outlet property="phoneNumberTextField" destination="qIo-c1-MYa" id="KNp-jV-g1J"/>
                         <outlet property="pinTextField" destination="FjW-ct-ZFa" id="UKT-3g-28i"/>
                         <outlet property="selectDateTimeField" destination="Uhe-fZ-Apb" id="wTG-Ok-Lau"/>
                     </connections>

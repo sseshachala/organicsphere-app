@@ -22,6 +22,17 @@ class OSNetworkManager: NSObject {
         }
         static let routePhoneNumberList = "https://devqa.b2bsphere.com/api/v1/rest/organicsphere/phonenumbers"
         static let routeStaticTextOfApp = "https://devqa.b2bsphere.com/api/v1/rest/organicsphere/"
+        
+        static func routePostMessageOn(phoneNumbers: [String], baseEncodedString:String) -> String {
+            var commaSeparatedString = ""
+            for phone in phoneNumbers {
+                commaSeparatedString.append(phone)
+                if phone != phoneNumbers.last {
+                    commaSeparatedString.append(",")
+                }
+            }
+            return "https://devqa.b2bsphere.com/api/v1/rest/organicsphere/sendMessage/\(commaSeparatedString)/\(baseEncodedString)"
+        }
     }
     
     //MARK: Shared Instance
@@ -50,6 +61,10 @@ class OSNetworkManager: NSObject {
     
     func getApplicationStaticText(completionHandler:@escaping (_ response:JSON, _ error:Error?) -> Void) {
         GET(apiUrl: APIRoutes.routeStaticTextOfApp, completionHandler: completionHandler)
+    }
+    
+    func sendOrderMessage(phoneNumbers: [String], baseEncodedString:String, completionHandler:@escaping (_ response:JSON, _ error:Error?) -> Void) {
+        GET(apiUrl: APIRoutes.routePostMessageOn(phoneNumbers: phoneNumbers, baseEncodedString: baseEncodedString), completionHandler: completionHandler)
     }
     
     private func GET(apiUrl: String, completionHandler:@escaping (_ response:JSON, _ error:Error?) -> Void) {

@@ -8,10 +8,12 @@
 
 import UIKit
 import MessageUI
+import NVActivityIndicatorView
 
 
 class OSOrderConfirmationViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate, MFMessageComposeViewControllerDelegate {
     
+    @IBOutlet weak var phoneNumberTextField: UITextField!
     @IBOutlet weak var selectDateTimeField: UITextField!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var addressTextView: UITextView!
@@ -49,6 +51,7 @@ class OSOrderConfirmationViewController: UIViewController, UITextFieldDelegate, 
         addBottomBorderToTextView(textView: addressTextView)
         addBottomBorderTo(textField: pinTextField)
         addBottomBorderTo(textField: selectDateTimeField)
+        addBottomBorderTo(textField: phoneNumberTextField)
         overlayRect = overlayView.frame
         
     }
@@ -201,7 +204,7 @@ class OSOrderConfirmationViewController: UIViewController, UITextFieldDelegate, 
     }
     
     func enableDisableDoneButton() {
-        if(addressTextView.text.characters.count > 0 && (nameTextField.text?.characters.count)! > 0 && (pinTextField.text?.characters.count)! > 0 && (selectDateTimeField.text?.characters.count)! > 0) {
+        if(addressTextView.text.characters.count > 0 && (nameTextField.text?.characters.count)! > 0 && (pinTextField.text?.characters.count)! > 0 && (selectDateTimeField.text?.characters.count)! > 0 && (phoneNumberTextField.text?.characters.count)! > 0) {
             confirmOrderButton.isEnabled = true
             confirmOrderButton.backgroundColor = UIColor().osGreenColor()
         }
@@ -220,21 +223,7 @@ class OSOrderConfirmationViewController: UIViewController, UITextFieldDelegate, 
     }
     
     @IBAction func confirmatioTapped(_ sender: AnyObject) {
-        if (MFMessageComposeViewController.canSendText()) {
-            let controller = MFMessageComposeViewController()
-            controller.subject = "Organic Sphere Mobile Order"
-            controller.body = createOrderMessageFormat()
-            
-            if OSCartService.sharedInstance.phoneNumbersToSendOrderTo.count == 0{
-                controller.recipients = phoneNumber
-            }
-            else {
-                controller.recipients = OSCartService.sharedInstance.phoneNumbersToSendOrderTo
-            }
-            
-            controller.messageComposeDelegate = self
-            present(controller, animated: true, completion: nil)
-        }
+        sendMessageToServer()
     }
     
     func messageComposeViewController(_ controller: MFMessageComposeViewController, didFinishWith result: MessageComposeResult) {
@@ -278,6 +267,46 @@ class OSOrderConfirmationViewController: UIViewController, UITextFieldDelegate, 
         return messageFormat;
     }
     
+    func sendMessageToServer() {
+        var phoneNumbersToSendTo:[String] = []
+        
+        if OSCartService.sharedInstance.phoneNumbersToSendOrderTo.count == 0{
+            phoneNumbersToSendTo = phoneNumber
+        }
+        else {
+            phoneNumbersToSendTo = OSCartService.sharedInstance.phoneNumbersToSendOrderTo
+        }
+        
+        phoneNumbersToSendTo.append(phoneNumberTextField.text!)
+        
+        NVActivityIndicatorPresenter.sharedInstance.startAnimating(ActivityData())
+        OSCartService.sharedInstance.sendOrderMessage(phoneNumbers: phoneNumbersToSendTo, baseEncodedString: createOrderMessageFormat().toBase64()) {
+            isScuccess, error in
+            NVActivityIndicatorPresenter.sharedInstance.stopAnimating()
+            if isScuccess {
+                let _ = SweetAlert().showAlert("Success", subTitle: "Order was sent successfully!", style: AlertStyle.success)
+                self.dismiss(animated: true, completion: nil)
+                self.delegate?.didConfirmOder()
+            }
+            else {
+                let _ = SweetAlert().showAlert("Failure", subTitle: "Failed to place the order because the system was unable to send the request.", style: AlertStyle.error)
+            }
+        }
+    }
+    
+}
 
 
+extension String {
+    func fromBase64() -> String? {
+        guard let data = Data(base64Encoded: self) else {
+            return nil
+        }
+        
+        return String(data: data, encoding: .utf8)
+    }
+    
+    func toBase64() -> String {
+        return Data(self.utf8).base64EncodedString()
+    }
 }

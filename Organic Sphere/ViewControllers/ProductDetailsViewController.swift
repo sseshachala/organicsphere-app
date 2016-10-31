@@ -101,8 +101,6 @@ class ProductDetailsViewController: UIViewController {
 //        present(SideMenuManager.menuRightNavigationController!, animated: true, completion: nil)
         selectedProduct.orderedQuantity = Int(productOrderCountLabel.text!)!
         let _ = SweetAlert().showAlert("Success", subTitle: "Successfuly added \(selectedProduct.orderedQuantity) \(selectedProduct.product_name!) to cart!", style: AlertStyle.success)
-
-        let _ = navigationController?.popToRootViewController(animated: true)
         if OSCartService.sharedInstance.postalCode == nil {
             OSLocationManager.sharedInstance.manager.requestLocation()
         }

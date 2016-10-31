@@ -75,4 +75,24 @@ class OSCartService: NSObject {
             }
         }
     }
+    
+    func sendOrderMessage(phoneNumbers: [String], baseEncodedString:String, completionHandler:@escaping (_ isSuccess:Bool, _ error:Error?) -> Void) {
+        OSNetworkManager.sharedInstance.sendOrderMessage(phoneNumbers: phoneNumbers, baseEncodedString: baseEncodedString) {
+            responseJSON, error in
+            if let _ = error {
+                
+            } else {
+                if let resultMessage = responseJSON["message_send"].string {
+                    if resultMessage == "Success"{
+                        completionHandler(true, error)
+                    } else {
+                        completionHandler(false, error)
+                    }
+                }
+                else {
+                    completionHandler(false, error)
+                }
+            }
+        }
+    }
 }
