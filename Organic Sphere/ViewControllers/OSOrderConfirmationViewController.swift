@@ -92,7 +92,7 @@ class OSOrderConfirmationViewController: UIViewController, UITextFieldDelegate, 
         if textField == selectDateTimeField {
             let datePickerView:UIDatePicker = UIDatePicker()
             datePickerView.datePickerMode = UIDatePickerMode.dateAndTime
-            datePickerView.minimumDate = Date()//Calendar.current.date(byAdding: .day, value: 1, to: Date())
+            datePickerView.minimumDate = Calendar.current.date(byAdding: .hour, value: 3, to: Date())
             textField.inputView = datePickerView
             datePickerView.addTarget(self, action: #selector(OSOrderConfirmationViewController.datePickerValueChanged), for: UIControlEvents.valueChanged)
         }
