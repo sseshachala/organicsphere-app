@@ -38,7 +38,8 @@ class OSOrderConfirmationViewController: UIViewController, UITextFieldDelegate, 
         enableDisableDoneButton()
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: .UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardDidHide), name: .UIKeyboardDidHide, object: nil)
-
+        
+        nameTextField.becomeFirstResponder()
     }
     
     override func viewWillDisappear(_ animated: Bool) {

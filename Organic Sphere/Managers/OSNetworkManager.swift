@@ -11,18 +11,27 @@ import Alamofire
 import SwiftyJSON
 
 class OSNetworkManager: NSObject {
+    #if RELEASE
+        static let server = "https://devqa.b2bsphere.com"
+    #else
+        static let server = "https://devqa.b2bsphere.com"
+    #endif
+    
+    static let restServicePathFirstVersion = "/api/v1/rest"
     
     struct APIRoutes {
-        static let routeCategories = "https://devqa.b2bsphere.com/api/v1/rest/catalog/organicCategories"
+        
+        static let routeCategories = "\(server)\(restServicePathFirstVersion)/catalog/organicCategories"
+        static let routePhoneNumberList = "\(server)\(restServicePathFirstVersion)/organicsphere/phonenumbers"
+        static let routeStaticTextOfApp = "\(server)\(restServicePathFirstVersion)/organicsphere/"
         static func routeTax(postalCode: String) -> String {
-            return "https://devqa.b2bsphere.com/api/v1/rest/taxrate/\(postalCode)"
+            return "\(server)\(restServicePathFirstVersion)/taxrate/\(postalCode)"
         }
         static func routeProductListFor(categoryId: String, pageNumber:Int) -> String {
-            return "https://devqa.b2bsphere.com/api/v1/rest/catalog/categoryProducts/\(categoryId)/\(pageNumber)/10"
+            return "\(server)\(restServicePathFirstVersion)/catalog/categoryProducts/\(categoryId)/\(pageNumber)/10"
         }
-        static let routePhoneNumberList = "https://devqa.b2bsphere.com/api/v1/rest/organicsphere/phonenumbers"
-        static let routeStaticTextOfApp = "https://devqa.b2bsphere.com/api/v1/rest/organicsphere/"
-        
+
+        //ToDo: This should be removed from here and should be added to a UTIlity Class
         static func routePostMessageOn(phoneNumbers: [String], baseEncodedString:String) -> String {
             var commaSeparatedString = ""
             for phone in phoneNumbers {
