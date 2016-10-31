@@ -12,10 +12,10 @@ import MessageUI
 
 class OSOrderConfirmationViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate, MFMessageComposeViewControllerDelegate {
     
+    @IBOutlet weak var selectDateTimeField: UITextField!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var addressTextView: UITextView!
     @IBOutlet weak var pinTextField: UITextField!
-    @IBOutlet weak var desciptionTextView: UITextView!
     @IBOutlet weak var overlayView: UIView!
     @IBOutlet weak var confirmOrderButton: UIButton!
     @IBOutlet weak var crossButtonClicked: UIButton!
@@ -44,7 +44,6 @@ class OSOrderConfirmationViewController: UIViewController, UITextFieldDelegate, 
         addressTextView.text = OSCartService.sharedInstance.address
         nameTextField.text = OSCartService.sharedInstance.fullName
         
-        checkIfPlaceholderTextIsNeeded(textView: desciptionTextView)
         checkIfPlaceholderTextIsNeeded(textView: addressTextView)
     }
 
@@ -53,8 +52,9 @@ class OSOrderConfirmationViewController: UIViewController, UITextFieldDelegate, 
         addBottomBorderTo(textField: nameTextField)
         addBottomBorderToTextView(textView: addressTextView)
         addBottomBorderTo(textField: pinTextField)
-        addBottomBorderToTextView(textView: desciptionTextView)
+        addBottomBorderTo(textField: selectDateTimeField)
         overlayRect = overlayView.frame
+        
     }
     
     func addBottomBorderTo(textField: UITextField) {
@@ -81,6 +81,30 @@ class OSOrderConfirmationViewController: UIViewController, UITextFieldDelegate, 
     
     @IBAction func crossButtonTapped(_ sender: AnyObject) {
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        if textField == selectDateTimeField {
+            let datePickerView:UIDatePicker = UIDatePicker()
+            datePickerView.datePickerMode = UIDatePickerMode.dateAndTime
+            datePickerView.minimumDate = Date()//Calendar.current.date(byAdding: .day, value: 1, to: Date())
+            textField.inputView = datePickerView
+            datePickerView.addTarget(self, action: #selector(OSOrderConfirmationViewController.datePickerValueChanged), for: UIControlEvents.valueChanged)
+        }
+        
+    }
+    
+    func datePickerValueChanged(sender:UIDatePicker) {
+        
+        let dateFormatter = DateFormatter()
+        
+        dateFormatter.dateStyle = .full
+        
+        dateFormatter.timeStyle = .medium
+
+        selectDateTimeField.text = dateFormatter.string(from: sender.date)
+        
+        enableDisableDoneButton()
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -172,7 +196,7 @@ class OSOrderConfirmationViewController: UIViewController, UITextFieldDelegate, 
     }
     
     func enableDisableDoneButton() {
-        if(addressTextView.text.characters.count > 0 && (nameTextField.text?.characters.count)! > 0 && (pinTextField.text?.characters.count)! > 0) {
+        if(addressTextView.text.characters.count > 0 && (nameTextField.text?.characters.count)! > 0 && (pinTextField.text?.characters.count)! > 0 && (selectDateTimeField.text?.characters.count)! > 0) {
             confirmOrderButton.isEnabled = true
             confirmOrderButton.backgroundColor = UIColor().osGreenColor()
         }
@@ -239,20 +263,12 @@ class OSOrderConfirmationViewController: UIViewController, UITextFieldDelegate, 
         messageFormat.append("\n")
         
         messageFormat.append("\(nameTextField.text!)\n")
-        messageFormat.append("Delivery Date and time\n")
+        messageFormat.append("Delivery Time: \(selectDateTimeField.text!)\n")
         messageFormat.append("\(addressTextView.text!)\n")
         
         return messageFormat;
     }
     
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
