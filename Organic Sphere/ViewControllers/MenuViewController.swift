@@ -25,7 +25,7 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     override func viewDidLayoutSubviews() {
-        let viewForLogo = UIView(frame: CGRect(x:0, y:0, width: 100, height:100))
+        let viewForLogo = UIView(frame: CGRect(x:0, y:0, width: 100, height:400))
         let verbageLabel = UILabel(frame: CGRect(x:0, y:0, width:self.tableView.frame.width, height:100))
         verbageLabel.textColor = UIColor.white
         verbageLabel.text = "Your neighborhood stores for Indian Organic groceries and healthy natural products"

@@ -150,7 +150,7 @@ class ProductDetailsViewController: UIViewController {
         navigationItem.rightBarButtonItem = rightBarButton
         rightBarButton?.badgeBackgroundColor = UIColor.red
         rightBarButton?.badgeTextColor = UIColor.white
-        
+        rightBarButton?.badgeValue = "\(OSCartService.sharedInstance.productsInCart.count)"
     }
     
     func rightButtonPressed(_ sender: UIButton) {

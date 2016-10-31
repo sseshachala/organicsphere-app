@@ -89,7 +89,7 @@
                                         <rect key="frame" x="0.0" y="92" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4QS-DW-Vdg" id="4g2-Zt-DSA">
-                                            <frame key="frameInset" width="414" height="43.666666666666664"/>
+                                            <frame key="frameInset" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WJk-bQ-lu7">
@@ -164,7 +164,7 @@
                                         <rect key="frame" x="0.0" y="92" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bwV-Ta-jvp" id="nAA-fv-Lth">
-                                            <frame key="frameInset" width="414" height="43.666666666666664"/>
+                                            <frame key="frameInset" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fyP-Ch-P6Z">
@@ -473,10 +473,10 @@
             </objects>
             <point key="canvasLocation" x="3154" y="150"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="o3Q-gy-8XQ">
             <objects>
-                <viewController id="SCn-nc-YaF" sceneMemberID="viewController">
+                <viewController id="SCn-nc-YaF" customClass="OSHomeViewController" customModule="Organic_Sphere" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LdS-GL-v5I"/>
                         <viewControllerLayoutGuide type="bottom" id="Zy9-Tr-pkq"/>
@@ -487,11 +487,11 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="95M-AM-eJa">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="142" id="Sq6-nV-Diq"/>
+                                    <constraint firstAttribute="height" constant="100" id="Sq6-nV-Diq"/>
                                 </constraints>
                                 <string key="text">Your neighborhood stores for Indian Organic groceries and healthy natural products
 Organic Foods are grown naturally without hormones, dangerous pesticides and other unhealthy chemicals</string>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -508,16 +508,28 @@ We take our client’s privacy seriously and we pledge that we do not share your
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="bHs-nC-z0r"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOW IT WORKS?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFU-WX-pcP">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="tc9-S4-U6b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="IPo-e4-PaX" firstAttribute="leading" secondItem="Bln-PN-PYc" secondAttribute="leadingMargin" id="8sc-yi-oh4"/>
-                            <constraint firstItem="bHs-nC-z0r" firstAttribute="top" secondItem="95M-AM-eJa" secondAttribute="bottom" constant="2" id="G4Y-Dg-Fe4"/>
+                            <constraint firstItem="YFU-WX-pcP" firstAttribute="top" secondItem="95M-AM-eJa" secondAttribute="bottom" constant="8" id="8yZ-R4-yEk"/>
                             <constraint firstItem="95M-AM-eJa" firstAttribute="top" secondItem="LdS-GL-v5I" secondAttribute="bottom" id="JYA-lt-AlW"/>
                             <constraint firstAttribute="trailing" secondItem="bHs-nC-z0r" secondAttribute="trailing" id="TVo-zO-SjJ"/>
+                            <constraint firstAttribute="trailing" secondItem="YFU-WX-pcP" secondAttribute="trailing" id="WTy-fA-jmh"/>
+                            <constraint firstItem="YFU-WX-pcP" firstAttribute="leading" secondItem="Bln-PN-PYc" secondAttribute="leading" id="Y8k-2s-a9f"/>
                             <constraint firstItem="95M-AM-eJa" firstAttribute="leading" secondItem="Bln-PN-PYc" secondAttribute="leading" id="c9t-Bc-nIy"/>
                             <constraint firstItem="IPo-e4-PaX" firstAttribute="trailing" secondItem="Bln-PN-PYc" secondAttribute="trailingMargin" id="iGr-15-pHX"/>
+                            <constraint firstItem="bHs-nC-z0r" firstAttribute="top" secondItem="YFU-WX-pcP" secondAttribute="bottom" constant="8" id="ixU-ng-vHZ"/>
                             <constraint firstAttribute="trailing" secondItem="95M-AM-eJa" secondAttribute="trailing" id="j0R-jR-UeB"/>
+                            <constraint firstItem="bHs-nC-z0r" firstAttribute="top" secondItem="YFU-WX-pcP" secondAttribute="bottom" constant="8" id="nNZ-Ht-hDz"/>
                             <constraint firstItem="Zy9-Tr-pkq" firstAttribute="top" secondItem="IPo-e4-PaX" secondAttribute="bottom" id="ue9-QJ-yHY"/>
                             <constraint firstItem="IPo-e4-PaX" firstAttribute="top" secondItem="bHs-nC-z0r" secondAttribute="bottom" constant="3" id="xjf-6w-vFV"/>
                             <constraint firstItem="bHs-nC-z0r" firstAttribute="leading" secondItem="Bln-PN-PYc" secondAttribute="leading" id="ybJ-pb-ytN"/>
@@ -526,7 +538,7 @@ We take our client’s privacy seriously and we pledge that we do not share your
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ECa-4n-8BA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3162.4000000000001" y="914.392803598201"/>
+            <point key="canvasLocation" x="3162.3188405797105" y="913.85869565217399"/>
         </scene>
         <!--Cart View Controller-->
         <scene sceneID="6Pf-yc-qeK">
@@ -547,7 +559,7 @@ We take our client’s privacy seriously and we pledge that we do not share your
                                         <rect key="frame" x="0.0" y="92" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WEC-TX-4Hs" id="0Si-iF-hbd">
-                                            <frame key="frameInset" width="414" height="43.666666666666664"/>
+                                            <frame key="frameInset" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="g4q-0F-AKR">

@@ -158,6 +158,7 @@ class ProductsViewController: UIViewController, UITableViewDataSource, UITableVi
         navigationItem.rightBarButtonItem = rightBarButton
         rightBarButton?.badgeBackgroundColor = UIColor.red
         rightBarButton?.badgeTextColor = UIColor.white
+        rightBarButton?.badgeValue = "\(OSCartService.sharedInstance.productsInCart.count)"
         
     }
     
