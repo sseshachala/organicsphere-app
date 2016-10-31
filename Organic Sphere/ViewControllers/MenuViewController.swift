@@ -58,6 +58,8 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
         case 2, 3 ,4:
             performSegue(withIdentifier: "ToOSWebViewController", sender: indexPath)
             break
+        case 0:
+            performSegue(withIdentifier: "showHome", sender: indexPath)
         default:
             dismiss(animated: true, completion: nil)
             break

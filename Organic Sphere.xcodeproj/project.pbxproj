@@ -26,6 +26,7 @@
 		5A6C862F1DC0329400C42D04 /* OSColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6C862E1DC0329400C42D04 /* OSColors.swift */; };
 		5A6C86311DC0353F00C42D04 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6C86301DC0353F00C42D04 /* ProductsViewController.swift */; };
 		5A6C86331DC03AC600C42D04 /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6C86321DC03AC600C42D04 /* ProductDetailsViewController.swift */; };
+		5A93DBC11DC7C45F004434A2 /* OSHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A93DBC01DC7C45F004434A2 /* OSHomeViewController.swift */; };
 		5AC6E3571DC507330096C442 /* OSProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC6E3561DC507330096C442 /* OSProduct.swift */; };
 		5AC6E35A1DC50AFD0096C442 /* OSCategoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC6E3591DC50AFD0096C442 /* OSCategoryService.swift */; };
 		5AC6E35E1DC5240A0096C442 /* OSProductList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC6E35D1DC5240A0096C442 /* OSProductList.swift */; };
@@ -72,6 +73,7 @@
 		5A6C862E1DC0329400C42D04 /* OSColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSColors.swift; sourceTree = "<group>"; };
 		5A6C86301DC0353F00C42D04 /* ProductsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductsViewController.swift; path = ViewControllers/ProductsViewController.swift; sourceTree = "<group>"; };
 		5A6C86321DC03AC600C42D04 /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductDetailsViewController.swift; path = ViewControllers/ProductDetailsViewController.swift; sourceTree = "<group>"; };
+		5A93DBC01DC7C45F004434A2 /* OSHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OSHomeViewController.swift; path = ViewControllers/OSHomeViewController.swift; sourceTree = "<group>"; };
 		5AC6E3561DC507330096C442 /* OSProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OSProduct.swift; path = Models/OSProduct.swift; sourceTree = "<group>"; };
 		5AC6E3591DC50AFD0096C442 /* OSCategoryService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OSCategoryService.swift; path = Services/OSCategoryService.swift; sourceTree = "<group>"; };
 		5AC6E35D1DC5240A0096C442 /* OSProductList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OSProductList.swift; path = Models/OSProductList.swift; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 				5A6ACF7B1DC1730E00083C0F /* CartViewController.swift */,
 				5A5C7ACE1DC18F6F00643F5D /* OSWebViewController.swift */,
 				5A249D3C1DC5777900AE4F44 /* OSOrderConfirmationViewController.swift */,
+				5A93DBC01DC7C45F004434A2 /* OSHomeViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -449,6 +452,7 @@
 				5A5C7ACF1DC18F6F00643F5D /* OSWebViewController.swift in Sources */,
 				5A6C86041DC010B800C42D04 /* AppDelegate.swift in Sources */,
 				5A6ACF7C1DC1730E00083C0F /* CartViewController.swift in Sources */,
+				5A93DBC11DC7C45F004434A2 /* OSHomeViewController.swift in Sources */,
 				5AC6E35E1DC5240A0096C442 /* OSProductList.swift in Sources */,
 				5AC6E3691DC5435D0096C442 /* OSCartService.swift in Sources */,
 				5A6C86331DC03AC600C42D04 /* ProductDetailsViewController.swift in Sources */,
