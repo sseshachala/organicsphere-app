@@ -12,9 +12,9 @@ import SwiftyJSON
 
 class OSNetworkManager: NSObject {
     #if RELEASE
-        static let server = "https://devqa.b2bsphere.com"
+        static let server = "https://b2bsphere.com"
     #else
-        static let server = "https://devqa.b2bsphere.com"
+        static let server = "https://b2bsphere.com"
     #endif
     
     static let restServicePathFirstVersion = "/api/v1/rest"
@@ -40,7 +40,7 @@ class OSNetworkManager: NSObject {
                     commaSeparatedString.append(",")
                 }
             }
-            return "https://devqa.b2bsphere.com/api/v1/rest/organicsphere/sendMessage/\(commaSeparatedString)/\(baseEncodedString)"
+            return "\(server)\(restServicePathFirstVersion)/organicsphere/sendMessage/\(commaSeparatedString)/\(baseEncodedString)"
         }
     }
     
