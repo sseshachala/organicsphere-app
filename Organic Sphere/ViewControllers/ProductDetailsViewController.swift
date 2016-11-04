@@ -12,6 +12,7 @@ import SideMenu
 class ProductDetailsViewController: UIViewController {
 
     
+    @IBOutlet weak var productDescriptionView: UITextView!
     @IBOutlet weak var productImageView: UIImageView!
     @IBOutlet weak var productNameLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
@@ -39,7 +40,7 @@ class ProductDetailsViewController: UIViewController {
         //Set product name
         productNameLabel.text = selectedProduct.product_name
         //Set categor/company
-        productCategoryLabel.text = selectedProduct.company_name
+        productCategoryLabel.text = selectedProduct.brand_c
         ///set price
         if let price = selectedProduct.terms_fob_price_c {
             priceLabel.text = "$\(price)"
@@ -57,6 +58,13 @@ class ProductDetailsViewController: UIViewController {
             tagsLabel.text = "Tags: \(tags)"
         } else {
             tagsLabel.text = "Tags: No available tags at the moment"
+        }
+        
+        if let productDescription = selectedProduct.productDescription{
+            productDescriptionView.text = productDescription
+        }
+        else {
+            productDescriptionView.text = "No description available."
         }
         
         productView.backgroundColor = UIColor(white: 0, alpha: 0.5)
