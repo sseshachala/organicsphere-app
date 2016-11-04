@@ -8,6 +8,7 @@
 
 import UIKit
 import NVActivityIndicatorView
+import AlamofireImage
 
 protocol OrderConfirmation {
     func didConfirmOder()
@@ -92,8 +93,12 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
         let cell = tableView.dequeueReusableCell(withIdentifier: "cartCell", for: indexPath)
         cell.textLabel?.text = products[indexPath.row].product_name
         cell.detailTextLabel?.text = "Order Quantity: \(products[indexPath.row].orderedQuantity)"
-        cell.imageView?.image = UIImage(named: "lentils")
-        
+        if let productImageUrl = products[indexPath.row].product_images_c {
+            setImage(to: cell.imageView!, urlString: productImageUrl)
+        }
+        else {
+            cell.imageView?.image = UIImage(named: "lentils")
+        }
         //Set custom label to the accessory view
         let priceLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 75, height: 50))
         priceLabel.textAlignment = NSTextAlignment.right
@@ -110,6 +115,14 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         cell.accessoryView = priceLabel
         return cell
+    }
+    
+    func setImage(to imageView: UIImageView, urlString:String) {
+        if let url = URL(string: urlString) {
+            let placeholderImage = UIImage(named: "lentils")!
+            imageView.af_setImage(withURL: url, placeholderImage: placeholderImage)
+            
+        }
     }
     
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

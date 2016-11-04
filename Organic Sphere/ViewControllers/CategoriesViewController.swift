@@ -126,6 +126,14 @@ class CategoriesViewController: UIViewController, UITableViewDelegate, UITableVi
         return cell
     }
     
+    func setImage(to imageView: UIImageView, urlString:String) {
+        if let url = URL(string: urlString) {
+            let placeholderImage = UIImage(named: "lentils")!
+            imageView.af_setImage(withURL: url, placeholderImage: placeholderImage)
+            
+        }
+    }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "CategoriesToProducts", sender: indexPath)
     }

@@ -8,6 +8,8 @@
 
 import UIKit
 import SideMenu
+import AlamofireImage
+
 
 class ProductDetailsViewController: UIViewController {
 
@@ -34,6 +36,7 @@ class ProductDetailsViewController: UIViewController {
         self.title = "Product Details"
         
         setAllTheLabels()
+        setImage()
     }
     
     func setAllTheLabels() {
@@ -68,6 +71,16 @@ class ProductDetailsViewController: UIViewController {
         }
         
         productView.backgroundColor = UIColor(white: 0, alpha: 0.5)
+    }
+    
+    func setImage() {
+        if let urlString  = selectedProduct.product_images_c {
+            if let url = URL(string: urlString) {
+                let placeholderImage = UIImage(named: "banner")!
+                productImageView.af_setImage(withURL: url, placeholderImage: placeholderImage)
+
+            }
+        }
     }
     
     func makeButtonCircular(button:UIButton) {
