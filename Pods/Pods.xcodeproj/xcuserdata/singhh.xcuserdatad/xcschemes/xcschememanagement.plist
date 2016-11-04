@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>AlamofireImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>CCBottomRefreshControl.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -57,12 +62,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6D32D7C5507D53318F943205DFB7F938</key>
+		<key>333E47F1004946B94926B19979768D18</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6ECC4C26E4F601B9791F68038A181ED4</key>
+		<key>4BE5A9D9731A5D0BC00FA3BF37F3D2DB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>666C23F43C71F3CEEB2D963D7BC6B862</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -77,7 +87,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CA4A5F476C43C6DAD78200C3A62AC064</key>
+		<key>DD084AFACA891F5F6DE04EC21B20CDD5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
