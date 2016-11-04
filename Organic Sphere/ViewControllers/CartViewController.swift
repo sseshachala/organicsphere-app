@@ -121,7 +121,9 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
         if let url = URL(string: urlString) {
             let placeholderImage = UIImage(named: "lentils")!
             imageView.af_setImage(withURL: url, placeholderImage: placeholderImage)
-            
+        }
+        else {
+            imageView.image = UIImage(named: "lentils")
         }
     }
     
