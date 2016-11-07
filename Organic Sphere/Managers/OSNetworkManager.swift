@@ -12,7 +12,7 @@ import SwiftyJSON
 
 class OSNetworkManager: NSObject {
     #if RELEASE
-        static let server = "http://devqa.b2bsphere.com"
+        static let server = "http://b2bsphere.com"
     #else
         static let server = "http://devqa.b2bsphere.com"
     #endif
