@@ -602,6 +602,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FW7F9SP7S7;
 				INFOPLIST_FILE = "Organic Sphere/Info.plist";
+<<<<<<< HEAD
+=======
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+>>>>>>> 302d33ebed4776c8d3a27df6bbace57ed4db8408
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Arsh.Organic-Sphere";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -617,6 +621,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FW7F9SP7S7;
 				INFOPLIST_FILE = "Organic Sphere/Info.plist";
+<<<<<<< HEAD
+=======
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+>>>>>>> 302d33ebed4776c8d3a27df6bbace57ed4db8408
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Arsh.Organic-Sphere";
 				PRODUCT_NAME = "$(TARGET_NAME)";

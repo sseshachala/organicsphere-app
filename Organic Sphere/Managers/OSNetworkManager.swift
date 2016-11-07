@@ -12,9 +12,15 @@ import SwiftyJSON
 
 class OSNetworkManager: NSObject {
     #if RELEASE
+<<<<<<< HEAD
         static let server = "https://b2bsphere.com"
     #else
         static let server = "https://b2bsphere.com"
+=======
+        static let server = "http://b2bsphere.com"
+    #else
+        static let server = "http://devqa.b2bsphere.com"
+>>>>>>> 302d33ebed4776c8d3a27df6bbace57ed4db8408
     #endif
     
     static let restServicePathFirstVersion = "/api/v1/rest"

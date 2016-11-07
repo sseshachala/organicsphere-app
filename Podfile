@@ -12,8 +12,12 @@ target 'Organic Sphere' do
     pod 'SwiftyJSON'
     pod 'NVActivityIndicatorView'
     pod 'CCBottomRefreshControl'
+<<<<<<< HEAD
 
 
+=======
+    pod 'AlamofireImage', '~> 3.1'
+>>>>>>> 302d33ebed4776c8d3a27df6bbace57ed4db8408
 
   target 'Organic SphereTests' do
     inherit! :search_paths
