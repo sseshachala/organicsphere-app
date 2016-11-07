@@ -24,8 +24,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-<<<<<<< HEAD
-=======
 ## AlamofireImage
 
 Copyright (c) 2015-2016 Alamofire Software Foundation (http://alamofire.org/)
@@ -49,7 +47,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
->>>>>>> 302d33ebed4776c8d3a27df6bbace57ed4db8408
 ## CCBottomRefreshControl
 
 The MIT License (MIT)

@@ -8,19 +8,11 @@
 
 import UIKit
 import SideMenu
-<<<<<<< HEAD
-=======
 import AlamofireImage
-
->>>>>>> 302d33ebed4776c8d3a27df6bbace57ed4db8408
 
 class ProductDetailsViewController: UIViewController {
 
-    
-<<<<<<< HEAD
-=======
     @IBOutlet weak var productDescriptionView: UITextView!
->>>>>>> 302d33ebed4776c8d3a27df6bbace57ed4db8408
     @IBOutlet weak var productImageView: UIImageView!
     @IBOutlet weak var productNameLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
@@ -42,21 +34,14 @@ class ProductDetailsViewController: UIViewController {
         self.title = "Product Details"
         
         setAllTheLabels()
-<<<<<<< HEAD
-=======
         setImage()
->>>>>>> 302d33ebed4776c8d3a27df6bbace57ed4db8408
     }
     
     func setAllTheLabels() {
         //Set product name
         productNameLabel.text = selectedProduct.product_name
         //Set categor/company
-<<<<<<< HEAD
-        productCategoryLabel.text = selectedProduct.company_name
-=======
         productCategoryLabel.text = selectedProduct.brand_c
->>>>>>> 302d33ebed4776c8d3a27df6bbace57ed4db8408
         ///set price
         if let price = selectedProduct.terms_fob_price_c {
             priceLabel.text = "$\(price)"
@@ -76,11 +61,6 @@ class ProductDetailsViewController: UIViewController {
             tagsLabel.text = "Tags: No available tags at the moment"
         }
         
-<<<<<<< HEAD
-        productView.backgroundColor = UIColor(white: 0, alpha: 0.5)
-    }
-    
-=======
         if let productDescription = selectedProduct.productDescription{
             productDescriptionView.text = productDescription
         }
@@ -101,7 +81,6 @@ class ProductDetailsViewController: UIViewController {
         }
     }
     
->>>>>>> 302d33ebed4776c8d3a27df6bbace57ed4db8408
     func makeButtonCircular(button:UIButton) {
         button.layer.cornerRadius = button.frame.width * 0.50
         button.clipsToBounds = true
@@ -118,11 +97,7 @@ class ProductDetailsViewController: UIViewController {
         productOrderCountLabel.layer.borderColor = UIColor.gray.cgColor
         productOrderCountLabel.layer.borderWidth = 1
         setUpRightBarButton()
-<<<<<<< HEAD
-
-=======
         productDescriptionView.setContentOffset(CGPoint(x:0, y:0), animated: false)
->>>>>>> 302d33ebed4776c8d3a27df6bbace57ed4db8408
     }
     
     override func viewWillAppear(_ animated: Bool) {

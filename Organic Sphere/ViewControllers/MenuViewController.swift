@@ -34,11 +34,7 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
         verbageLabel.numberOfLines = 0
         let splashImageView = UIImageView(frame: CGRect(x:tableView.frame.width/2 - 100, y:verbageLabel.frame.height, width: 200, height:150))
-<<<<<<< HEAD
-        splashImageView.image = UIImage(named: "splashImage")
-=======
         splashImageView.image = UIImage(named: "splash")
->>>>>>> 302d33ebed4776c8d3a27df6bbace57ed4db8408
         viewForLogo.addSubview(verbageLabel)
         viewForLogo.addSubview(splashImageView)
         self.tableView.tableFooterView = viewForLogo

@@ -14,6 +14,7 @@
 		5A3D3BA91DC2F99A00880138 /* OSCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3D3BA81DC2F99A00880138 /* OSCategory.swift */; };
 		5A5C7ACF1DC18F6F00643F5D /* OSWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5C7ACE1DC18F6F00643F5D /* OSWebViewController.swift */; };
 		5A5C7AD61DC1AD5200643F5D /* OSLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5C7AD51DC1AD5200643F5D /* OSLocationManager.swift */; };
+		5A60A53E1DD0EBCA00263E73 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A60A53D1DD0EBCA00263E73 /* Default-568h@2x.png */; };
 		5A6ACF7C1DC1730E00083C0F /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6ACF7B1DC1730E00083C0F /* CartViewController.swift */; };
 		5A6C86041DC010B800C42D04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6C86031DC010B800C42D04 /* AppDelegate.swift */; };
 		5A6C86091DC010B800C42D04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A6C86071DC010B800C42D04 /* Main.storyboard */; };
@@ -57,6 +58,7 @@
 		5A3D3BA81DC2F99A00880138 /* OSCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OSCategory.swift; path = Models/OSCategory.swift; sourceTree = "<group>"; };
 		5A5C7ACE1DC18F6F00643F5D /* OSWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OSWebViewController.swift; path = ViewControllers/OSWebViewController.swift; sourceTree = "<group>"; };
 		5A5C7AD51DC1AD5200643F5D /* OSLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OSLocationManager.swift; path = Managers/OSLocationManager.swift; sourceTree = "<group>"; };
+		5A60A53D1DD0EBCA00263E73 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		5A6ACF7B1DC1730E00083C0F /* CartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CartViewController.swift; path = ViewControllers/CartViewController.swift; sourceTree = "<group>"; };
 		5A6C86001DC010B800C42D04 /* Organic Sphere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Organic Sphere.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A6C86031DC010B800C42D04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 		5A6C85F71DC010B800C42D04 = {
 			isa = PBXGroup;
 			children = (
+				5A60A53D1DD0EBCA00263E73 /* Default-568h@2x.png */,
 				5A6C86021DC010B800C42D04 /* Organic Sphere */,
 				5A6C861A1DC010B800C42D04 /* Organic SphereTests */,
 				5A6C86011DC010B800C42D04 /* Products */,
@@ -325,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A6C86111DC010B800C42D04 /* LaunchScreen.storyboard in Resources */,
+				5A60A53E1DD0EBCA00263E73 /* Default-568h@2x.png in Resources */,
 				5A6C860E1DC010B800C42D04 /* Assets.xcassets in Resources */,
 				5A6C86091DC010B800C42D04 /* Main.storyboard in Resources */,
 			);
@@ -602,10 +606,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FW7F9SP7S7;
 				INFOPLIST_FILE = "Organic Sphere/Info.plist";
-<<<<<<< HEAD
-=======
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
->>>>>>> 302d33ebed4776c8d3a27df6bbace57ed4db8408
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Arsh.Organic-Sphere";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -621,10 +622,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FW7F9SP7S7;
 				INFOPLIST_FILE = "Organic Sphere/Info.plist";
-<<<<<<< HEAD
-=======
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
->>>>>>> 302d33ebed4776c8d3a27df6bbace57ed4db8408
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Arsh.Organic-Sphere";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -9,10 +9,7 @@
 import UIKit
 import NVActivityIndicatorView
 import CCBottomRefreshControl
-<<<<<<< HEAD
-=======
 import AlamofireImage
->>>>>>> 302d33ebed4776c8d3a27df6bbace57ed4db8408
 
 
 class ProductsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
@@ -109,9 +106,6 @@ class ProductsViewController: UIViewController, UITableViewDataSource, UITableVi
         let cell = tableView.dequeueReusableCell(withIdentifier: "productCell", for: indexPath)
         cell.textLabel?.text = products[indexPath.row].product_name
         cell.detailTextLabel?.text = products[indexPath.row].prodCatName
-<<<<<<< HEAD
-        cell.imageView?.image = UIImage(named: "lentils")
-=======
         if let productImageUrl = products[indexPath.row].product_logo {
             setImage(to: cell.imageView!, urlString: productImageUrl)
         }
@@ -122,7 +116,6 @@ class ProductsViewController: UIViewController, UITableViewDataSource, UITableVi
         //cell.imageView?.contentMode = .scaleAspectFit
         cell.imageView?.autoresizingMask = []
         cell.imageView?.clipsToBounds = true
->>>>>>> 302d33ebed4776c8d3a27df6bbace57ed4db8408
         
         //Set custom label to the accessory view
         let priceLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 50))
@@ -139,8 +132,6 @@ class ProductsViewController: UIViewController, UITableViewDataSource, UITableVi
         return cell
     }
     
-<<<<<<< HEAD
-=======
     func setImage(to imageView: UIImageView, urlString:String) {
         if let url = URL(string: urlString) {
             let placeholderImage = UIImage(named: "lentils")!
@@ -154,7 +145,6 @@ class ProductsViewController: UIViewController, UITableViewDataSource, UITableVi
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
     }
     
->>>>>>> 302d33ebed4776c8d3a27df6bbace57ed4db8408
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         performSegue(withIdentifier: "ProductsToProductDetails", sender: indexPath)

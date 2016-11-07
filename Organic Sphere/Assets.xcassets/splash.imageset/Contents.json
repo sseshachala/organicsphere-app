@@ -2,11 +2,7 @@
   "images" : [
     {
       "idiom" : "universal",
-<<<<<<< HEAD
-      "filename" : "howItWorks.png",
-=======
       "filename" : "howItWorks (1).png",
->>>>>>> 302d33ebed4776c8d3a27df6bbace57ed4db8408
       "scale" : "1x"
     },
     {

@@ -94,9 +94,6 @@ class OSProductList: NSObject {
         //Remove $ from the model
         terms_fob_price_c = terms_fob_price_c?.replacingOccurrences(of: "$", with: "")
         terms_fob_price_c = terms_fob_price_c?.replacingOccurrences(of: " ", with: "")
-<<<<<<< HEAD
-=======
         productDescription = productDescription?.replacingOccurrences(of: "@", with: "\u{2022}")
->>>>>>> 302d33ebed4776c8d3a27df6bbace57ed4db8408
     }
 }

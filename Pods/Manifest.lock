@@ -1,10 +1,7 @@
 PODS:
   - Alamofire (4.0.1)
-<<<<<<< HEAD
-=======
   - AlamofireImage (3.1.0):
     - Alamofire (~> 4.0)
->>>>>>> 302d33ebed4776c8d3a27df6bbace57ed4db8408
   - CCBottomRefreshControl (0.5.1):
     - Masonry (~> 0.6.2)
   - Masonry (0.6.4)
@@ -14,10 +11,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 4.0)
-<<<<<<< HEAD
-=======
   - AlamofireImage (~> 3.1)
->>>>>>> 302d33ebed4776c8d3a27df6bbace57ed4db8408
   - CCBottomRefreshControl
   - NVActivityIndicatorView
   - SideMenu
@@ -25,20 +19,13 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
-<<<<<<< HEAD
-=======
   AlamofireImage: bb8c8351c51cb1633bb6be69b6dbbaff37ce65b7
->>>>>>> 302d33ebed4776c8d3a27df6bbace57ed4db8408
   CCBottomRefreshControl: 57a596348855260f627ffc2b311328ed15b94877
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
   NVActivityIndicatorView: 81953b5e65093ba79edf4fe7268e002039ca5268
   SideMenu: 0ecfd407b24e7d36c57fc50ca7f5d7cedb7c8841
   SwiftyJSON: f0be2e604f83e8405a624e9f891898bf6ed4e019
 
-<<<<<<< HEAD
-PODFILE CHECKSUM: ea0d720e9974c4f0a696f62da9995ef39b0ef5a5
-=======
 PODFILE CHECKSUM: f6ee19ee9f9ccefa50dfdee53ddb508dd887ff22
->>>>>>> 302d33ebed4776c8d3a27df6bbace57ed4db8408
 
 COCOAPODS: 1.1.1
