@@ -106,13 +106,16 @@ class ProductsViewController: UIViewController, UITableViewDataSource, UITableVi
         let cell = tableView.dequeueReusableCell(withIdentifier: "productCell", for: indexPath)
         cell.textLabel?.text = products[indexPath.row].product_name
         cell.detailTextLabel?.text = products[indexPath.row].prodCatName
-        if let productImageUrl = products[indexPath.row].product_images_c {
+        if let productImageUrl = products[indexPath.row].product_logo {
             setImage(to: cell.imageView!, urlString: productImageUrl)
         }
         else {
             cell.imageView?.image = UIImage(named: "lentils")
         }
         
+        //cell.imageView?.contentMode = .scaleAspectFit
+        cell.imageView?.autoresizingMask = []
+        cell.imageView?.clipsToBounds = true
         
         //Set custom label to the accessory view
         let priceLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 50))
@@ -137,6 +140,9 @@ class ProductsViewController: UIViewController, UITableViewDataSource, UITableVi
         else {
             imageView.image = UIImage(named: "lentils")
         }
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

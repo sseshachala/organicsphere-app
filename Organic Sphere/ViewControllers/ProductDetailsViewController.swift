@@ -74,7 +74,7 @@ class ProductDetailsViewController: UIViewController {
     }
     
     func setImage() {
-        if let urlString  = selectedProduct.product_images_c {
+        if let urlString  = selectedProduct.product_logo {
             if let url = URL(string: urlString) {
                 let placeholderImage = UIImage(named: "banner")!
                 productImageView.af_setImage(withURL: url, placeholderImage: placeholderImage)
@@ -99,7 +99,7 @@ class ProductDetailsViewController: UIViewController {
         productOrderCountLabel.layer.borderColor = UIColor.gray.cgColor
         productOrderCountLabel.layer.borderWidth = 1
         setUpRightBarButton()
-
+        productDescriptionView.setContentOffset(CGPoint(x:0, y:0), animated: false)
     }
     
     override func viewWillAppear(_ animated: Bool) {

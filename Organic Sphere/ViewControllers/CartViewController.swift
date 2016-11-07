@@ -93,7 +93,7 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
         let cell = tableView.dequeueReusableCell(withIdentifier: "cartCell", for: indexPath)
         cell.textLabel?.text = products[indexPath.row].product_name
         cell.detailTextLabel?.text = "Order Quantity: \(products[indexPath.row].orderedQuantity)"
-        if let productImageUrl = products[indexPath.row].product_images_c {
+        if let productImageUrl = products[indexPath.row].product_logo {
             setImage(to: cell.imageView!, urlString: productImageUrl)
         }
         else {

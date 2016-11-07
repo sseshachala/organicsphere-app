@@ -42,7 +42,11 @@ class OSLocationManager: NSObject, CLLocationManagerDelegate {
                 
                 let openAction = UIAlertAction(title: "Open Settings", style: .default) { (action) in
                     if let url = URL(string:UIApplicationOpenSettingsURLString) {
-                        UIApplication.shared.open(url)
+                        if #available(iOS 10.0, *) {
+                            UIApplication.shared.open(url)
+                        } else {
+                            // Fallback on earlier versions
+                        }
                     }
                 }
                 alertController.addAction(openAction)
