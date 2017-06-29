@@ -9,7 +9,7 @@
 import UIKit
 import SideMenu
 
-class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UIGestureRecognizerDelegate {
     @IBOutlet weak var tableView: UITableView!
     let menuDataSource = ["HOME", "CATEGORY", "TERMS & CONDITIONS", "PRIVACY POLICY", "ABOUT"];
     
@@ -28,7 +28,10 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let viewForLogo = UIView(frame: CGRect(x:0, y:0, width: 100, height:400))
         let verbageLabel = UILabel(frame: CGRect(x:0, y:0, width:self.tableView.frame.width, height:60))
         verbageLabel.textColor = UIColor.white
-        verbageLabel.text = "Your neighborhood stores for Indian Organic groceries and healthy natural products"
+        let footerMessage = "Your neighborhood stores for Indian Organic groceries and healthy natural products \n https://www.organic-sphere.com/"
+        let mutableAttributedString: NSMutableAttributedString = NSMutableAttributedString(string: footerMessage)
+        _ = mutableAttributedString.setAsLink(textToFind: "https://www.organic-sphere.com/", linkURL: "https://www.organic-sphere.com/")
+        verbageLabel.attributedText = mutableAttributedString
         verbageLabel.textAlignment = NSTextAlignment.center
         verbageLabel.font = verbageLabel.font.withSize(13)
 
@@ -37,6 +40,11 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
         splashImageView.image = UIImage(named: "splash")
         viewForLogo.addSubview(verbageLabel)
         viewForLogo.addSubview(splashImageView)
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
+        tap.delegate = self
+        viewForLogo.addGestureRecognizer(tap)
+        
         self.tableView.tableFooterView = viewForLogo
     }
 
@@ -92,6 +100,35 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
             }
         }
     }
+    
+    func handleTap() {
+        guard let url = URL(string: "https://www.organic-sphere.com/") else {
+            return
+        }
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url, options: [:]) {_ in }
+        } else {
+            // Fallback on earlier versions
+            UIApplication.shared.openURL(url)
+        }
+    }
 
 
+}
+
+
+extension NSMutableAttributedString {
+    
+    public func setAsLink(textToFind:String, linkURL:String) -> Bool {
+        
+        let foundRange = self.mutableString.range(of: textToFind)
+        if foundRange.location != NSNotFound {
+            self.addAttribute(NSLinkAttributeName, value: linkURL, range: foundRange)
+            self.addAttribute(NSUnderlineStyleAttributeName, value: NSUnderlineStyle.styleSingle.rawValue, range: foundRange)
+            self.addAttribute(NSForegroundColorAttributeName, value: UIColor.blue, range: foundRange)
+
+            return true
+        }
+        return false
+    }
 }

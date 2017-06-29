@@ -17,10 +17,12 @@ class OSCartService: NSObject {
     }()
     
     var productsInCart:[OSProductList] = []
+    let deliveryCharge = 0
     var wasPlacingOrderProcessInitiated = false
     var wasOrderPlaced = false
-    var taxValue: Double = 8.0
+    var taxValue: Double = 0.0
     var taxValueType = "%"
+    let useServerTaxVal = false
     var postalCode:String? {
         didSet {
             getTaxdetails(postalCode: postalCode!)
@@ -46,6 +48,9 @@ class OSCartService: NSObject {
     }
     
     func getTaxdetails(postalCode:String) {
+        if !useServerTaxVal {
+            return
+        }
         OSNetworkManager.sharedInstance.getTaxDetailsFor(postalCode: postalCode) {
             responseJSON, error in
             if let _ = error {

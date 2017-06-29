@@ -46,7 +46,7 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.totalPrice.text = "$\(OSCartService.sharedInstance.totalPrice())"
         
         if OSCartService.sharedInstance.totalPrice() < 100 {
-            deliveryChargesLabel.text = "$20"
+            deliveryChargesLabel.text = "$\(OSCartService.sharedInstance.deliveryCharge)"
         } else {
             deliveryChargesLabel.text = "$0"
         }

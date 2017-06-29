@@ -264,10 +264,10 @@ class OSOrderConfirmationViewController: UIViewController, UITextFieldDelegate, 
         }
         messageFormat.append("Total Bill: $\(OSCartService.sharedInstance.totalPrice())\n")
         messageFormat.append("Tax: \(OSCartService.sharedInstance.taxValue)\(OSCartService.sharedInstance.taxValueType)\n")
-        messageFormat.append("Delivery Charges: $\(OSCartService.sharedInstance.totalPrice() < 100 ? 20 : 0)\n")
+        messageFormat.append("Delivery Charges: $\(OSCartService.sharedInstance.totalPrice() < 100 ? OSCartService.sharedInstance.deliveryCharge : 0)\n")
         
         let total = OSCartService.sharedInstance.totalPrice()
-        let deliveryCharge = Double(OSCartService.sharedInstance.totalPrice() < 100 ? 20 : 0)
+        let deliveryCharge = Double(OSCartService.sharedInstance.totalPrice() < 100 ? 0 : 0)
         let totalIncludingTax = (Double(OSCartService.sharedInstance.taxValue) * OSCartService.sharedInstance.totalPrice())/100
         let grandTotal = round(total + deliveryCharge + totalIncludingTax)
         
