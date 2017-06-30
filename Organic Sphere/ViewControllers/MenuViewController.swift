@@ -28,7 +28,7 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let viewForLogo = UIView(frame: CGRect(x:0, y:0, width: 100, height:400))
         let verbageLabel = UILabel(frame: CGRect(x:0, y:0, width:self.tableView.frame.width, height:60))
         verbageLabel.textColor = UIColor.white
-        let footerMessage = "Your neighborhood stores for Indian Organic groceries and healthy natural products \n https://www.organic-sphere.com/"
+        let footerMessage = "Your neighborhood stores for Organic groceries and healthy natural products \n https://www.organic-sphere.com/"
         let mutableAttributedString: NSMutableAttributedString = NSMutableAttributedString(string: footerMessage)
         _ = mutableAttributedString.setAsLink(textToFind: "https://www.organic-sphere.com/", linkURL: "https://www.organic-sphere.com/")
         verbageLabel.attributedText = mutableAttributedString
